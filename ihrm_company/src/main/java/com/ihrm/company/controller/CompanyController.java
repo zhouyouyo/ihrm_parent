@@ -10,8 +10,8 @@ import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
-//解决跨域问题
-@CrossOrigin
+
+@CrossOrigin//解决跨域问题
 @RestController
 @RequestMapping(value="/company")
 public class CompanyController {

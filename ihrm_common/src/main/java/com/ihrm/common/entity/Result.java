@@ -7,7 +7,16 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * 响应结果对象
+ * 数据响应对象
+ *    {
+ *      success ：是否成功
+ *      code    ：返回码
+ *      message ：返回信息
+ *      //返回数据
+ *      data：  ：{
+ *
+ *      }
+ *    }
  */
 @Data
 @NoArgsConstructor
