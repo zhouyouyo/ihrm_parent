@@ -2,24 +2,28 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbc77585-f06d-47b1-87cf-9674cec03543" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ihrm_common/src/main/java/com/ihrm/common/exception/CommonException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common/src/main/java/com/ihrm/common/handler/BaseExceptionHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common/target/classes/com/ihrm/common/entity/PageResult.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common/target/classes/com/ihrm/common/entity/Result.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common/target/classes/com/ihrm/common/entity/ResultCode.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common/target/classes/com/ihrm/common/utils/IdWorker.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/company/Company.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_company/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_company/target/classes/com/ihrm/company/CompanyApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_company/target/classes/com/ihrm/company/controller/CompanyController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_company/target/classes/com/ihrm/company/dao/CompanyDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_company/target/classes/com/ihrm/company/service/CompanyService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_common/src/main/java/com/ihrm/common/controller/BaseController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_common/src/main/java/com/ihrm/common/service/BaseService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_common/target/classes/com/ihrm/common/controller/BaseController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_common/target/classes/com/ihrm/common/exception/CommonException.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_common/target/classes/com/ihrm/common/handler/BaseExceptionHandler.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_common/target/classes/com/ihrm/common/service/BaseService$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_common/target/classes/com/ihrm/common/service/BaseService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/company/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/company/response/DeptListResult.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/company/Department.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/company/response/DeptListResult.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_company/src/main/java/com/ihrm/company/controller/DepartmentController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_company/src/main/java/com/ihrm/company/dao/DepartmentDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_company/src/main/java/com/ihrm/company/service/DepartmentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_company/target/classes/com/ihrm/company/controller/DepartmentController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_company/target/classes/com/ihrm/company/dao/DepartmentDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_company/target/classes/com/ihrm/company/service/DepartmentService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ihrm_common/src/main/java/com/ihrm/common/entity/PageResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/ihrm_common/src/main/java/com/ihrm/common/entity/PageResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ihrm_common/src/main/java/com/ihrm/common/entity/Result.java" beforeDir="false" afterPath="$PROJECT_DIR$/ihrm_common/src/main/java/com/ihrm/common/entity/Result.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ihrm_common/src/main/java/com/ihrm/common/entity/ResultCode.java" beforeDir="false" afterPath="$PROJECT_DIR$/ihrm_common/src/main/java/com/ihrm/common/entity/ResultCode.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ihrm_company/src/main/java/com/ihrm/company/controller/CompanyController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ihrm_company/src/main/java/com/ihrm/company/controller/CompanyController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ihrm_company/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ihrm_company/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ihrm_common/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ihrm_common/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ihrm_common/target/classes/com/ihrm/common/entity/PageResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/ihrm_common/target/classes/com/ihrm/common/entity/PageResult.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ihrm_common/target/classes/com/ihrm/common/entity/Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/ihrm_common/target/classes/com/ihrm/common/entity/Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ihrm_common/target/classes/com/ihrm/common/entity/ResultCode.class" beforeDir="false" afterPath="$PROJECT_DIR$/ihrm_common/target/classes/com/ihrm/common/entity/ResultCode.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -75,7 +79,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ihrm_common/src/main/java/com/ihrm/common" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/company" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -83,11 +87,11 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_common\src\main\java\com\ihrm\common" />
-      <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_company\src\main\java\com\ihrm\company" />
       <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_common_model\src\main\java\com\ihrm\domain\company" />
-      <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_common_model\src\main\java" />
-      <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_common\src\main\java\com\ihrm\common\utils" />
+      <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_common\src\main\java\com\ihrm\common" />
+      <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_company\src\main\java\com\ihrm\company\dao" />
+      <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_company\src\main\java\com\ihrm\company\service" />
+      <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_company\src\main\java\com\ihrm\company\controller" />
     </key>
   </component>
   <component name="RunManager">
@@ -132,7 +136,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584171553270</updated>
-      <workItem from="1584171555856" duration="5667000" />
+      <workItem from="1584171555856" duration="12106000" />
     </task>
     <task id="LOCAL-00001" summary="搭建子模块">
       <created>1584174898324</created>
@@ -148,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1584176294749</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="完成自定义异常处理器">
+      <created>1584185238179</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1584185238179</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -158,85 +169,98 @@
     <option name="SHOW_DIRTY_RECURSIVELY" value="true" />
     <MESSAGE value="搭建子模块" />
     <MESSAGE value="完成公司基本crud操作" />
-    <option name="LAST_COMMIT_MESSAGE" value="完成公司基本crud操作" />
+    <MESSAGE value="完成自定义异常处理器" />
+    <option name="LAST_COMMIT_MESSAGE" value="完成自定义异常处理器" />
   </component>
   <component name="WindowStateProjectService">
     <state x="374" y="341" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1584175569512">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="374" y="341" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1584175569512" />
-    <state x="385" y="7" key="CommitChangelistDialog2" timestamp="1584176294139">
+    <state x="385" y="7" key="CommitChangelistDialog2" timestamp="1584185237515">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="385" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584176294139" />
+    <state x="385" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1584185237515" />
+    <state width="452" height="466" key="DebuggerActiveHint" timestamp="1584267408203">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state width="452" height="466" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1584267408203" />
     <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1584171625941">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1584171625941" />
-    <state width="1493" height="255" key="GridCell.Tab.0.bottom" timestamp="1584185193667">
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom" timestamp="1584267026454">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="255" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584185193667" />
-    <state width="1493" height="255" key="GridCell.Tab.0.center" timestamp="1584185193667">
+    <state width="1493" height="203" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584267026454" />
+    <state width="1493" height="203" key="GridCell.Tab.0.center" timestamp="1584267026454">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="255" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1584185193667" />
-    <state width="1493" height="255" key="GridCell.Tab.0.left" timestamp="1584185193667">
+    <state width="1493" height="203" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1584267026454" />
+    <state width="1493" height="203" key="GridCell.Tab.0.left" timestamp="1584267026454">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="255" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1584185193667" />
-    <state width="1493" height="255" key="GridCell.Tab.0.right" timestamp="1584185193667">
+    <state width="1493" height="203" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1584267026454" />
+    <state width="1493" height="203" key="GridCell.Tab.0.right" timestamp="1584267026454">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="255" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1584185193667" />
-    <state width="1493" height="255" key="GridCell.Tab.1.bottom" timestamp="1584185193667">
+    <state width="1493" height="203" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1584267026454" />
+    <state width="1493" height="203" key="GridCell.Tab.1.bottom" timestamp="1584267187725">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="255" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584185193667" />
-    <state width="1493" height="255" key="GridCell.Tab.1.center" timestamp="1584185193667">
+    <state width="1493" height="203" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584267187725" />
+    <state width="1493" height="203" key="GridCell.Tab.1.center" timestamp="1584267187725">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="255" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1584185193667" />
-    <state width="1493" height="255" key="GridCell.Tab.1.left" timestamp="1584185193667">
+    <state width="1493" height="203" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1584267187725" />
+    <state width="1493" height="203" key="GridCell.Tab.1.left" timestamp="1584267187725">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="255" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1584185193667" />
-    <state width="1493" height="255" key="GridCell.Tab.1.right" timestamp="1584185193667">
+    <state width="1493" height="203" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1584267187725" />
+    <state width="1493" height="203" key="GridCell.Tab.1.right" timestamp="1584267187725">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="255" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1584185193667" />
-    <state width="1493" height="255" key="GridCell.Tab.2.bottom" timestamp="1584185193667">
+    <state width="1493" height="203" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1584267187725" />
+    <state width="1493" height="203" key="GridCell.Tab.2.bottom" timestamp="1584267026343">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="255" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584185193667" />
-    <state width="1493" height="255" key="GridCell.Tab.2.center" timestamp="1584185193667">
+    <state width="1493" height="203" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1584267026343" />
+    <state width="1493" height="203" key="GridCell.Tab.2.center" timestamp="1584267026343">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="255" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1584185193667" />
-    <state width="1493" height="255" key="GridCell.Tab.2.left" timestamp="1584185193667">
+    <state width="1493" height="203" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1584267026343" />
+    <state width="1493" height="203" key="GridCell.Tab.2.left" timestamp="1584267026343">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="255" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1584185193667" />
-    <state width="1493" height="255" key="GridCell.Tab.2.right" timestamp="1584185193667">
+    <state width="1493" height="203" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1584267026343" />
+    <state width="1493" height="203" key="GridCell.Tab.2.right" timestamp="1584267026343">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="255" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1584185193667" />
+    <state width="1493" height="203" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1584267026343" />
     <state x="272" y="0" width="1173" height="708" key="SettingsEditor" timestamp="1584176521721">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="272" y="0" width="1173" height="708" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1584176521721" />
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1584176537119">
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1584185265054">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1584176537119" />
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1584185265054" />
     <state x="564" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584174765610">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="564" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1584174765610" />
-    <state x="465" y="215" key="git4idea.merge.GitPullDialog" timestamp="1584174813129">
+    <state x="323" y="152" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1584247425590">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="215" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1584174813129" />
+    <state x="323" y="152" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1584247425590" />
+    <state x="457" y="167" width="621" height="490" key="find.popup" timestamp="1584246842141">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="457" y="167" width="621" height="490" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1584246842141" />
+    <state x="465" y="215" key="git4idea.merge.GitPullDialog" timestamp="1584185251056">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="465" y="215" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1584185251056" />
     <state x="178" y="117" key="new project wizard" timestamp="1584174098882">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -245,5 +269,12 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="431" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1584175445737" />
+  </component>
+  <component name="XDebuggerManager">
+    <watches-manager>
+      <configuration name="SpringBootApplicationConfigurationType">
+        <watch expression="getSpec(companyId)" language="JAVA" />
+      </configuration>
+    </watches-manager>
   </component>
 </project>
