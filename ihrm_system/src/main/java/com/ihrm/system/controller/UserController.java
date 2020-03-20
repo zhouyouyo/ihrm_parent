@@ -6,6 +6,7 @@ import com.ihrm.common.entity.Result;
 import com.ihrm.common.entity.ResultCode;
 
 import com.ihrm.common.exception.CommonException;
+import com.ihrm.common.utils.IdWorker;
 import com.ihrm.common.utils.JwtUtils;
 import com.ihrm.common.utils.PermissionConstants;
 import com.ihrm.domain.system.Permission;
@@ -16,6 +17,13 @@ import com.ihrm.domain.system.response.UserResult;
 import com.ihrm.system.service.PermissionService;
 import com.ihrm.system.service.UserService;
 import io.jsonwebtoken.Claims;
+import org.apache.shiro.SecurityUtils;
+import org.apache.shiro.authc.AuthenticationException;
+import org.apache.shiro.authc.UsernamePasswordToken;
+import org.apache.shiro.authz.annotation.RequiresPermissions;
+import org.apache.shiro.crypto.hash.Md5Hash;
+import org.apache.shiro.subject.PrincipalCollection;
+import org.apache.shiro.subject.Subject;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.util.StringUtils;
@@ -23,6 +31,7 @@ import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.websocket.server.PathParam;
+import java.io.Serializable;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -45,14 +54,24 @@ public class UserController extends BaseController {
     @Autowired
     private PermissionService permissionService;
 
+    @Autowired
+    private IdWorker idWorker;
+
     /**
      * 保存
      */
     @RequestMapping(value = "/user", method = RequestMethod.POST)
     public Result save(@RequestBody User user) {
+        String id = idWorker.nextId()+"";
         //1.设置保存的企业id
         user.setCompanyId(companyId);
         user.setCompanyName(companyName);
+        //对密码加密
+        String password = new Md5Hash("123456",user.getMobile(),3).toString();//1.密码，盐，加密次数;
+        user.setPassword(password);
+        user.setLevel("user");
+        user.setEnableState(1);
+        user.setId(id);
         //2.调用service完成保存企业
         userService.save(user);
         //3.构造返回结果
@@ -99,6 +118,7 @@ public class UserController extends BaseController {
     /**
      * 根据id删除
      */
+    @RequiresPermissions(value = "API-USER-DELETE")//加上该注解，就会执行realm自定义的类中的doGetAuthorizationInfo授权的方法
     @RequestMapping(value = "/user/{id}", method = RequestMethod.DELETE,name = "API-USER-DELETE")
     public Result delete(@PathVariable(value = "id") String id) {
         userService.deleteById(id);
@@ -120,11 +140,29 @@ public class UserController extends BaseController {
         return new Result(ResultCode.SUCCESS);
     }
 
+
     @RequestMapping(value = "/login", method = RequestMethod.POST)
     public Result login(@RequestBody Map<String, Object> loginMap) {
         String mobile = (String) loginMap.get("mobile");
         String password = (String) loginMap.get("password");
-        User user = userService.findByMobile(mobile);
+        try {
+            //构造安全数据
+            //对密码加密,以mobile作为盐
+            password = new Md5Hash(password,mobile,3).toString();//1.密码，盐，加密次数
+            //获取subject
+            Subject subject = SecurityUtils.getSubject();
+            //构造token令牌数据
+            UsernamePasswordToken upToken = new UsernamePasswordToken(mobile, password);
+            //登录,进入realm完成认证
+            subject.login(upToken);
+            //获取sessionId
+            String id = (String) subject.getSession().getId();
+            return new Result(ResultCode.SUCCESS,id);
+        } catch (AuthenticationException e) {
+            e.printStackTrace();
+            return new Result(ResultCode.MOBILEORPASSWORDERROR);
+        }
+        /*User user = userService.findByMobile(mobile);
         if (user == null || !user.getPassword().equals(password)) {
             return new Result(ResultCode.MOBILEORPASSWORDERROR);
         }
@@ -144,13 +182,19 @@ public class UserController extends BaseController {
         map.put("companyId", user.getCompanyId());
         map.put("companyName", user.getCompanyName());
         String jwt = jwtUtils.createJwt(user.getId(), user.getUsername(), map);
-        return new Result(ResultCode.SUCCESS, jwt);
+        return new Result(ResultCode.SUCCESS, jwt);*/
     }
 
     @RequestMapping(value = "/profile", method = RequestMethod.POST)
     public Result profile(HttpServletRequest request) throws CommonException {
+        //获取session中的安全数据
+        Subject subject = SecurityUtils.getSubject();
+        //1.subject获取所有的安全数据集合
+        PrincipalCollection principals = subject.getPrincipals();
+        //2.获取安全数据
+        ProfileResult profileResult = (ProfileResult) principals.getPrimaryPrincipal();
         //获取用户id，用户名，手机号等
-        String id =  claims.getId();//用户id
+        /*String id =  claims.getId();//用户id
         User user = userService.findById(id);
         ProfileResult profileResult = null;
         //根据用户等级获取响应的权限
@@ -166,7 +210,7 @@ public class UserController extends BaseController {
             }
             List<Permission> list = permissionService.findAll(map);//无条件表示查询的所有权限，即saas管理员的权限
             profileResult = new ProfileResult(user,list);
-        }
+        }*/
         return new Result(ResultCode.SUCCESS,profileResult);
     }
 }
