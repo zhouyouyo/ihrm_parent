@@ -1,15 +1,22 @@
 package com.ihrm.system.service;
 
 import com.ihrm.common.utils.IdWorker;
+import com.ihrm.domain.company.Department;
 import com.ihrm.domain.system.Role;
 import com.ihrm.domain.system.User;
+import com.ihrm.system.client.DepartmentFeignClient;
 import com.ihrm.system.dao.RoleDao;
 import com.ihrm.system.dao.UserDao;
+import org.apache.poi.ss.usermodel.Cell;
+import org.apache.poi.ss.usermodel.CellType;
+import org.apache.poi.ss.usermodel.DateUtil;
+import org.apache.shiro.crypto.hash.Md5Hash;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.data.domain.PageRequest;
 import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
 
 import javax.persistence.criteria.CriteriaBuilder;
@@ -30,6 +37,9 @@ public class UserService {
 
     @Autowired
     private IdWorker idWorker;
+
+    @Autowired
+    private DepartmentFeignClient departmentFeignClient;
 
     /**
      * 1.保存用户
@@ -134,5 +144,59 @@ public class UserService {
 
     public User findByMobile(String mobile){
         return userDao.findByMobile(mobile);
+    }
+
+    //根据单元的数据类型获取内容
+    public Object getCellValue(Cell cell){
+        //获取单元格的数据类型
+        CellType cellType = cell.getCellType();
+        Object value = null;
+        switch (cellType){
+            case STRING://字符串
+                value = cell.getStringCellValue();
+                break;
+            case BOOLEAN://布尔类型
+                value = cell.getBooleanCellValue();
+                break;
+            case NUMERIC://数字类型，时间类型和整数类型以及小数类型都是数字类型
+                if (DateUtil.isCellDateFormatted(cell)){
+                    //日期类型
+                    value = cell.getDateCellValue();
+                }else{
+                    //数字类型
+                    value = cell.getNumericCellValue();
+                }
+                break;
+            case FORMULA://获取公式
+                value = cell.getCellFormula();
+                break;
+            default:
+                break;
+        }
+        return value;
+    }
+
+    /**
+     * 批量保存
+     */
+    @Transactional
+    public void saveAll(List<User> list,String companyId,String companyName){
+        for (User user : list) {
+            user.setId(idWorker.nextId()+"");
+            //基本属性
+            user.setCompanyId(companyId);
+            user.setCompanyName(companyName);
+            user.setInServiceStatus(1);
+            user.setEnableState(1);
+            user.setLevel("user");
+            user.setCreateTime(new Date());
+            Department department = departmentFeignClient.findByCode(user.getDepartmentId());//此时部门id是存的code
+            if (department!=null){
+                user.setDepartmentId(department.getId());
+                user.setDepartmentName(department.getName());
+            }
+            user.setPassword(new Md5Hash("123456",user.getMobile(),3).toString());
+            userDao.save(user);
+        }
     }
 }

@@ -6,17 +6,16 @@ import com.ihrm.common.entity.PageResult;
 import com.ihrm.common.entity.Result;
 import com.ihrm.common.entity.ResultCode;
 import com.ihrm.common.exception.CommonException;
-import com.ihrm.common.poi.utils.ExcelExportUtil;
+//import com.ihrm.common.poi.ExcelExportUtil;
 import com.ihrm.common.utils.BeanMapUtils;
+import com.ihrm.common.utils.DownloadUtils;
 import com.ihrm.domain.employee.*;
 import com.ihrm.domain.employee.response.EmployeeReportResult;
-import com.ihrm.domain.system.vo.UserVo;
 import com.ihrm.employee.service.*;
 import io.jsonwebtoken.Claims;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
-import org.apache.poi.poifs.filesystem.POIFSFileSystem;
-import org.apache.poi.ss.formula.functions.T;
 import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.streaming.SXSSFWorkbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.core.io.ClassPathResource;
@@ -26,10 +25,10 @@ import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 
+import javax.servlet.ServletOutputStream;
 import javax.servlet.http.HttpServletResponse;
-import java.io.FileInputStream;
-import java.io.IOException;
-import java.io.InputStream;
+import java.io.*;
+import java.lang.reflect.Field;
 import java.net.URLEncoder;
 import java.util.*;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -37,6 +36,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 @RestController
 @RequestMapping("/employees")
+@CrossOrigin
 public class EmployeeController extends BaseController {
     @Autowired
     private UserCompanyPersonalService userCompanyPersonalService;
@@ -73,11 +73,11 @@ public class EmployeeController extends BaseController {
     @RequestMapping(value = "/{id}/personalInfo", method = RequestMethod.GET)
     public Result findPersonalInfo(@PathVariable(name = "id") String uid) throws Exception {
         UserCompanyPersonal info = userCompanyPersonalService.findById(uid);
-        if(info == null) {
+        if (info == null) {
             info = new UserCompanyPersonal();
             info.setUserId(uid);
         }
-        return new Result(ResultCode.SUCCESS,info);
+        return new Result(ResultCode.SUCCESS, info);
     }
 
     /**
@@ -100,13 +100,13 @@ public class EmployeeController extends BaseController {
      */
     @RequestMapping(value = "/{id}/jobs", method = RequestMethod.GET)
     public Result findJobsInfo(@PathVariable(name = "id") String uid) throws Exception {
-        UserCompanyJobs info = userCompanyJobsService.findById(super.userId);
-        if(info == null) {
+        UserCompanyJobs info = userCompanyJobsService.findById(uid);
+        if (info == null) {
             info = new UserCompanyJobs();
             info.setUserId(uid);
             info.setCompanyId(companyId);
         }
-        return new Result(ResultCode.SUCCESS,info);
+        return new Result(ResultCode.SUCCESS, info);
     }
 
     /**
@@ -125,11 +125,11 @@ public class EmployeeController extends BaseController {
     @RequestMapping(value = "/{id}/leave", method = RequestMethod.GET)
     public Result findLeave(@PathVariable(name = "id") String uid) throws Exception {
         EmployeeResignation resignation = resignationService.findById(uid);
-        if(resignation == null) {
+        if (resignation == null) {
             resignation = new EmployeeResignation();
             resignation.setUserId(uid);
         }
-        return new Result(ResultCode.SUCCESS,resignation);
+        return new Result(ResultCode.SUCCESS, resignation);
     }
 
     /**
@@ -156,11 +156,11 @@ public class EmployeeController extends BaseController {
     @RequestMapping(value = "/{id}/transferPosition", method = RequestMethod.GET)
     public Result findTransferPosition(@PathVariable(name = "id") String uid) throws Exception {
         UserCompanyJobs jobsInfo = userCompanyJobsService.findById(uid);
-        if(jobsInfo == null) {
+        if (jobsInfo == null) {
             jobsInfo = new UserCompanyJobs();
             jobsInfo.setUserId(uid);
         }
-        return new Result(ResultCode.SUCCESS,jobsInfo);
+        return new Result(ResultCode.SUCCESS, jobsInfo);
     }
 
     /**
@@ -178,18 +178,18 @@ public class EmployeeController extends BaseController {
     @RequestMapping(value = "/{id}/positive", method = RequestMethod.GET)
     public Result findPositive(@PathVariable(name = "id") String uid) throws Exception {
         EmployeePositive positive = positiveService.findById(uid);
-        if(positive == null) {
+        if (positive == null) {
             positive = new EmployeePositive();
             positive.setUserId(uid);
         }
-        return new Result(ResultCode.SUCCESS,positive);
+        return new Result(ResultCode.SUCCESS, positive);
     }
 
     /**
      * 历史归档详情列表
      */
-    @RequestMapping(value = "/archives/{month}", method = RequestMethod.GET)
-    public Result archives(@PathVariable(name = "month") String month, @RequestParam(name = "type") Integer type) throws Exception {
+    @RequestMapping(value = "/archives/details", method = RequestMethod.GET)
+    public Result archives(@RequestParam(name = "month") String month, @RequestParam(name = "type") Integer type) throws Exception {
         return new Result(ResultCode.SUCCESS);
     }
 
@@ -207,10 +207,185 @@ public class EmployeeController extends BaseController {
     @RequestMapping(value = "/archives", method = RequestMethod.GET)
     public Result findArchives(@RequestParam(name = "pagesize") Integer pagesize, @RequestParam(name = "page") Integer page, @RequestParam(name = "year") String year) throws Exception {
         Map map = new HashMap();
-        map.put("year",year);
-        map.put("companyId",companyId);
+        map.put("year", year);
+        map.put("companyId", companyId);
         Page<EmployeeArchive> searchPage = archiveService.findSearch(map, page, pagesize);
-        PageResult<EmployeeArchive> pr = new PageResult(searchPage.getTotalElements(),searchPage.getContent());
-        return new Result(ResultCode.SUCCESS,pr);
+        PageResult<EmployeeArchive> pr = new PageResult(searchPage.getTotalElements(), searchPage.getContent());
+        return new Result(ResultCode.SUCCESS, pr);
     }
+
+    /*@RequestMapping(value = "/export/{month}", method = RequestMethod.GET)
+    public void export(@PathVariable String month) throws Exception {
+
+        //1.获取报表数据
+        List<EmployeeReportResult> list = userCompanyPersonalService.findByReport(companyId,month);
+        //2.构造Excel
+        //创建工作簿
+        Workbook wb = new XSSFWorkbook();
+        //构造sheet
+        Sheet sheet = wb.createSheet();
+        //创建行
+        //标题
+        String [] titles = "编号,姓名,手机,最高学历,国家地区,护照号,籍贯,生日,属相,入职时间,离职类型,离职原因,离职时间".split(",");
+        //处理标题
+
+        Row row = sheet.createRow(0);
+
+        int titleIndex=0;
+        for (String title : titles) {
+            Cell cell = row.createCell(titleIndex++);
+            cell.setCellValue(title);
+        }
+
+        int rowIndex = 1;
+        Cell cell=null;
+        for (EmployeeReportResult employeeReportResult : list) {
+            row = sheet.createRow(rowIndex++);
+            // 编号,
+            cell = row.createCell(0);
+            cell.setCellValue(employeeReportResult.getUserId());
+            // 姓名,
+            cell = row.createCell(1);
+            cell.setCellValue(employeeReportResult.getUsername());
+            // 手机,
+            cell = row.createCell(2);
+            cell.setCellValue(employeeReportResult.getMobile());
+            // 最高学历,
+            cell = row.createCell(3);
+            cell.setCellValue(employeeReportResult.getTheHighestDegreeOfEducation());
+            // 国家地区,
+            cell = row.createCell(4);
+            cell.setCellValue(employeeReportResult.getNationalArea());
+            // 护照号,
+            cell = row.createCell(5);
+            cell.setCellValue(employeeReportResult.getPassportNo());
+            // 籍贯,
+            cell = row.createCell(6);
+            cell.setCellValue(employeeReportResult.getNativePlace());
+            // 生日,
+            cell = row.createCell(7);
+            cell.setCellValue(employeeReportResult.getBirthday());
+            // 属相,
+            cell = row.createCell(8);
+            cell.setCellValue(employeeReportResult.getZodiac());
+            // 入职时间,
+            cell = row.createCell(9);
+            cell.setCellValue(employeeReportResult.getTimeOfEntry());
+            // 离职类型,
+            cell = row.createCell(10);
+            cell.setCellValue(employeeReportResult.getTypeOfTurnover());
+            // 离职原因,
+            cell = row.createCell(11);
+            cell.setCellValue(employeeReportResult.getReasonsForLeaving());
+            // 离职时间
+            cell = row.createCell(12);
+            cell.setCellValue(employeeReportResult.getResignationTime());
+        }
+        //3.完成下载
+        ByteArrayOutputStream os = new ByteArrayOutputStream();
+        wb.write(os);
+        new DownloadUtils().download(os,response,month+".xlsx");
+        System.out.println("nihao");
+    }*/
+
+    /**
+     * 根据模板导入
+     * @param month
+     * @throws Exception
+     */
+    @RequestMapping(value = "/export/{month}", method = RequestMethod.GET)
+    public void export(@PathVariable String month) throws Exception {
+        //加载模板文件
+        Resource resource =  new ClassPathResource("excel-template/hr-demo.xlsx");
+        FileInputStream fis= new FileInputStream(resource.getFile());
+        //通过模板输入流得到工作簿
+        Workbook wb = new XSSFWorkbook(fis);
+        //获取第一个sheet对象
+        Sheet sheet = wb.getSheetAt(0);
+        //得到第一行的样式
+        Row firstRow = sheet.getRow(0);
+        Cell firstRowCell = firstRow.getCell(0);
+        firstRowCell.setCellValue(month+"人事报表");
+        //抽取公共样式
+        Row row = sheet.getRow(2);
+        CellStyle[] cellStyles=new CellStyle[row.getLastCellNum()];
+        for (int i = 0; i < row.getLastCellNum(); i++) {
+            Cell cell = row.getCell(i);
+            CellStyle cellStyle = cell.getCellStyle();
+            cellStyles[i] = cellStyle;
+        }
+        //拼装数据到单元格中
+        int rowIndex = 2;
+        Cell cell=null;
+        //获取报表数据
+        List<EmployeeReportResult> list = userCompanyPersonalService.findByReport(companyId,month);
+        Collections.sort(list, new Comparator<EmployeeReportResult>() {
+            @Override
+            public int compare(EmployeeReportResult o1, EmployeeReportResult o2) {
+                return Integer.parseInt(o1.getUserId())-Integer.parseInt(o2.getUserId());
+            }
+        });
+        for (EmployeeReportResult employeeReportResult : list) {
+            row = sheet.createRow(rowIndex++);
+            // 编号,
+            cell = row.createCell(0);
+            cell.setCellValue(employeeReportResult.getUserId());
+            cell.setCellStyle(cellStyles[0]);
+            // 姓名,
+            cell = row.createCell(1);
+            cell.setCellValue(employeeReportResult.getUsername());
+            cell.setCellStyle(cellStyles[1]);
+            // 手机,
+            cell = row.createCell(2);
+            cell.setCellValue(employeeReportResult.getMobile());
+            cell.setCellStyle(cellStyles[2]);
+            // 最高学历,
+            cell = row.createCell(3);
+            cell.setCellValue(employeeReportResult.getTheHighestDegreeOfEducation());
+            cell.setCellStyle(cellStyles[3]);
+            // 国家地区,
+            cell = row.createCell(4);
+            cell.setCellValue(employeeReportResult.getNationalArea());
+            cell.setCellStyle(cellStyles[4]);
+            // 护照号,
+            cell = row.createCell(5);
+            cell.setCellValue(employeeReportResult.getPassportNo());
+            cell.setCellStyle(cellStyles[5]);
+            // 籍贯,
+            cell = row.createCell(6);
+            cell.setCellValue(employeeReportResult.getNativePlace());
+            cell.setCellStyle(cellStyles[6]);
+            // 生日,
+            cell = row.createCell(7);
+            cell.setCellValue(employeeReportResult.getBirthday());
+            cell.setCellStyle(cellStyles[7]);
+            // 属相,
+            cell = row.createCell(8);
+            cell.setCellValue(employeeReportResult.getZodiac());
+            cell.setCellStyle(cellStyles[8]);
+            // 入职时间,
+            cell = row.createCell(9);
+            cell.setCellValue(employeeReportResult.getTimeOfEntry());
+            cell.setCellStyle(cellStyles[9]);
+            // 离职类型,
+            cell = row.createCell(10);
+            cell.setCellValue(employeeReportResult.getTypeOfTurnover());
+            cell.setCellStyle(cellStyles[10]);
+            // 离职原因,
+            cell = row.createCell(11);
+            cell.setCellValue(employeeReportResult.getReasonsForLeaving());
+            cell.setCellStyle(cellStyles[11]);
+            // 离职时间
+            cell = row.createCell(12);
+            cell.setCellValue(employeeReportResult.getResignationTime());
+            cell.setCellStyle(cellStyles[12]);
+        }
+        //3.完成下载
+        ByteArrayOutputStream os = new ByteArrayOutputStream();
+        wb.write(os);
+        new DownloadUtils().download(os,response,month+".xlsx");
+        System.out.println("nihao");
+    }
+
+
 }

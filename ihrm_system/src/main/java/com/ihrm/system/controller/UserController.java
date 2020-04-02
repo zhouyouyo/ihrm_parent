@@ -9,14 +9,18 @@ import com.ihrm.common.exception.CommonException;
 import com.ihrm.common.utils.IdWorker;
 import com.ihrm.common.utils.JwtUtils;
 import com.ihrm.common.utils.PermissionConstants;
+import com.ihrm.domain.company.Department;
 import com.ihrm.domain.system.Permission;
 import com.ihrm.domain.system.Role;
 import com.ihrm.domain.system.User;
 import com.ihrm.domain.system.response.ProfileResult;
 import com.ihrm.domain.system.response.UserResult;
+import com.ihrm.system.client.DepartmentFeignClient;
 import com.ihrm.system.service.PermissionService;
 import com.ihrm.system.service.UserService;
 import io.jsonwebtoken.Claims;
+import org.apache.poi.ss.usermodel.*;
+import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.apache.shiro.SecurityUtils;
 import org.apache.shiro.authc.AuthenticationException;
 import org.apache.shiro.authc.UsernamePasswordToken;
@@ -28,14 +32,12 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.domain.Page;
 import org.springframework.util.StringUtils;
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.websocket.server.PathParam;
 import java.io.Serializable;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
+import java.util.*;
 
 //1.解决跨域
 @CrossOrigin
@@ -56,6 +58,15 @@ public class UserController extends BaseController {
 
     @Autowired
     private IdWorker idWorker;
+
+    @Autowired
+    private DepartmentFeignClient departmentFeignClient;
+
+    //远程调用企业服务
+    @RequestMapping(value = "/test/{id}", method = RequestMethod.GET)
+    public Result findByDepId(@PathVariable("id") String id) throws Exception{
+        return departmentFeignClient.findById(id);
+    }
 
     /**
      * 保存
@@ -213,4 +224,36 @@ public class UserController extends BaseController {
         }*/
         return new Result(ResultCode.SUCCESS,profileResult);
     }
+
+    @RequestMapping(value = "/user/import", method = RequestMethod.POST)
+    public Result userImport(@RequestParam("file") MultipartFile file) throws Exception{
+        //构造所有用户user对象集合
+        List<User> userList = new ArrayList<>();
+        //创建工作簿  HSSFWorkbook -- 2003
+        Workbook wb = new XSSFWorkbook(file.getInputStream()); //2007版本
+        //获取sheet对象
+        Sheet sheet = wb.getSheetAt(0);//根据索引获取sheet对象
+        //循环所有的行,sheet.getLastRowNum()得到是最后一行的索引
+        for (int rowNum = 1; rowNum <= sheet.getLastRowNum(); rowNum++) {
+            //得到每一行
+            Row row = sheet.getRow(rowNum);
+            //得到每个单元格数据
+            Object[] objects = new Object[row.getLastCellNum()];
+            //循环每一行的所有列，row.getLastCellNum()得到最后一列，不是索引
+            for (int cellNum = 1; cellNum < row.getLastCellNum(); cellNum++) {
+                //得到每一个单元格
+                Cell cell = row.getCell(cellNum);
+                //由于每个单元格数据类型不同，因此要根据不同的数据类型获取数据
+                Object cellValue = userService.getCellValue(cell);
+               objects[cellNum] = cellValue;
+            }
+            //构造每一条user对象
+            User user = new User(objects);
+            userList.add(user);
+        }
+        //批量保存user集合
+        userService.saveAll(userList,companyId,companyName);
+        return new Result(ResultCode.SUCCESS);
+    }
+
 }

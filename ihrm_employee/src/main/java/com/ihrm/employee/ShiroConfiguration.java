@@ -1,7 +1,9 @@
 package com.ihrm.employee;
 
-import com.ihrm.common.shiro.IhrmRealm;
-import com.ihrm.common.shiro.IhrmWebSessionManager;
+
+
+import com.ihrm.common.shiro.realm.IhrmRealm;
+import com.ihrm.common.shiro.session.CustomSessionManager;
 import org.apache.shiro.mgt.SecurityManager;
 import org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor;
 import org.apache.shiro.spring.web.ShiroFilterFactoryBean;
@@ -115,7 +117,7 @@ public class ShiroConfiguration {
      * shiro session的管理
      */
     public DefaultWebSessionManager sessionManager() {
-        IhrmWebSessionManager sessionManager = new IhrmWebSessionManager();
+        CustomSessionManager sessionManager = new CustomSessionManager();
         sessionManager.setSessionDAO(redisSessionDAO());
         return sessionManager;
     }

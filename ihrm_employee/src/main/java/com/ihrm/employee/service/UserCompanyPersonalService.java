@@ -24,4 +24,14 @@ public class UserCompanyPersonalService {
     public UserCompanyPersonal findById(String userId) {
         return userCompanyPersonalDao.findByUserId(userId);
     }
+
+    /**
+     * 查询要导出的数据
+     * @param month
+     * @param companyId
+     * @return
+     */
+    public List<EmployeeReportResult> findByReport(String companyId, String month) {
+        return userCompanyPersonalDao.findByReport(companyId,month+"%");
+    }
 }
