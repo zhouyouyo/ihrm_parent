@@ -20,8 +20,11 @@ spring:
   redis:
     host: 127.0.0.1
     port: 6379
-#注册到eureka的服务地址
+#微服务注册到eureka配置
 eureka:
   client:
     service-url:
-      defaultZone: http://localhost:6868/eureka/
+      defaultZone: http://127.0.0.1:6868/eureka/
+  instance:
+    preferIpAddress : true
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}

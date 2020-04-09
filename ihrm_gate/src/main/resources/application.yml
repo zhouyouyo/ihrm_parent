@@ -1,0 +1,48 @@
+#微服务注册到eureka配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/
+  instance:
+    preferIpAddress : true
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+server:
+  port: 9090
+spring:
+  application:
+    name: ihrm-gate #指定服务名
+  redis:
+    host: 127.0.0.1
+    port: 6379
+#配置路由规则
+zuul:
+  routes:
+    #路由id,随便写
+    ihrm-company:
+      path: /company/** #需要映射的路径地址
+      serviceId: ihrm-company #通过服务实例名去Eureka Server中获取服务路径
+      # url: http://127.0.0.1:9001 #映射路径对应的实际微服务的url路径
+      # zuul网关会自动删除匹配路径的一级路径，如/company/**，自动会删除/company一级路径,只有访问zuul路径为http://localhost:9090/company/company
+      # 删除/company就只剩下http://localhost:9001/company,就是正确的重定向路径了
+      stripPrefix: false #不删除请求前缀，可以直接写http://localhost:9090/company即可
+        #处理敏感头信息,因为zuul网关会自动将请求头中Authorization屏蔽掉(属于敏感信息)
+      sentiviteHeaders:   #将指定路由的敏感头设置为空
+      customSensitiveHeaders: true #对指定路由开启自定义敏感头
+    ihrm-system: #系统
+      path: /sys/** #配置请求URL的请求规则
+      serviceId: ihrm-system #指定Eureka注册中心中的服务id
+      stripPrefix: false
+      sentiviteHeaders:   #将指定路由的敏感头设置为空
+      customSensitiveHeaders: true #对指定路由开启自定义敏感头
+    ihrm-employee: #员工
+      path: /employees/** #配置请求URL的请求规则
+      serviceId: ihrm-employee #指定Eureka注册中心中的服务id
+      stripPrefix: false
+      sentiviteHeaders:   #将指定路由的敏感头设置为空
+      customSensitiveHeaders: true #对指定路由开启自定义敏感头
+    ihrm-social-securitys: #社保
+      path: /social_securitys/** #配置请求URL的请求规则
+      serviceId: ihrm-social-securitys #指定Eureka注册中心中的服务id
+      stripPrefix: false
+      sentiviteHeaders:   #将指定路由的敏感头设置为空
+      customSensitiveHeaders: true #对指定路由开启自定义敏感头

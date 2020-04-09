@@ -1,12 +1,14 @@
 package com.ihrm.system.service;
 
 import com.ihrm.common.utils.IdWorker;
+import com.ihrm.common.utils.QiniuUploadUtil;
 import com.ihrm.domain.company.Department;
 import com.ihrm.domain.system.Role;
 import com.ihrm.domain.system.User;
 import com.ihrm.system.client.DepartmentFeignClient;
 import com.ihrm.system.dao.RoleDao;
 import com.ihrm.system.dao.UserDao;
+import com.ihrm.system.utils.BaiduAiUtil;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.ss.usermodel.DateUtil;
@@ -18,13 +20,17 @@ import org.springframework.data.jpa.domain.Specification;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.StringUtils;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.persistence.criteria.CriteriaBuilder;
 import javax.persistence.criteria.CriteriaQuery;
 import javax.persistence.criteria.Predicate;
 import javax.persistence.criteria.Root;
+import java.io.IOException;
 import java.lang.annotation.Target;
 import java.util.*;
+
+import com.sun.org.apache.xml.internal.security.utils.Base64;
 
 @Service
 public class UserService {
@@ -40,6 +46,9 @@ public class UserService {
 
     @Autowired
     private DepartmentFeignClient departmentFeignClient;
+
+    @Autowired
+    private BaiduAiUtil baiduAiUtil;
 
     /**
      * 1.保存用户
@@ -198,5 +207,61 @@ public class UserService {
             user.setPassword(new Md5Hash("123456",user.getMobile(),3).toString());
             userDao.save(user);
         }
+    }
+
+    /**
+     * 保存用户头像
+     * @param id
+     * @param file
+     * @return
+     */
+    /*public String upload(String id, MultipartFile file) throws IOException {
+        User user = userDao.findById(id).get();
+        String encode = Base64.encode(file.getBytes());
+        String dataUrl = "data:image/png;base64,"+encode;
+        user.setStaffPhoto(dataUrl);
+        userDao.save(user);
+        return dataUrl;
+    }*/
+
+    /**
+     * 将图片data URL改成七牛云服务进行存储
+     * @param id
+     * @param file
+     * @return
+     * @throws IOException
+     */
+    /*public String upload(String id, MultipartFile file) throws IOException {
+        User user = userDao.findById(id).get();
+        String uploadUrl = new QiniuUploadUtil().upload(id, file.getBytes());
+        user.setStaffPhoto(uploadUrl);
+        userDao.save(user);
+        return uploadUrl;
+    }*/
+
+    /**
+     * 将用户头像保存到七牛云进行存储，并将头像
+     * 注册更新到百度云AI人脸库中用于进行人脸识别，检测，登录
+     * @param id
+     * @param file
+     * @return
+     * @throws IOException
+     */
+    public String upload(String id, MultipartFile file) throws IOException {
+        User user = userDao.findById(id).get();
+        String uploadUrl = new QiniuUploadUtil().upload(id, file.getBytes());
+        user.setStaffPhoto(uploadUrl);
+        userDao.save(user);
+        //保存头像到百度云人脸库中
+        boolean flag = baiduAiUtil.faceExit(id);
+        String imgBase64 = Base64.encode(file.getBytes());
+        if (flag){
+            //更新
+            baiduAiUtil.faceUpdate(id,imgBase64);
+        }else {
+            //注册
+            baiduAiUtil.faceRegister(id,imgBase64);
+        }
+        return uploadUrl;
     }
 }

@@ -1,3 +1,11 @@
+#微服务注册到eureka配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/
+  instance:
+    preferIpAddress : true
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
 #服务配置
 server:
   port: 9002
@@ -24,7 +32,11 @@ jwt:
   config:
     key: saas-ihrm
     ttl: 3600000
-eureka:
-  client:
-    service-url:
-      defaultZone: http://localhost:6868/eureka/
+ai:
+  appId: 19261627
+  apiKey: B5zR0L862AdKgvkqtft3ioOv
+  secretKey: cl1PCwQXH9fqiiApRdgwxL1QvhH8VIdB
+  imageType: BASE64
+  groupId: group01
+qr:
+  url: http://localhost:8080/#/facelogin

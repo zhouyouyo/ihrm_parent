@@ -6,6 +6,7 @@ import com.ihrm.common.entity.Result;
 import com.ihrm.common.entity.ResultCode;
 
 import com.ihrm.common.exception.CommonException;
+import com.ihrm.common.poi.ExcelImportUtil;
 import com.ihrm.common.utils.IdWorker;
 import com.ihrm.common.utils.JwtUtils;
 import com.ihrm.common.utils.PermissionConstants;
@@ -36,6 +37,7 @@ import org.springframework.web.multipart.MultipartFile;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.websocket.server.PathParam;
+import java.io.IOException;
 import java.io.Serializable;
 import java.util.*;
 
@@ -228,9 +230,9 @@ public class UserController extends BaseController {
     @RequestMapping(value = "/user/import", method = RequestMethod.POST)
     public Result userImport(@RequestParam("file") MultipartFile file) throws Exception{
         //构造所有用户user对象集合
-        List<User> userList = new ArrayList<>();
+//        List<User> userList = new ArrayList<>();
         //创建工作簿  HSSFWorkbook -- 2003
-        Workbook wb = new XSSFWorkbook(file.getInputStream()); //2007版本
+        /*Workbook wb = new XSSFWorkbook(file.getInputStream()); //2007版本
         //获取sheet对象
         Sheet sheet = wb.getSheetAt(0);//根据索引获取sheet对象
         //循环所有的行,sheet.getLastRowNum()得到是最后一行的索引
@@ -250,10 +252,24 @@ public class UserController extends BaseController {
             //构造每一条user对象
             User user = new User(objects);
             userList.add(user);
-        }
+        }*/
+        //通过工具类实现导入的功能
+        List<User> userList = new ExcelImportUtil<User>(User.class).readExcel(file.getInputStream(), 1, 1);
         //批量保存user集合
         userService.saveAll(userList,companyId,companyName);
         return new Result(ResultCode.SUCCESS);
     }
 
+    /**
+     * 用户头像上传
+     * @param id
+     * @param file
+     * @return
+     * @throws IOException
+     */
+    @RequestMapping(value = "/user/upload/{id}", method = RequestMethod.POST)
+    public Result upload(@PathVariable("id") String id,@RequestParam("file") MultipartFile file) throws IOException {
+        String dataUrl = userService.upload(id,file);
+        return new Result(ResultCode.SUCCESS,dataUrl);
+    }
 }

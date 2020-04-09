@@ -7,12 +7,14 @@ import com.ihrm.common.entity.Result;
 import com.ihrm.common.entity.ResultCode;
 import com.ihrm.common.exception.CommonException;
 //import com.ihrm.common.poi.ExcelExportUtil;
+import com.ihrm.common.poi.ExcelExportUtil;
 import com.ihrm.common.utils.BeanMapUtils;
 import com.ihrm.common.utils.DownloadUtils;
 import com.ihrm.domain.employee.*;
 import com.ihrm.domain.employee.response.EmployeeReportResult;
 import com.ihrm.employee.service.*;
 import io.jsonwebtoken.Claims;
+import net.sf.jasperreports.engine.*;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
 import org.apache.poi.ss.usermodel.*;
 import org.apache.poi.xssf.streaming.SXSSFWorkbook;
@@ -214,110 +216,97 @@ public class EmployeeController extends BaseController {
         return new Result(ResultCode.SUCCESS, pr);
     }
 
-    /*@RequestMapping(value = "/export/{month}", method = RequestMethod.GET)
+    @RequestMapping(value = "/export/{month}", method = RequestMethod.GET)
     public void export(@PathVariable String month) throws Exception {
 
         //1.获取报表数据
-        List<EmployeeReportResult> list = userCompanyPersonalService.findByReport(companyId,month);
+        List<EmployeeReportResult> list = userCompanyPersonalService.findByReport(companyId, month);
+        Collections.sort(list, new Comparator<EmployeeReportResult>() {
+            @Override
+            public int compare(EmployeeReportResult o1, EmployeeReportResult o2) {
+                return Integer.parseInt(o1.getUserId()) - Integer.parseInt(o2.getUserId());
+            }
+        });
         //2.构造Excel
         //创建工作簿
-        Workbook wb = new XSSFWorkbook();
+//        Workbook wb = new XSSFWorkbook();
+        //使用该对象模拟读取百万数据导入导出，当堆内存中的对象个数达到100之后就将多余的对象保存到磁盘中的临时文件中
+        SXSSFWorkbook wb = new SXSSFWorkbook(120);
         //构造sheet
         Sheet sheet = wb.createSheet();
         //创建行
         //标题
-        String [] titles = "编号,姓名,手机,最高学历,国家地区,护照号,籍贯,生日,属相,入职时间,离职类型,离职原因,离职时间".split(",");
+        String[] titles = "编号,姓名,手机,最高学历,国家地区,护照号,籍贯,生日,属相,入职时间,离职类型,离职原因,离职时间".split(",");
         //处理标题
 
         Row row = sheet.createRow(0);
 
-        int titleIndex=0;
+        int titleIndex = 0;
         for (String title : titles) {
             Cell cell = row.createCell(titleIndex++);
             cell.setCellValue(title);
         }
 
         int rowIndex = 1;
-        Cell cell=null;
-        for (EmployeeReportResult employeeReportResult : list) {
-            row = sheet.createRow(rowIndex++);
-            // 编号,
-            cell = row.createCell(0);
-            cell.setCellValue(employeeReportResult.getUserId());
-            // 姓名,
-            cell = row.createCell(1);
-            cell.setCellValue(employeeReportResult.getUsername());
-            // 手机,
-            cell = row.createCell(2);
-            cell.setCellValue(employeeReportResult.getMobile());
-            // 最高学历,
-            cell = row.createCell(3);
-            cell.setCellValue(employeeReportResult.getTheHighestDegreeOfEducation());
-            // 国家地区,
-            cell = row.createCell(4);
-            cell.setCellValue(employeeReportResult.getNationalArea());
-            // 护照号,
-            cell = row.createCell(5);
-            cell.setCellValue(employeeReportResult.getPassportNo());
-            // 籍贯,
-            cell = row.createCell(6);
-            cell.setCellValue(employeeReportResult.getNativePlace());
-            // 生日,
-            cell = row.createCell(7);
-            cell.setCellValue(employeeReportResult.getBirthday());
-            // 属相,
-            cell = row.createCell(8);
-            cell.setCellValue(employeeReportResult.getZodiac());
-            // 入职时间,
-            cell = row.createCell(9);
-            cell.setCellValue(employeeReportResult.getTimeOfEntry());
-            // 离职类型,
-            cell = row.createCell(10);
-            cell.setCellValue(employeeReportResult.getTypeOfTurnover());
-            // 离职原因,
-            cell = row.createCell(11);
-            cell.setCellValue(employeeReportResult.getReasonsForLeaving());
-            // 离职时间
-            cell = row.createCell(12);
-            cell.setCellValue(employeeReportResult.getResignationTime());
+        Cell cell = null;
+        for (int i = 0; i < 5000; i++) {
+            for (EmployeeReportResult employeeReportResult : list) {
+                row = sheet.createRow(rowIndex++);
+                // 编号,
+                cell = row.createCell(0);
+                cell.setCellValue(employeeReportResult.getUserId());
+                // 姓名,
+                cell = row.createCell(1);
+                cell.setCellValue(employeeReportResult.getUsername());
+                // 手机,
+                cell = row.createCell(2);
+                cell.setCellValue(employeeReportResult.getMobile());
+                // 最高学历,
+                cell = row.createCell(3);
+                cell.setCellValue(employeeReportResult.getTheHighestDegreeOfEducation());
+                // 国家地区,
+                cell = row.createCell(4);
+                cell.setCellValue(employeeReportResult.getNationalArea());
+                // 护照号,
+                cell = row.createCell(5);
+                cell.setCellValue(employeeReportResult.getPassportNo());
+                // 籍贯,
+                cell = row.createCell(6);
+                cell.setCellValue(employeeReportResult.getNativePlace());
+                // 生日,
+                cell = row.createCell(7);
+                cell.setCellValue(employeeReportResult.getBirthday());
+                // 属相,
+                cell = row.createCell(8);
+                cell.setCellValue(employeeReportResult.getZodiac());
+                // 入职时间,
+                cell = row.createCell(9);
+                cell.setCellValue(employeeReportResult.getTimeOfEntry());
+                // 离职类型,
+                cell = row.createCell(10);
+                cell.setCellValue(employeeReportResult.getTypeOfTurnover());
+                // 离职原因,
+                cell = row.createCell(11);
+                cell.setCellValue(employeeReportResult.getReasonsForLeaving());
+                // 离职时间
+                cell = row.createCell(12);
+                cell.setCellValue(employeeReportResult.getResignationTime());
+            }
         }
         //3.完成下载
         ByteArrayOutputStream os = new ByteArrayOutputStream();
         wb.write(os);
-        new DownloadUtils().download(os,response,month+".xlsx");
+        new DownloadUtils().download(os, response, month + ".xlsx");
         System.out.println("nihao");
-    }*/
+    }
 
     /**
-     * 根据模板导入
+     * 根据模板导出
      * @param month
      * @throws Exception
      */
-    @RequestMapping(value = "/export/{month}", method = RequestMethod.GET)
+    /*@RequestMapping(value = "/export/{month}", method = RequestMethod.GET)
     public void export(@PathVariable String month) throws Exception {
-        //加载模板文件
-        Resource resource =  new ClassPathResource("excel-template/hr-demo.xlsx");
-        FileInputStream fis= new FileInputStream(resource.getFile());
-        //通过模板输入流得到工作簿
-        Workbook wb = new XSSFWorkbook(fis);
-        //获取第一个sheet对象
-        Sheet sheet = wb.getSheetAt(0);
-        //得到第一行的样式
-        Row firstRow = sheet.getRow(0);
-        Cell firstRowCell = firstRow.getCell(0);
-        firstRowCell.setCellValue(month+"人事报表");
-        //抽取公共样式
-        Row row = sheet.getRow(2);
-        CellStyle[] cellStyles=new CellStyle[row.getLastCellNum()];
-        for (int i = 0; i < row.getLastCellNum(); i++) {
-            Cell cell = row.getCell(i);
-            CellStyle cellStyle = cell.getCellStyle();
-            cellStyles[i] = cellStyle;
-        }
-        //拼装数据到单元格中
-        int rowIndex = 2;
-        Cell cell=null;
-        //获取报表数据
         List<EmployeeReportResult> list = userCompanyPersonalService.findByReport(companyId,month);
         Collections.sort(list, new Comparator<EmployeeReportResult>() {
             @Override
@@ -325,67 +314,125 @@ public class EmployeeController extends BaseController {
                 return Integer.parseInt(o1.getUserId())-Integer.parseInt(o2.getUserId());
             }
         });
-        for (EmployeeReportResult employeeReportResult : list) {
-            row = sheet.createRow(rowIndex++);
-            // 编号,
-            cell = row.createCell(0);
-            cell.setCellValue(employeeReportResult.getUserId());
-            cell.setCellStyle(cellStyles[0]);
-            // 姓名,
-            cell = row.createCell(1);
-            cell.setCellValue(employeeReportResult.getUsername());
-            cell.setCellStyle(cellStyles[1]);
-            // 手机,
-            cell = row.createCell(2);
-            cell.setCellValue(employeeReportResult.getMobile());
-            cell.setCellStyle(cellStyles[2]);
-            // 最高学历,
-            cell = row.createCell(3);
-            cell.setCellValue(employeeReportResult.getTheHighestDegreeOfEducation());
-            cell.setCellStyle(cellStyles[3]);
-            // 国家地区,
-            cell = row.createCell(4);
-            cell.setCellValue(employeeReportResult.getNationalArea());
-            cell.setCellStyle(cellStyles[4]);
-            // 护照号,
-            cell = row.createCell(5);
-            cell.setCellValue(employeeReportResult.getPassportNo());
-            cell.setCellStyle(cellStyles[5]);
-            // 籍贯,
-            cell = row.createCell(6);
-            cell.setCellValue(employeeReportResult.getNativePlace());
-            cell.setCellStyle(cellStyles[6]);
-            // 生日,
-            cell = row.createCell(7);
-            cell.setCellValue(employeeReportResult.getBirthday());
-            cell.setCellStyle(cellStyles[7]);
-            // 属相,
-            cell = row.createCell(8);
-            cell.setCellValue(employeeReportResult.getZodiac());
-            cell.setCellStyle(cellStyles[8]);
-            // 入职时间,
-            cell = row.createCell(9);
-            cell.setCellValue(employeeReportResult.getTimeOfEntry());
-            cell.setCellStyle(cellStyles[9]);
-            // 离职类型,
-            cell = row.createCell(10);
-            cell.setCellValue(employeeReportResult.getTypeOfTurnover());
-            cell.setCellStyle(cellStyles[10]);
-            // 离职原因,
-            cell = row.createCell(11);
-            cell.setCellValue(employeeReportResult.getReasonsForLeaving());
-            cell.setCellStyle(cellStyles[11]);
-            // 离职时间
-            cell = row.createCell(12);
-            cell.setCellValue(employeeReportResult.getResignationTime());
-            cell.setCellStyle(cellStyles[12]);
+        //加载模板文件
+        Resource resource =  new ClassPathResource("excel-template/hr-demo.xlsx");
+        FileInputStream fis= new FileInputStream(resource.getFile());
+        //通过工具类实现导出功能
+        new ExcelExportUtil<EmployeeReportResult>(EmployeeReportResult.class,2,2)
+                .export(response,fis,list,month+"人事报表.xlsx");
+        //通过模板输入流得到工作簿
+//        Workbook wb = new XSSFWorkbook(fis);
+//        //获取第一个sheet对象
+//        Sheet sheet = wb.getSheetAt(0);
+//        //得到第一行的样式
+//        Row firstRow = sheet.getRow(0);
+//        Cell firstRowCell = firstRow.getCell(0);
+//        firstRowCell.setCellValue(month+"人事报表");
+//        //抽取公共样式
+//        Row row = sheet.getRow(2);
+//        CellStyle[] cellStyles=new CellStyle[row.getLastCellNum()];
+//        for (int i = 0; i < row.getLastCellNum(); i++) {
+//            Cell cell = row.getCell(i);
+//            CellStyle cellStyle = cell.getCellStyle();
+//            cellStyles[i] = cellStyle;
+//        }
+//        //拼装数据到单元格中
+//        int rowIndex = 2;
+//        Cell cell=null;
+//        //获取报表数据
+//
+//        for (EmployeeReportResult employeeReportResult : list) {
+//            row = sheet.createRow(rowIndex++);
+//            // 编号,
+//            cell = row.createCell(0);
+//            cell.setCellValue(employeeReportResult.getUserId());
+//            cell.setCellStyle(cellStyles[0]);
+//            // 姓名,
+//            cell = row.createCell(1);
+//            cell.setCellValue(employeeReportResult.getUsername());
+//            cell.setCellStyle(cellStyles[1]);
+//            // 手机,
+//            cell = row.createCell(2);
+//            cell.setCellValue(employeeReportResult.getMobile());
+//            cell.setCellStyle(cellStyles[2]);
+//            // 最高学历,
+//            cell = row.createCell(3);
+//            cell.setCellValue(employeeReportResult.getTheHighestDegreeOfEducation());
+//            cell.setCellStyle(cellStyles[3]);
+//            // 国家地区,
+//            cell = row.createCell(4);
+//            cell.setCellValue(employeeReportResult.getNationalArea());
+//            cell.setCellStyle(cellStyles[4]);
+//            // 护照号,
+//            cell = row.createCell(5);
+//            cell.setCellValue(employeeReportResult.getPassportNo());
+//            cell.setCellStyle(cellStyles[5]);
+//            // 籍贯,
+//            cell = row.createCell(6);
+//            cell.setCellValue(employeeReportResult.getNativePlace());
+//            cell.setCellStyle(cellStyles[6]);
+//            // 生日,
+//            cell = row.createCell(7);
+//            cell.setCellValue(employeeReportResult.getBirthday());
+//            cell.setCellStyle(cellStyles[7]);
+//            // 属相,
+//            cell = row.createCell(8);
+//            cell.setCellValue(employeeReportResult.getZodiac());
+//            cell.setCellStyle(cellStyles[8]);
+//            // 入职时间,
+//            cell = row.createCell(9);
+//            cell.setCellValue(employeeReportResult.getTimeOfEntry());
+//            cell.setCellStyle(cellStyles[9]);
+//            // 离职类型,
+//            cell = row.createCell(10);
+//            cell.setCellValue(employeeReportResult.getTypeOfTurnover());
+//            cell.setCellStyle(cellStyles[10]);
+//            // 离职原因,
+//            cell = row.createCell(11);
+//            cell.setCellValue(employeeReportResult.getReasonsForLeaving());
+//            cell.setCellStyle(cellStyles[11]);
+//            // 离职时间
+//            cell = row.createCell(12);
+//            cell.setCellValue(employeeReportResult.getResignationTime());
+//            cell.setCellStyle(cellStyles[12]);
+//        }
+//        //3.完成下载
+//        ByteArrayOutputStream os = new ByteArrayOutputStream();
+//        wb.write(os);
+//        new DownloadUtils().download(os,response,month+".xlsx");
+//        System.out.println("nihao");
+    }*/
+
+    /**
+     *     * 打印员工pdf报表x
+     *    
+     */
+    @RequestMapping(value = "/{id}/pdf", method = RequestMethod.GET)
+    public void pdf(@PathVariable String id) throws IOException {
+        //引入Jasper文件
+        Resource resource = new ClassPathResource("template/profile.jasper");
+        FileInputStream fis = new FileInputStream(resource.getFile());
+        ServletOutputStream os = response.getOutputStream();
+        try {
+           Map map = new HashMap<>();
+           //获取员工详情信息
+            UserCompanyPersonal userCompanyPersonal = userCompanyPersonalService.findById(id);
+            //获取员工岗位信息
+            UserCompanyJobs userCompanyJobs = userCompanyJobsService.findById(id);
+            //获取员工头像信息http://q85ylm9bq.bkt.clouddn.com/1063705989926227968
+            String staffPhoto = "http://q85ylm9bq.bkt.clouddn.com/"+id;
+            Map<String, Object> map1 = BeanMapUtils.beanToMap(userCompanyPersonal);
+            Map<String, Object> map2 = BeanMapUtils.beanToMap(userCompanyJobs);
+            map.putAll(map1);
+            map.putAll(map2);
+            map.put("staffPhoto",staffPhoto);
+            JasperPrint jasperPrint = JasperFillManager.fillReport(fis,map, new JREmptyDataSource());
+            //将JasperPrint以PDF的形式输出
+            JasperExportManager.exportReportToPdfStream(jasperPrint,os);
+        } catch (JRException e) {
+            e.printStackTrace();
+        }finally {
+            os.close();
         }
-        //3.完成下载
-        ByteArrayOutputStream os = new ByteArrayOutputStream();
-        wb.write(os);
-        new DownloadUtils().download(os,response,month+".xlsx");
-        System.out.println("nihao");
     }
-
-
 }
