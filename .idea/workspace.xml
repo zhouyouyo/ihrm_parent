@@ -2,138 +2,58 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cbc77585-f06d-47b1-87cf-9674cec03543" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/ihrm_attendance.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/src/main/java/com/ihrm/atte/AttandanceApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/src/main/java/com/ihrm/atte/ShiroConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/src/main/java/com/ihrm/atte/controller/AttendanceController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/src/main/java/com/ihrm/atte/controller/ConfigController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/src/main/java/com/ihrm/atte/dao/ArchiveMonthlyDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/src/main/java/com/ihrm/atte/dao/ArchiveMonthlyInfoDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/src/main/java/com/ihrm/atte/dao/AttendanceConfigDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/src/main/java/com/ihrm/atte/dao/AttendanceDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/src/main/java/com/ihrm/atte/dao/CompanySettingsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/src/main/java/com/ihrm/atte/dao/DayOffConfigDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/src/main/java/com/ihrm/atte/dao/DeductionDictDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/src/main/java/com/ihrm/atte/dao/DeductionTypeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/src/main/java/com/ihrm/atte/dao/ExtraDutyConfigDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/src/main/java/com/ihrm/atte/dao/ExtraDutyRuleDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/src/main/java/com/ihrm/atte/dao/LeaveConfigDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/src/main/java/com/ihrm/atte/dao/UserDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/src/main/java/com/ihrm/atte/service/ArchiveService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/src/main/java/com/ihrm/atte/service/AtteService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/src/main/java/com/ihrm/atte/service/ConfigurationService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/src/main/java/com/ihrm/atte/service/ExcelImportService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/src/main/java/com/ihrm/atte/service/ReprortService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/src/test/java/com/ihrm/poi/PoiTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/target/classes/com/ihrm/atte/AttandanceApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/target/classes/com/ihrm/atte/ShiroConfiguration.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/target/classes/com/ihrm/atte/controller/AttendanceController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/target/classes/com/ihrm/atte/controller/ConfigController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/target/classes/com/ihrm/atte/dao/ArchiveMonthlyDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/target/classes/com/ihrm/atte/dao/ArchiveMonthlyInfoDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/target/classes/com/ihrm/atte/dao/AttendanceConfigDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/target/classes/com/ihrm/atte/dao/AttendanceDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/target/classes/com/ihrm/atte/dao/CompanySettingsDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/target/classes/com/ihrm/atte/dao/DayOffConfigDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/target/classes/com/ihrm/atte/dao/DeductionDictDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/target/classes/com/ihrm/atte/dao/DeductionTypeDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/target/classes/com/ihrm/atte/dao/ExtraDutyConfigDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/target/classes/com/ihrm/atte/dao/ExtraDutyRuleDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/target/classes/com/ihrm/atte/dao/LeaveConfigDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/target/classes/com/ihrm/atte/dao/UserDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/target/classes/com/ihrm/atte/service/ArchiveService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/target/classes/com/ihrm/atte/service/AtteService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/target/classes/com/ihrm/atte/service/ConfigurationService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/target/classes/com/ihrm/atte/service/ExcelImportService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/target/classes/com/ihrm/atte/service/ReprortService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_attendance/target/test-classes/com/ihrm/poi/PoiTest.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common/src/main/java/com/ihrm/common/utils/DateUtil.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common/target/classes/com/ihrm/common/utils/DateUtil.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/base/BaseEntity.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/bo/ArchiveListBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/bo/AtteItemBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/bo/AtteReportMonthlyBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/bo/AtteSalaryStatisticsBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/bo/AtteStatisBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/bo/AtteTotalsBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/bo/DaysMonthlyBO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/entity/ArchiveMonthly.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/entity/ArchiveMonthlyInfo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/entity/Attendance.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/entity/AttendanceConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/entity/CompanySettings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/entity/DayOffConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/entity/DeductionDict.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/entity/DeductionType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/entity/ExtraDutyConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/entity/ExtraDutyRule.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/entity/LeaveConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/entity/ReportItemVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/enums/DeductionEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/enums/LeaveTypeEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/resp/PageResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/vo/ArchiveInfoVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/vo/ArchiveItemVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/vo/ArchiveMonthlyVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/vo/ArchiveVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/vo/AttePageVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/vo/AtteSalaryStatisticsVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/vo/AtteUploadVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/vo/AtteVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/vo/ConfigVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/vo/ExtDutyVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/vo/ExtWorkVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/vo/ReportVO.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/base/BaseEntity.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/bo/ArchiveListBO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/bo/AtteItemBO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/bo/AtteReportMonthlyBO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/bo/AtteSalaryStatisticsBO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/bo/AtteStatisBO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/bo/AtteTotalsBO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/bo/DaysMonthlyBO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/entity/ArchiveMonthly.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/entity/ArchiveMonthlyInfo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/entity/Attendance.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/entity/AttendanceConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/entity/CompanySettings.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/entity/DayOffConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/entity/DeductionDict.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/entity/DeductionType.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/entity/ExtraDutyConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/entity/ExtraDutyRule.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/entity/LeaveConfig.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/entity/ReportItemVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/enums/DeductionEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/enums/LeaveTypeEnum.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/resp/PageResult.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/vo/ArchiveInfoVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/vo/ArchiveItemVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/vo/ArchiveMonthlyVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/vo/ArchiveVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/vo/AttePageVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/vo/AtteSalaryStatisticsVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/vo/AtteUploadVo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/vo/AtteVo.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/vo/ConfigVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/vo/ExtDutyVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/vo/ExtWorkVO.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/atte/vo/ReportVO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/salarys/CompanySettings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/salarys/SalaryArchive.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/salarys/SalaryArchiveDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/salarys/Settings.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/salarys/UserSalary.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/salarys/UserSalaryChange.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/salarys/CompanySettings.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/salarys/SalaryArchive.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/salarys/SalaryArchiveDetail.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/salarys/Settings.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/salarys/UserSalary.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/salarys/UserSalaryChange.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/ihrm_salarys.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/SalarysApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/SalarysConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/controller/ArchiveController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/controller/CompanySettingsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/controller/SalaryController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/controller/SettingsController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/dao/ArchiveDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/dao/ArchiveDetailDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/dao/CompanySettingsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/dao/SettingsDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/dao/UserSalaryChangeDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/dao/UserSalaryDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/service/ArchiveService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/service/CompanySettingsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/service/SalaryService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/service/SettingsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/META-INF/ihrm_salarys.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/SalarysApplication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/SalarysConfiguration.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/controller/ArchiveController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/controller/CompanySettingsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/controller/SalaryController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/controller/SettingsController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/dao/ArchiveDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/dao/ArchiveDetailDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/dao/CompanySettingsDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/dao/SettingsDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/dao/UserSalaryChangeDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/dao/UserSalaryDao.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/service/ArchiveService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/service/CompanySettingsService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/service/SalaryService.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/service/SettingsService.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ihrm_common/src/main/java/com/ihrm/common/poi/ExcelImportUtil.java" beforeDir="false" afterPath="$PROJECT_DIR$/ihrm_common/src/main/java/com/ihrm/common/poi/ExcelImportUtil.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ihrm_common/target/classes/com/ihrm/common/poi/ExcelImportUtil.class" beforeDir="false" afterPath="$PROJECT_DIR$/ihrm_common/target/classes/com/ihrm/common/poi/ExcelImportUtil.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ihrm_employee/src/main/java/com/ihrm/employee/ShiroConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/ihrm_employee/src/main/java/com/ihrm/employee/ShiroConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ihrm_employee/src/main/java/com/ihrm/employee/controller/EmployeeController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ihrm_employee/src/main/java/com/ihrm/employee/controller/EmployeeController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ihrm_employee/src/main/java/com/ihrm/employee/dao/UserCompanyPersonalDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/ihrm_employee/src/main/java/com/ihrm/employee/dao/UserCompanyPersonalDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ihrm_employee/target/classes/com/ihrm/employee/ShiroConfiguration.class" beforeDir="false" afterPath="$PROJECT_DIR$/ihrm_employee/target/classes/com/ihrm/employee/ShiroConfiguration.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ihrm_employee/target/classes/com/ihrm/employee/controller/EmployeeController$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/ihrm_employee/target/classes/com/ihrm/employee/controller/EmployeeController.class" beforeDir="false" afterPath="$PROJECT_DIR$/ihrm_employee/target/classes/com/ihrm/employee/controller/EmployeeController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ihrm_employee/target/classes/com/ihrm/employee/dao/UserCompanyPersonalDao.class" beforeDir="false" afterPath="$PROJECT_DIR$/ihrm_employee/target/classes/com/ihrm/employee/dao/UserCompanyPersonalDao.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ihrm_gate/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ihrm_gate/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ihrm_gate/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ihrm_gate/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -211,7 +131,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/atte/entity" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -219,18 +139,18 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_salarys\src\main\java\com\ihrm\salarys" />
+      <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_common_model\src\main\java\com\ihrm\domain" />
+      <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_salarys\src\main\java" />
+      <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_salarys\src\main\resources" />
       <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_common_model\src\main\java\com\ihrm\domain\atte\entity" />
-      <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_attendance\src\main\java\com\ihrm\atte\dao" />
-      <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_common\src\main\java\com\ihrm\common\utils" />
-      <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_attendance\src\main\java\com\ihrm\atte\service" />
-      <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_common_model\src\main\java\com\ihrm\domain\atte" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ihrm.salarys" />
       <recent name="com.ihrm.atte" />
       <recent name="com.ihrm.gate" />
       <recent name="com.ihrm.company" />
       <recent name="com.ihrm.system" />
-      <recent name="com.ihrm.system.dao" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_employee\src\main\resources\template" />
@@ -243,7 +163,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.AttandanceApplication">
+  <component name="RunManager" selected="Spring Boot.SalarysApplication">
     <configuration name="ParseJwtTest" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ihrm.common.ParseJwtTest" />
       <module name="ihrm_common" />
@@ -310,6 +230,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SalarysApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ihrm_salarys" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ihrm.salarys.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ihrm.salarys.SalarysApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SocialSecuritysApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
       <module name="ihrm_social_securitys" />
       <extension name="coverage">
@@ -323,26 +256,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="ihrm_system" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ihrm.system.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ihrm.system.SystemApplication" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.SalarysApplication" />
         <item itemvalue="Spring Boot.AttandanceApplication" />
         <item itemvalue="Application.PoiTest" />
         <item itemvalue="Spring Boot.SocialSecuritysApplication" />
         <item itemvalue="Spring Boot.CompanyApplication" />
-        <item itemvalue="Spring Boot.SystemApplication" />
       </list>
     </recent_temporary>
   </component>
@@ -404,7 +324,7 @@
       <workItem from="1586352912701" duration="1268000" />
       <workItem from="1586415667368" duration="22492000" />
       <workItem from="1586520578586" duration="3340000" />
-      <workItem from="1586588448193" duration="20517000" />
+      <workItem from="1586588448193" duration="23850000" />
     </task>
     <task id="LOCAL-00001" summary="搭建子模块">
       <created>1584174898324</created>
@@ -469,7 +389,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586419889682</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="增加考勤模块">
+      <created>1586688343693</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1586688343693</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -487,7 +414,8 @@
     <MESSAGE value="集成shiro的控制，并构建员工管理微服务" />
     <MESSAGE value="增加导出功能" />
     <MESSAGE value="增加社保模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加社保模块" />
+    <MESSAGE value="增加考勤模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加考勤模块" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="74" key="#Inspections" timestamp="1584333514532">
@@ -510,14 +438,18 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="374" y="341" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1536.824@0.0.1536.824" timestamp="1584175569512" />
+    <state x="523" y="279" width="489" height="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1586688694914">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="523" y="279" width="489" height="271" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1586688694914" />
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1584434296497">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1584434296497" />
-    <state x="231" y="7" key="CommitChangelistDialog2" timestamp="1586419888249">
+    <state x="231" y="7" key="CommitChangelistDialog2" timestamp="1586688342552">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="231" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586419888249" />
+    <state x="231" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586688342552" />
     <state width="544" height="578" key="DebuggerActiveHint" timestamp="1586605215677">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -526,54 +458,54 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1584867794849" />
-    <state width="1141" height="230" key="GridCell.Tab.0.bottom" timestamp="1586678753087">
+    <state width="1141" height="281" key="GridCell.Tab.0.bottom" timestamp="1586689014112">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1141" height="230" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586678753087" />
-    <state width="1141" height="230" key="GridCell.Tab.0.center" timestamp="1586678753087">
+    <state width="1141" height="281" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586689014112" />
+    <state width="1141" height="281" key="GridCell.Tab.0.center" timestamp="1586689014112">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1141" height="230" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586678753087" />
-    <state width="1141" height="230" key="GridCell.Tab.0.left" timestamp="1586678753087">
+    <state width="1141" height="281" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586689014112" />
+    <state width="1141" height="281" key="GridCell.Tab.0.left" timestamp="1586689014111">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1141" height="230" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586678753087" />
-    <state width="1141" height="230" key="GridCell.Tab.0.right" timestamp="1586678753087">
+    <state width="1141" height="281" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586689014111" />
+    <state width="1141" height="281" key="GridCell.Tab.0.right" timestamp="1586689014112">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1141" height="230" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586678753087" />
-    <state width="1141" height="230" key="GridCell.Tab.1.bottom" timestamp="1586678753088">
+    <state width="1141" height="281" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586689014112" />
+    <state width="1141" height="281" key="GridCell.Tab.1.bottom" timestamp="1586689014112">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1141" height="230" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586678753088" />
-    <state width="1141" height="230" key="GridCell.Tab.1.center" timestamp="1586678753088">
+    <state width="1141" height="281" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586689014112" />
+    <state width="1141" height="281" key="GridCell.Tab.1.center" timestamp="1586689014112">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1141" height="230" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1586678753088" />
-    <state width="1141" height="230" key="GridCell.Tab.1.left" timestamp="1586678753088">
+    <state width="1141" height="281" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1586689014112" />
+    <state width="1141" height="281" key="GridCell.Tab.1.left" timestamp="1586689014112">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1141" height="230" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1586678753088" />
-    <state width="1141" height="230" key="GridCell.Tab.1.right" timestamp="1586678753088">
+    <state width="1141" height="281" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1586689014112" />
+    <state width="1141" height="281" key="GridCell.Tab.1.right" timestamp="1586689014112">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1141" height="230" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1586678753088" />
-    <state width="1141" height="230" key="GridCell.Tab.2.bottom" timestamp="1586678753088">
+    <state width="1141" height="281" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1586689014112" />
+    <state width="1141" height="281" key="GridCell.Tab.2.bottom" timestamp="1586689014113">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1141" height="230" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586678753088" />
-    <state width="1141" height="230" key="GridCell.Tab.2.center" timestamp="1586678753088">
+    <state width="1141" height="281" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586689014113" />
+    <state width="1141" height="281" key="GridCell.Tab.2.center" timestamp="1586689014112">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1141" height="230" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1586678753088" />
-    <state width="1141" height="230" key="GridCell.Tab.2.left" timestamp="1586678753088">
+    <state width="1141" height="281" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1586689014112" />
+    <state width="1141" height="281" key="GridCell.Tab.2.left" timestamp="1586689014112">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1141" height="230" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1586678753088" />
-    <state width="1141" height="230" key="GridCell.Tab.2.right" timestamp="1586678753088">
+    <state width="1141" height="281" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1586689014112" />
+    <state width="1141" height="281" key="GridCell.Tab.2.right" timestamp="1586689014112">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1141" height="230" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1586678753088" />
+    <state width="1141" height="281" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1586689014112" />
     <state x="498" y="58" key="NewModule_or_Project.wizard" timestamp="1584667356801">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -582,10 +514,10 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="272" y="0" width="1173" height="708" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1584782214016" />
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1586419899247">
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1586688368052">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586419899247" />
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586688368052" />
     <state x="564" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584174765610">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -594,26 +526,26 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="323" y="152" width="889" height="565" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1586612386118" />
-    <state x="543" y="254" width="827" height="490" key="find.popup" timestamp="1586612499823">
+    <state x="543" y="254" width="827" height="490" key="find.popup" timestamp="1586691035179">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="543" y="254" width="827" height="490" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1586612499823" />
-    <state x="465" y="215" key="git4idea.merge.GitPullDialog" timestamp="1586419806651">
+    <state x="543" y="254" width="827" height="490" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1586691035179" />
+    <state x="465" y="215" key="git4idea.merge.GitPullDialog" timestamp="1586688353402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="465" y="215" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1586419806651" />
-    <state x="178" y="58" key="new project wizard" timestamp="1586419913731">
+    <state x="465" y="215" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1586688353402" />
+    <state x="178" y="58" key="new project wizard" timestamp="1586688384392">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="178" y="58" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1586419913731" />
+    <state x="178" y="58" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1586688384392" />
     <state x="425" y="187" key="run.anything.popup" timestamp="1586003019018">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1586003019018" />
-    <state x="578" y="203" width="672" height="678" key="search.everywhere.popup" timestamp="1586597442681">
+    <state x="578" y="203" width="672" height="678" key="search.everywhere.popup" timestamp="1586690195440">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="578" y="203" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1586597442681" />
+    <state x="578" y="203" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1586690195440" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>
@@ -622,9 +554,6 @@
         <watch expression="Integer.parseInt(o1.getUserId())" language="JAVA" />
         <watch expression="o1.getUserId()" language="JAVA" />
         <watch expression="Long.parseLong(o1.getUserId())" language="JAVA" />
-        <watch expression="DateUtil.isWeekend(attDate)" language="JAVA" />
-        <watch expression="!workingDays.contains(attDate)" language="JAVA" />
-        <watch expression="dataMonth.substring(6)" language="JAVA" />
       </configuration>
     </watches-manager>
   </component>
