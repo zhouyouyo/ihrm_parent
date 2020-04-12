@@ -1,0 +1,28 @@
+#微服务注册到eureka配置
+eureka:
+  client:
+    service-url:
+      defaultZone: http://127.0.0.1:6868/eureka/
+  instance:
+    preferIpAddress : true
+    instance-id: ${spring.cloud.client.ip-address}:${spring.application.name}:${server.port}
+server:
+  port: 9005
+spring:
+  application:
+    name: ihrm-attendance #指定服务名
+  datasource:
+    driver-class-name: com.mysql.jdbc.Driver
+    url: jdbc:mysql://localhost:3306/ihrm?useUnicode=true&characterEncoding=utf8
+    username: root
+    password: root
+  jpa:
+    database: MySQL
+    show-sql: true
+    open-in-view: true
+  redis:
+    host: 127.0.0.1
+    port: 6379
+attendance:
+  holidays: 20191001,20191002,20191003,20190101
+  workingDays: 20190927

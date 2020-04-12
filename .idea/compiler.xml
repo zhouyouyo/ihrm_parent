@@ -7,6 +7,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ihrm_attendance" />
         <module name="ihrm_social_securitys" />
         <module name="ihrm_eureka" />
         <module name="ihrm_company" />
@@ -20,6 +21,7 @@
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="ihrm_attendance" options="-parameters" />
       <module name="ihrm_common" options="-parameters" />
       <module name="ihrm_common_model" options="-parameters" />
       <module name="ihrm_company" options="-parameters" />

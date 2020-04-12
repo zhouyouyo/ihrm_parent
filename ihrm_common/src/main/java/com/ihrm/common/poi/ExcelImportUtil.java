@@ -77,7 +77,7 @@ public class ExcelImportUtil<T> {
         if ("String".equals(fieldType)) {
             return getValue(cell);
         }else if ("Date".equals(fieldType)) {
-            return new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").parse(getValue(cell)) ;
+            return new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").parse(getValue(cell)) ;
         }else if ("int".equals(fieldType) || "Integer".equals(fieldType)) {
             return Integer.parseInt(getValue(cell));
         }else if ("double".equals(fieldType) || "Double".equals(fieldType)) {
@@ -103,7 +103,7 @@ public class ExcelImportUtil<T> {
             case NUMERIC:
                 if (DateUtil.isCellDateFormatted(cell)) {
                     Date dt = DateUtil.getJavaDate(cell.getNumericCellValue());
-                    return new SimpleDateFormat("yyyy-MM-dd hh:mm:ss").format(dt);
+                    return new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(dt);
                 } else {
                     // 防止数值变成科学计数法
                     String strCell = "";

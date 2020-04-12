@@ -22,6 +22,6 @@ public interface UserCompanyPersonalDao extends JpaRepository<UserCompanyPersona
 
     @Query(value="select new com.ihrm.domain.employee.response.EmployeeReportResult(a,b) from UserCompanyPersonal a " +
             "LEFT JOIN EmployeeResignation b on a.userId=b.userId where a.companyId=?1 and a.timeOfEntry like?2 or (" +
-            "b.resignationTime like ?2)")
+            "b.resignationTime like ?2) order by a.userId")
     List<EmployeeReportResult> findByReport(String companyId,String month);
 }

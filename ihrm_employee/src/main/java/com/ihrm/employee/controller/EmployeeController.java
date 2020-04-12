@@ -39,7 +39,7 @@ import java.util.concurrent.atomic.AtomicInteger;
 @RestController
 @RequestMapping("/employees")
 @CrossOrigin
-public class EmployeeController extends BaseController {
+public class EmployeeController extends BaseController   {
     @Autowired
     private UserCompanyPersonalService userCompanyPersonalService;
     @Autowired
@@ -217,16 +217,10 @@ public class EmployeeController extends BaseController {
     }
 
     @RequestMapping(value = "/export/{month}", method = RequestMethod.GET)
-    public void export(@PathVariable String month) throws Exception {
+    public void export(@PathVariable("month") String month) throws Exception {
 
         //1.获取报表数据
         List<EmployeeReportResult> list = userCompanyPersonalService.findByReport(companyId, month);
-        Collections.sort(list, new Comparator<EmployeeReportResult>() {
-            @Override
-            public int compare(EmployeeReportResult o1, EmployeeReportResult o2) {
-                return Integer.parseInt(o1.getUserId()) - Integer.parseInt(o2.getUserId());
-            }
-        });
         //2.构造Excel
         //创建工作簿
 //        Workbook wb = new XSSFWorkbook();
@@ -414,24 +408,24 @@ public class EmployeeController extends BaseController {
         FileInputStream fis = new FileInputStream(resource.getFile());
         ServletOutputStream os = response.getOutputStream();
         try {
-           Map map = new HashMap<>();
-           //获取员工详情信息
+            Map map = new HashMap<>();
+            //获取员工详情信息
             UserCompanyPersonal userCompanyPersonal = userCompanyPersonalService.findById(id);
             //获取员工岗位信息
             UserCompanyJobs userCompanyJobs = userCompanyJobsService.findById(id);
             //获取员工头像信息http://q85ylm9bq.bkt.clouddn.com/1063705989926227968
-            String staffPhoto = "http://q85ylm9bq.bkt.clouddn.com/"+id;
+            String staffPhoto = "http://q85ylm9bq.bkt.clouddn.com/" + id;
             Map<String, Object> map1 = BeanMapUtils.beanToMap(userCompanyPersonal);
             Map<String, Object> map2 = BeanMapUtils.beanToMap(userCompanyJobs);
             map.putAll(map1);
             map.putAll(map2);
-            map.put("staffPhoto",staffPhoto);
-            JasperPrint jasperPrint = JasperFillManager.fillReport(fis,map, new JREmptyDataSource());
+            map.put("staffPhoto", staffPhoto);
+            JasperPrint jasperPrint = JasperFillManager.fillReport(fis, map, new JREmptyDataSource());
             //将JasperPrint以PDF的形式输出
-            JasperExportManager.exportReportToPdfStream(jasperPrint,os);
+            JasperExportManager.exportReportToPdfStream(jasperPrint, os);
         } catch (JRException e) {
             e.printStackTrace();
-        }finally {
+        } finally {
             os.close();
         }
     }
