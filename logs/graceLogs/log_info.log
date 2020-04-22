@@ -1,0 +1,1174 @@
+2020-04-17 20:09:07.163 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 20:09:07.165 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 20:09:07.166 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.new PreparedStatement returned 
+2020-04-17 20:09:07.166 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.prepareStatement(update proc_instance set department_id=?, department_name=?, proc_apply_time=?, proc_curr_node_user_id=?, proc_curr_node_user_name=?, proc_data=?, proc_end_time=?, process_definition_id=?, process_key=?, process_name=?, process_state=?, time_of_entry=?, user_id=?, username=? where process_id=?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@b64a2b6
+2020-04-17 20:09:07.167 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setString(1, "1175311466846683136") returned 
+2020-04-17 20:09:07.167 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setString(2, "市场部") returned 
+2020-04-17 20:09:07.167 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setTimestamp(3, 2020-04-17 20:00:19.0) returned 
+2020-04-17 20:09:07.167 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setString(4, "10753831331064258561075383135371350016") returned 
+2020-04-17 20:09:07.167 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setString(5, "test001 test002 ") returned 
+2020-04-17 20:09:07.167 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setString(6, "{"duration":"4","reason":"","holidayType":"1","processName":"请假","processKey":"process_leave","startTime":"2020-04-09 00:00:00","applyUnit":"按天","endTime":"2020-04-17 20:00:15","userId":"1066370498633486336"}") returned 
+2020-04-17 20:09:07.168 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setNull(7, 93) returned 
+2020-04-17 20:09:07.168 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setNull(8, 12) returned 
+2020-04-17 20:09:07.168 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setNull(9, 12) returned 
+2020-04-17 20:09:07.168 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setString(10, "请假") returned 
+2020-04-17 20:09:07.168 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setString(11, "1") returned 
+2020-04-17 20:09:07.169 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setTimestamp(12, 2018-11-04 08:00:00.0) returned 
+2020-04-17 20:09:07.169 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setString(13, "1066370498633486336") returned 
+2020-04-17 20:09:07.169 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setString(14, "zbz") returned 
+2020-04-17 20:09:07.169 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setString(15, "1251118288528740352") returned 
+2020-04-17 20:09:07.170 INFO  log4jdbc.log4j2 Line:243 - 1. update proc_instance set department_id='1175311466846683136', department_name='市场部', proc_apply_time='2020-04-17 
+20:00:19', proc_curr_node_user_id='10753831331064258561075383135371350016', proc_curr_node_user_name='test001 
+test002 ', proc_data='{"duration":"4","reason":"","holidayType":"1","processName":"请假","processKey":"process_leave","startTime":"2020-04-09 
+00:00:00","applyUnit":"按天","endTime":"2020-04-17 20:00:15","userId":"1066370498633486336"}', 
+proc_end_time=NULL, process_definition_id=NULL, process_key=NULL, process_name='请假', process_state='1', 
+time_of_entry='2018-11-04 08:00:00', user_id='1066370498633486336', username='zbz' where process_id='1251118288528740352'  {executed in 1 ms}
+2020-04-17 20:09:07.170 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.executeUpdate() returned 1
+2020-04-17 20:09:07.170 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.getMaxRows() returned 0
+2020-04-17 20:09:07.170 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.getQueryTimeout() returned 0
+2020-04-17 20:09:07.170 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.close() returned 
+2020-04-17 20:09:07.173 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 20:09:07.174 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 20:09:07.174 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 20:09:07.174 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 20:09:07.175 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.new PreparedStatement returned 
+2020-04-17 20:09:07.175 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.prepareStatement(select proctaskin0_.task_id as task_id1_1_0_, proctaskin0_.handle_opinion as handle_o2_1_0_, proctaskin0_.handle_time as handle_t3_1_0_, proctaskin0_.handle_type as handle_t4_1_0_, proctaskin0_.handle_user_id as handle_u5_1_0_, proctaskin0_.handle_user_name as handle_u6_1_0_, proctaskin0_.process_id as process_7_1_0_, proctaskin0_.task_key as task_key8_1_0_, proctaskin0_.task_name as task_nam9_1_0_ from proc_task_instance proctaskin0_ where proctaskin0_.task_id=?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@27185362
+2020-04-17 20:09:07.175 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setString(1, "1251120502609547264") returned 
+2020-04-17 20:09:07.176 INFO  log4jdbc.log4j2 Line:243 - 1. select proctaskin0_.task_id as task_id1_1_0_, proctaskin0_.handle_opinion as handle_o2_1_0_, 
+proctaskin0_.handle_time as handle_t3_1_0_, proctaskin0_.handle_type as handle_t4_1_0_, proctaskin0_.handle_user_id 
+as handle_u5_1_0_, proctaskin0_.handle_user_name as handle_u6_1_0_, proctaskin0_.process_id 
+as process_7_1_0_, proctaskin0_.task_key as task_key8_1_0_, proctaskin0_.task_name as task_nam9_1_0_ 
+from proc_task_instance proctaskin0_ where proctaskin0_.task_id='1251120502609547264'  {executed in 0 ms}
+2020-04-17 20:09:07.176 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.new ResultSet returned 
+2020-04-17 20:09:07.176 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.executeQuery() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@40b7cbf5
+2020-04-17 20:09:07.177 INFO  log4jdbc.log4j2 Line:390 - 
+|--------|---------------|------------|------------|---------------|-----------------|-----------|---------|----------|
+|task_id |handle_opinion |handle_time |handle_type |handle_user_id |handle_user_name |process_id |task_key |task_name |
+|--------|---------------|------------|------------|---------------|-----------------|-----------|---------|----------|
+|--------|---------------|------------|------------|---------------|-----------------|-----------|---------|----------|
+
+2020-04-17 20:09:07.177 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.next() returned false
+2020-04-17 20:09:07.177 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.close() returned void
+2020-04-17 20:09:07.177 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.getMaxRows() returned 0
+2020-04-17 20:09:07.178 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.getQueryTimeout() returned 0
+2020-04-17 20:09:07.178 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.close() returned 
+2020-04-17 20:09:07.179 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.new PreparedStatement returned 
+2020-04-17 20:09:07.179 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.prepareStatement(insert into proc_task_instance (handle_opinion, handle_time, handle_type, handle_user_id, handle_user_name, process_id, task_key, task_name, task_id) values (?, ?, ?, ?, ?, ?, ?, ?, ?)) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@19ff0ea2
+2020-04-17 20:09:07.179 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setString(1, "") returned 
+2020-04-17 20:09:07.179 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setTimestamp(2, 2020-04-17 20:09:07.174) returned 
+2020-04-17 20:09:07.180 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setString(3, "2") returned 
+2020-04-17 20:09:07.180 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setString(4, "1074238801330704384") returned 
+2020-04-17 20:09:07.180 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setString(5, "a01") returned 
+2020-04-17 20:09:07.180 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setString(6, "1251118288528740352") returned 
+2020-04-17 20:09:07.180 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setNull(7, 12) returned 
+2020-04-17 20:09:07.181 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setNull(8, 12) returned 
+2020-04-17 20:09:07.181 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setString(9, "1251120502609547264") returned 
+2020-04-17 20:09:07.181 INFO  log4jdbc.log4j2 Line:243 - 1. insert into proc_task_instance (handle_opinion, handle_time, handle_type, handle_user_id, handle_user_name, 
+process_id, task_key, task_name, task_id) values ('', '2020-04-17 20:09:07', '2', '1074238801330704384', 
+'a01', '1251118288528740352', NULL, NULL, '1251120502609547264')  {executed in 0 ms}
+2020-04-17 20:09:07.181 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.executeUpdate() returned 1
+2020-04-17 20:09:07.182 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.getMaxRows() returned 0
+2020-04-17 20:09:07.182 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.getQueryTimeout() returned 0
+2020-04-17 20:09:07.182 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.close() returned 
+2020-04-17 20:09:07.185 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 20:09:07.185 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 20:09:07.186 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 20:09:07.186 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 20:09:07.524 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.isValid(5) returned true
+2020-04-17 20:09:07.524 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.setReadOnly(true) returned 
+2020-04-17 20:09:07.525 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.getAutoCommit() returned true
+2020-04-17 20:09:07.525 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.setAutoCommit(false) returned 
+2020-04-17 20:09:07.526 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.new PreparedStatement returned 
+2020-04-17 20:09:07.527 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.prepareStatement(select procinstan0_.process_id as process_1_0_, procinstan0_.department_id as departme2_0_, procinstan0_.department_name as departme3_0_, procinstan0_.proc_apply_time as proc_app4_0_, procinstan0_.proc_curr_node_user_id as proc_cur5_0_, procinstan0_.proc_curr_node_user_name as proc_cur6_0_, procinstan0_.proc_data as proc_dat7_0_, procinstan0_.proc_end_time as proc_end8_0_, procinstan0_.process_definition_id as process_9_0_, procinstan0_.process_key as process10_0_, procinstan0_.process_name as process11_0_, procinstan0_.process_state as process12_0_, procinstan0_.time_of_entry as time_of13_0_, procinstan0_.user_id as user_id14_0_, procinstan0_.username as usernam15_0_ from proc_instance procinstan0_ where (procinstan0_.process_state in (?)) and (procinstan0_.proc_curr_node_user_id like ?) limit ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@3b05ec1a
+2020-04-17 20:09:07.528 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.setString(1, "1") returned 
+2020-04-17 20:09:07.528 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.setString(2, "%1074238801330704384%") returned 
+2020-04-17 20:09:07.528 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.setInt(3, 10) returned 
+2020-04-17 20:09:07.529 INFO  log4jdbc.log4j2 Line:243 - 2. select procinstan0_.process_id as process_1_0_, procinstan0_.department_id as departme2_0_, 
+procinstan0_.department_name as departme3_0_, procinstan0_.proc_apply_time as proc_app4_0_, 
+procinstan0_.proc_curr_node_user_id as proc_cur5_0_, procinstan0_.proc_curr_node_user_name 
+as proc_cur6_0_, procinstan0_.proc_data as proc_dat7_0_, procinstan0_.proc_end_time as proc_end8_0_, 
+procinstan0_.process_definition_id as process_9_0_, procinstan0_.process_key as process10_0_, 
+procinstan0_.process_name as process11_0_, procinstan0_.process_state as process12_0_, procinstan0_.time_of_entry 
+as time_of13_0_, procinstan0_.user_id as user_id14_0_, procinstan0_.username as usernam15_0_ 
+from proc_instance procinstan0_ where (procinstan0_.process_state in ('1')) and (procinstan0_.proc_curr_node_user_id 
+like '%1074238801330704384%') limit 10  {executed in 0 ms}
+2020-04-17 20:09:07.529 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.new ResultSet returned 
+2020-04-17 20:09:07.530 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.executeQuery() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@7fdc803a
+2020-04-17 20:09:07.530 INFO  log4jdbc.log4j2 Line:390 - 
+|-----------|--------------|----------------|----------------|-----------------------|-------------------------|----------|--------------|----------------------|------------|-------------|--------------|--------------|--------|---------|
+|process_id |department_id |department_name |proc_apply_time |proc_curr_node_user_id |proc_curr_node_user_name |proc_data |proc_end_time |process_definition_id |process_key |process_name |process_state |time_of_entry |user_id |username |
+|-----------|--------------|----------------|----------------|-----------------------|-------------------------|----------|--------------|----------------------|------------|-------------|--------------|--------------|--------|---------|
+|-----------|--------------|----------------|----------------|-----------------------|-------------------------|----------|--------------|----------------------|------------|-------------|--------------|--------------|--------|---------|
+
+2020-04-17 20:09:07.530 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.next() returned false
+2020-04-17 20:09:07.531 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.close() returned void
+2020-04-17 20:09:07.531 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.getMaxRows() returned 0
+2020-04-17 20:09:07.531 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.getQueryTimeout() returned 0
+2020-04-17 20:09:07.531 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.close() returned 
+2020-04-17 20:09:07.532 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.commit() returned 
+2020-04-17 20:09:07.532 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.setAutoCommit(true) returned 
+2020-04-17 20:09:07.532 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.isReadOnly() returned true
+2020-04-17 20:09:07.533 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.setReadOnly(false) returned 
+2020-04-17 20:09:07.534 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.clearWarnings() returned 
+2020-04-17 20:09:07.534 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.clearWarnings() returned 
+2020-04-17 20:09:09.618 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isValid(5) returned true
+2020-04-17 20:09:09.619 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setReadOnly(true) returned 
+2020-04-17 20:09:09.619 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 20:09:09.620 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 20:09:09.622 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.new PreparedStatement returned 
+2020-04-17 20:09:09.622 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.prepareStatement(select procinstan0_.process_id as process_1_0_, procinstan0_.department_id as departme2_0_, procinstan0_.department_name as departme3_0_, procinstan0_.proc_apply_time as proc_app4_0_, procinstan0_.proc_curr_node_user_id as proc_cur5_0_, procinstan0_.proc_curr_node_user_name as proc_cur6_0_, procinstan0_.proc_data as proc_dat7_0_, procinstan0_.proc_end_time as proc_end8_0_, procinstan0_.process_definition_id as process_9_0_, procinstan0_.process_key as process10_0_, procinstan0_.process_name as process11_0_, procinstan0_.process_state as process12_0_, procinstan0_.time_of_entry as time_of13_0_, procinstan0_.user_id as user_id14_0_, procinstan0_.username as usernam15_0_ from proc_instance procinstan0_ where procinstan0_.user_id=? limit ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@69ccdda
+2020-04-17 20:09:09.622 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setString(1, "1074238801330704384") returned 
+2020-04-17 20:09:09.622 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setInt(2, 10) returned 
+2020-04-17 20:09:09.623 INFO  log4jdbc.log4j2 Line:243 - 1. select procinstan0_.process_id as process_1_0_, procinstan0_.department_id as departme2_0_, 
+procinstan0_.department_name as departme3_0_, procinstan0_.proc_apply_time as proc_app4_0_, 
+procinstan0_.proc_curr_node_user_id as proc_cur5_0_, procinstan0_.proc_curr_node_user_name 
+as proc_cur6_0_, procinstan0_.proc_data as proc_dat7_0_, procinstan0_.proc_end_time as proc_end8_0_, 
+procinstan0_.process_definition_id as process_9_0_, procinstan0_.process_key as process10_0_, 
+procinstan0_.process_name as process11_0_, procinstan0_.process_state as process12_0_, procinstan0_.time_of_entry 
+as time_of13_0_, procinstan0_.user_id as user_id14_0_, procinstan0_.username as usernam15_0_ 
+from proc_instance procinstan0_ where procinstan0_.user_id='1074238801330704384' limit 10  {executed in 0 ms}
+2020-04-17 20:09:09.623 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.new ResultSet returned 
+2020-04-17 20:09:09.623 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.executeQuery() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@66565778
+2020-04-17 20:09:09.624 INFO  log4jdbc.log4j2 Line:390 - 
+|-----------|--------------|----------------|----------------|-----------------------|-------------------------|----------|--------------|----------------------|------------|-------------|--------------|--------------|--------|---------|
+|process_id |department_id |department_name |proc_apply_time |proc_curr_node_user_id |proc_curr_node_user_name |proc_data |proc_end_time |process_definition_id |process_key |process_name |process_state |time_of_entry |user_id |username |
+|-----------|--------------|----------------|----------------|-----------------------|-------------------------|----------|--------------|----------------------|------------|-------------|--------------|--------------|--------|---------|
+|-----------|--------------|----------------|----------------|-----------------------|-------------------------|----------|--------------|----------------------|------------|-------------|--------------|--------------|--------|---------|
+
+2020-04-17 20:09:09.624 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.next() returned false
+2020-04-17 20:09:09.624 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.close() returned void
+2020-04-17 20:09:09.624 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.getMaxRows() returned 0
+2020-04-17 20:09:09.624 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.getQueryTimeout() returned 0
+2020-04-17 20:09:09.625 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.close() returned 
+2020-04-17 20:09:09.625 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 20:09:09.625 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 20:09:09.626 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isReadOnly() returned true
+2020-04-17 20:09:09.626 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setReadOnly(false) returned 
+2020-04-17 20:09:09.626 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 20:09:09.627 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 20:09:10.968 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isValid(5) returned true
+2020-04-17 20:09:10.970 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setReadOnly(true) returned 
+2020-04-17 20:09:10.971 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 20:09:10.972 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 20:09:10.973 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.new PreparedStatement returned 
+2020-04-17 20:09:10.973 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.prepareStatement(select procinstan0_.process_id as process_1_0_, procinstan0_.department_id as departme2_0_, procinstan0_.department_name as departme3_0_, procinstan0_.proc_apply_time as proc_app4_0_, procinstan0_.proc_curr_node_user_id as proc_cur5_0_, procinstan0_.proc_curr_node_user_name as proc_cur6_0_, procinstan0_.proc_data as proc_dat7_0_, procinstan0_.proc_end_time as proc_end8_0_, procinstan0_.process_definition_id as process_9_0_, procinstan0_.process_key as process10_0_, procinstan0_.process_name as process11_0_, procinstan0_.process_state as process12_0_, procinstan0_.time_of_entry as time_of13_0_, procinstan0_.user_id as user_id14_0_, procinstan0_.username as usernam15_0_ from proc_instance procinstan0_ where 1=1 limit ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@876d9cc
+2020-04-17 20:09:10.974 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setInt(1, 10) returned 
+2020-04-17 20:09:10.975 INFO  log4jdbc.log4j2 Line:243 - 1. select procinstan0_.process_id as process_1_0_, procinstan0_.department_id as departme2_0_, 
+procinstan0_.department_name as departme3_0_, procinstan0_.proc_apply_time as proc_app4_0_, 
+procinstan0_.proc_curr_node_user_id as proc_cur5_0_, procinstan0_.proc_curr_node_user_name 
+as proc_cur6_0_, procinstan0_.proc_data as proc_dat7_0_, procinstan0_.proc_end_time as proc_end8_0_, 
+procinstan0_.process_definition_id as process_9_0_, procinstan0_.process_key as process10_0_, 
+procinstan0_.process_name as process11_0_, procinstan0_.process_state as process12_0_, procinstan0_.time_of_entry 
+as time_of13_0_, procinstan0_.user_id as user_id14_0_, procinstan0_.username as usernam15_0_ 
+from proc_instance procinstan0_ where 1=1 limit 10  {executed in 0 ms}
+2020-04-17 20:09:10.976 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.new ResultSet returned 
+2020-04-17 20:09:10.977 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.executeQuery() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@22ccbb86
+2020-04-17 20:09:10.977 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.next() returned true
+2020-04-17 20:09:10.978 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process_1_0_) returned 1251114710129012736
+2020-04-17 20:09:10.978 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:10.979 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(departme2_0_) returned 1175311466846683136
+2020-04-17 20:09:10.980 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:10.980 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(departme3_0_) returned 市场部
+2020-04-17 20:09:10.981 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:10.981 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getTimestamp(proc_app4_0_) returned 2020-04-17 19:46:06.0
+2020-04-17 20:09:10.982 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:10.982 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(proc_cur5_0_) returned 107163276022281011210742388013307043841074238801402007552
+2020-04-17 20:09:10.983 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:10.983 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(proc_cur6_0_) returned ll a01 a02 
+2020-04-17 20:09:10.984 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:10.984 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(proc_dat7_0_) returned {"duration":"1","reason":"xxx","holidayType":"1","processName":"请假","processKey":"process_leave","startTime":"2020-04-17 19:45:58","applyUnit":"按天","endTime":"2020-04-18 00:00:00","userId":"1066370498633486336"}
+2020-04-17 20:09:10.985 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:10.985 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getTimestamp(proc_end8_0_) returned void
+2020-04-17 20:09:10.986 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process_9_0_) returned void
+2020-04-17 20:09:10.986 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process10_0_) returned void
+2020-04-17 20:09:10.987 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process11_0_) returned 请假
+2020-04-17 20:09:10.987 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:10.988 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process12_0_) returned 2
+2020-04-17 20:09:10.989 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:10.989 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getTimestamp(time_of13_0_) returned 2018-11-04 08:00:00.0
+2020-04-17 20:09:10.990 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:10.990 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(user_id14_0_) returned 1066370498633486336
+2020-04-17 20:09:10.991 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:10.991 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(usernam15_0_) returned zbz
+2020-04-17 20:09:10.992 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:10.992 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.next() returned true
+2020-04-17 20:09:10.993 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process_1_0_) returned 1251117178887958528
+2020-04-17 20:09:10.993 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:10.994 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(departme2_0_) returned 1175311466846683136
+2020-04-17 20:09:10.994 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:10.995 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(departme3_0_) returned 市场部
+2020-04-17 20:09:10.995 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:10.996 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getTimestamp(proc_app4_0_) returned 2020-04-17 19:55:54.0
+2020-04-17 20:09:10.997 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:10.997 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(proc_cur5_0_) returned 107163276022281011210742388013307043841074238801402007552
+2020-04-17 20:09:10.998 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:10.998 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(proc_cur6_0_) returned ll a01 a02 
+2020-04-17 20:09:10.999 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:10.999 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(proc_dat7_0_) returned {"duration":"3","reason":"","holidayType":"1","processName":"请假","processKey":"process_leave","startTime":"2020-04-17 19:55:46","applyUnit":"按天","endTime":"2020-04-21 00:00:00","userId":"1066370498633486336"}
+2020-04-17 20:09:11.000 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:11.000 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getTimestamp(proc_end8_0_) returned void
+2020-04-17 20:09:11.001 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process_9_0_) returned void
+2020-04-17 20:09:11.001 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process10_0_) returned void
+2020-04-17 20:09:11.001 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process11_0_) returned 请假
+2020-04-17 20:09:11.002 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:11.002 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process12_0_) returned 2
+2020-04-17 20:09:11.003 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:11.003 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getTimestamp(time_of13_0_) returned 2018-11-04 08:00:00.0
+2020-04-17 20:09:11.004 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:11.004 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(user_id14_0_) returned 1066370498633486336
+2020-04-17 20:09:11.005 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:11.005 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(usernam15_0_) returned zbz
+2020-04-17 20:09:11.006 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:11.006 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.next() returned true
+2020-04-17 20:09:11.007 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process_1_0_) returned 1251118288528740352
+2020-04-17 20:09:11.007 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:11.007 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(departme2_0_) returned 1175311466846683136
+2020-04-17 20:09:11.008 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:11.008 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(departme3_0_) returned 市场部
+2020-04-17 20:09:11.009 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:11.009 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getTimestamp(proc_app4_0_) returned 2020-04-17 20:00:19.0
+2020-04-17 20:09:11.010 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:11.010 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(proc_cur5_0_) returned 10753831331064258561075383135371350016
+2020-04-17 20:09:11.010 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:11.011 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(proc_cur6_0_) returned test001 test002 
+2020-04-17 20:09:11.011 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:11.011 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(proc_dat7_0_) returned {"duration":"4","reason":"","holidayType":"1","processName":"请假","processKey":"process_leave","startTime":"2020-04-09 00:00:00","applyUnit":"按天","endTime":"2020-04-17 20:00:15","userId":"1066370498633486336"}
+2020-04-17 20:09:11.012 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:11.012 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getTimestamp(proc_end8_0_) returned void
+2020-04-17 20:09:11.012 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process_9_0_) returned void
+2020-04-17 20:09:11.013 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process10_0_) returned void
+2020-04-17 20:09:11.013 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process11_0_) returned 请假
+2020-04-17 20:09:11.014 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:11.014 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process12_0_) returned 1
+2020-04-17 20:09:11.014 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:11.015 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getTimestamp(time_of13_0_) returned 2018-11-04 08:00:00.0
+2020-04-17 20:09:11.015 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:11.015 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(user_id14_0_) returned 1066370498633486336
+2020-04-17 20:09:11.015 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:11.016 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(usernam15_0_) returned zbz
+2020-04-17 20:09:11.016 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:11.017 INFO  log4jdbc.log4j2 Line:390 - 
+|--------------------|--------------------|----------------|----------------------|----------------------------------------------------------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------------|------------|-------------|--------------|----------------------|--------------------|---------|
+|process_id          |department_id       |department_name |proc_apply_time       |proc_curr_node_user_id                                    |proc_curr_node_user_name |proc_data                                                                                                                                                                                                           |proc_end_time |process_definition_id |process_key |process_name |process_state |time_of_entry         |user_id             |username |
+|--------------------|--------------------|----------------|----------------------|----------------------------------------------------------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------------|------------|-------------|--------------|----------------------|--------------------|---------|
+|1251114710129012736 |1175311466846683136 |市场部             |2020-04-17 19:46:06.0 |107163276022281011210742388013307043841074238801402007552 |ll a01 a02               |{"duration":"1","reason":"xxx","holidayType":"1","processName":"请假","processKey":"process_leave","startTime":"2020-04-17 19:45:58","applyUnit":"按天","endTime":"2020-04-18 00:00:00","userId":"1066370498633486336"} |null          |null                  |null        |请假           |2             |2018-11-04 08:00:00.0 |1066370498633486336 |zbz      |
+|1251117178887958528 |1175311466846683136 |市场部             |2020-04-17 19:55:54.0 |107163276022281011210742388013307043841074238801402007552 |ll a01 a02               |{"duration":"3","reason":"","holidayType":"1","processName":"请假","processKey":"process_leave","startTime":"2020-04-17 19:55:46","applyUnit":"按天","endTime":"2020-04-21 00:00:00","userId":"1066370498633486336"}    |null          |null                  |null        |请假           |2             |2018-11-04 08:00:00.0 |1066370498633486336 |zbz      |
+|1251118288528740352 |1175311466846683136 |市场部             |2020-04-17 20:00:19.0 |10753831331064258561075383135371350016                    |test001 test002          |{"duration":"4","reason":"","holidayType":"1","processName":"请假","processKey":"process_leave","startTime":"2020-04-09 00:00:00","applyUnit":"按天","endTime":"2020-04-17 20:00:15","userId":"1066370498633486336"}    |null          |null                  |null        |请假           |1             |2018-11-04 08:00:00.0 |1066370498633486336 |zbz      |
+|--------------------|--------------------|----------------|----------------------|----------------------------------------------------------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------------|------------|-------------|--------------|----------------------|--------------------|---------|
+
+2020-04-17 20:09:11.017 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.next() returned false
+2020-04-17 20:09:11.017 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.close() returned void
+2020-04-17 20:09:11.018 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.getMaxRows() returned 0
+2020-04-17 20:09:11.018 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.getQueryTimeout() returned 0
+2020-04-17 20:09:11.018 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.close() returned 
+2020-04-17 20:09:11.018 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 20:09:11.019 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 20:09:11.019 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isReadOnly() returned true
+2020-04-17 20:09:11.019 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setReadOnly(false) returned 
+2020-04-17 20:09:11.022 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 20:09:11.022 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 20:09:37.583 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.isValid(5) returned true
+2020-04-17 20:09:37.584 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isValid(5) returned true
+2020-04-17 20:09:37.584 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.getAutoCommit() returned true
+2020-04-17 20:09:37.584 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setReadOnly(true) returned 
+2020-04-17 20:09:37.584 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 20:09:37.584 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.setAutoCommit(false) returned 
+2020-04-17 20:09:37.584 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 20:09:37.585 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.new PreparedStatement returned 
+2020-04-17 20:09:37.586 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.prepareStatement(select procinstan0_.process_id as process_1_0_, procinstan0_.department_id as departme2_0_, procinstan0_.department_name as departme3_0_, procinstan0_.proc_apply_time as proc_app4_0_, procinstan0_.proc_curr_node_user_id as proc_cur5_0_, procinstan0_.proc_curr_node_user_name as proc_cur6_0_, procinstan0_.proc_data as proc_dat7_0_, procinstan0_.proc_end_time as proc_end8_0_, procinstan0_.process_definition_id as process_9_0_, procinstan0_.process_key as process10_0_, procinstan0_.process_name as process11_0_, procinstan0_.process_state as process12_0_, procinstan0_.time_of_entry as time_of13_0_, procinstan0_.user_id as user_id14_0_, procinstan0_.username as usernam15_0_ from proc_instance procinstan0_ where 1=1 limit ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@5501c7cb
+2020-04-17 20:09:37.586 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setInt(1, 10) returned 
+2020-04-17 20:09:37.587 INFO  log4jdbc.log4j2 Line:243 - 1. select procinstan0_.process_id as process_1_0_, procinstan0_.department_id as departme2_0_, 
+procinstan0_.department_name as departme3_0_, procinstan0_.proc_apply_time as proc_app4_0_, 
+procinstan0_.proc_curr_node_user_id as proc_cur5_0_, procinstan0_.proc_curr_node_user_name 
+as proc_cur6_0_, procinstan0_.proc_data as proc_dat7_0_, procinstan0_.proc_end_time as proc_end8_0_, 
+procinstan0_.process_definition_id as process_9_0_, procinstan0_.process_key as process10_0_, 
+procinstan0_.process_name as process11_0_, procinstan0_.process_state as process12_0_, procinstan0_.time_of_entry 
+as time_of13_0_, procinstan0_.user_id as user_id14_0_, procinstan0_.username as usernam15_0_ 
+from proc_instance procinstan0_ where 1=1 limit 10  {executed in 1 ms}
+2020-04-17 20:09:37.587 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.new ResultSet returned 
+2020-04-17 20:09:37.588 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.executeQuery() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@14dfce9e
+2020-04-17 20:09:37.588 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.commit() returned 
+2020-04-17 20:09:37.588 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.next() returned true
+2020-04-17 20:09:37.588 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.setAutoCommit(true) returned 
+2020-04-17 20:09:37.589 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process_1_0_) returned 1251114710129012736
+2020-04-17 20:09:37.589 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.589 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(departme2_0_) returned 1175311466846683136
+2020-04-17 20:09:37.590 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.590 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.clearWarnings() returned 
+2020-04-17 20:09:37.590 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.clearWarnings() returned 
+2020-04-17 20:09:37.590 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(departme3_0_) returned 市场部
+2020-04-17 20:09:37.590 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.591 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getTimestamp(proc_app4_0_) returned 2020-04-17 19:46:06.0
+2020-04-17 20:09:37.591 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.592 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(proc_cur5_0_) returned 107163276022281011210742388013307043841074238801402007552
+2020-04-17 20:09:37.592 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.593 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(proc_cur6_0_) returned ll a01 a02 
+2020-04-17 20:09:37.593 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.593 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(proc_dat7_0_) returned {"duration":"1","reason":"xxx","holidayType":"1","processName":"请假","processKey":"process_leave","startTime":"2020-04-17 19:45:58","applyUnit":"按天","endTime":"2020-04-18 00:00:00","userId":"1066370498633486336"}
+2020-04-17 20:09:37.594 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.594 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getTimestamp(proc_end8_0_) returned void
+2020-04-17 20:09:37.594 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process_9_0_) returned void
+2020-04-17 20:09:37.595 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process10_0_) returned void
+2020-04-17 20:09:37.595 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process11_0_) returned 请假
+2020-04-17 20:09:37.595 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.595 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process12_0_) returned 2
+2020-04-17 20:09:37.596 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.596 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getTimestamp(time_of13_0_) returned 2018-11-04 08:00:00.0
+2020-04-17 20:09:37.596 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.596 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(user_id14_0_) returned 1066370498633486336
+2020-04-17 20:09:37.596 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.597 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(usernam15_0_) returned zbz
+2020-04-17 20:09:37.597 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.597 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.next() returned true
+2020-04-17 20:09:37.598 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process_1_0_) returned 1251117178887958528
+2020-04-17 20:09:37.598 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.598 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(departme2_0_) returned 1175311466846683136
+2020-04-17 20:09:37.598 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.599 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(departme3_0_) returned 市场部
+2020-04-17 20:09:37.599 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.599 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getTimestamp(proc_app4_0_) returned 2020-04-17 19:55:54.0
+2020-04-17 20:09:37.599 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.600 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(proc_cur5_0_) returned 107163276022281011210742388013307043841074238801402007552
+2020-04-17 20:09:37.600 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.600 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(proc_cur6_0_) returned ll a01 a02 
+2020-04-17 20:09:37.600 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.600 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(proc_dat7_0_) returned {"duration":"3","reason":"","holidayType":"1","processName":"请假","processKey":"process_leave","startTime":"2020-04-17 19:55:46","applyUnit":"按天","endTime":"2020-04-21 00:00:00","userId":"1066370498633486336"}
+2020-04-17 20:09:37.601 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.601 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getTimestamp(proc_end8_0_) returned void
+2020-04-17 20:09:37.601 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process_9_0_) returned void
+2020-04-17 20:09:37.601 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process10_0_) returned void
+2020-04-17 20:09:37.602 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process11_0_) returned 请假
+2020-04-17 20:09:37.602 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.602 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process12_0_) returned 2
+2020-04-17 20:09:37.602 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.603 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getTimestamp(time_of13_0_) returned 2018-11-04 08:00:00.0
+2020-04-17 20:09:37.603 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.603 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(user_id14_0_) returned 1066370498633486336
+2020-04-17 20:09:37.603 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.604 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(usernam15_0_) returned zbz
+2020-04-17 20:09:37.604 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.604 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.next() returned true
+2020-04-17 20:09:37.605 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process_1_0_) returned 1251118288528740352
+2020-04-17 20:09:37.605 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.605 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(departme2_0_) returned 1175311466846683136
+2020-04-17 20:09:37.606 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.606 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(departme3_0_) returned 市场部
+2020-04-17 20:09:37.607 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.607 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getTimestamp(proc_app4_0_) returned 2020-04-17 20:00:19.0
+2020-04-17 20:09:37.607 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.607 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(proc_cur5_0_) returned 10753831331064258561075383135371350016
+2020-04-17 20:09:37.608 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.608 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(proc_cur6_0_) returned test001 test002 
+2020-04-17 20:09:37.608 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.608 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(proc_dat7_0_) returned {"duration":"4","reason":"","holidayType":"1","processName":"请假","processKey":"process_leave","startTime":"2020-04-09 00:00:00","applyUnit":"按天","endTime":"2020-04-17 20:00:15","userId":"1066370498633486336"}
+2020-04-17 20:09:37.609 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.609 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getTimestamp(proc_end8_0_) returned void
+2020-04-17 20:09:37.609 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process_9_0_) returned void
+2020-04-17 20:09:37.610 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process10_0_) returned void
+2020-04-17 20:09:37.610 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process11_0_) returned 请假
+2020-04-17 20:09:37.610 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.611 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process12_0_) returned 1
+2020-04-17 20:09:37.611 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.611 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getTimestamp(time_of13_0_) returned 2018-11-04 08:00:00.0
+2020-04-17 20:09:37.611 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.612 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(user_id14_0_) returned 1066370498633486336
+2020-04-17 20:09:37.612 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.612 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(usernam15_0_) returned zbz
+2020-04-17 20:09:37.612 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:37.613 INFO  log4jdbc.log4j2 Line:390 - 
+|--------------------|--------------------|----------------|----------------------|----------------------------------------------------------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------------|------------|-------------|--------------|----------------------|--------------------|---------|
+|process_id          |department_id       |department_name |proc_apply_time       |proc_curr_node_user_id                                    |proc_curr_node_user_name |proc_data                                                                                                                                                                                                           |proc_end_time |process_definition_id |process_key |process_name |process_state |time_of_entry         |user_id             |username |
+|--------------------|--------------------|----------------|----------------------|----------------------------------------------------------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------------|------------|-------------|--------------|----------------------|--------------------|---------|
+|1251114710129012736 |1175311466846683136 |市场部             |2020-04-17 19:46:06.0 |107163276022281011210742388013307043841074238801402007552 |ll a01 a02               |{"duration":"1","reason":"xxx","holidayType":"1","processName":"请假","processKey":"process_leave","startTime":"2020-04-17 19:45:58","applyUnit":"按天","endTime":"2020-04-18 00:00:00","userId":"1066370498633486336"} |null          |null                  |null        |请假           |2             |2018-11-04 08:00:00.0 |1066370498633486336 |zbz      |
+|1251117178887958528 |1175311466846683136 |市场部             |2020-04-17 19:55:54.0 |107163276022281011210742388013307043841074238801402007552 |ll a01 a02               |{"duration":"3","reason":"","holidayType":"1","processName":"请假","processKey":"process_leave","startTime":"2020-04-17 19:55:46","applyUnit":"按天","endTime":"2020-04-21 00:00:00","userId":"1066370498633486336"}    |null          |null                  |null        |请假           |2             |2018-11-04 08:00:00.0 |1066370498633486336 |zbz      |
+|1251118288528740352 |1175311466846683136 |市场部             |2020-04-17 20:00:19.0 |10753831331064258561075383135371350016                    |test001 test002          |{"duration":"4","reason":"","holidayType":"1","processName":"请假","processKey":"process_leave","startTime":"2020-04-09 00:00:00","applyUnit":"按天","endTime":"2020-04-17 20:00:15","userId":"1066370498633486336"}    |null          |null                  |null        |请假           |1             |2018-11-04 08:00:00.0 |1066370498633486336 |zbz      |
+|--------------------|--------------------|----------------|----------------------|----------------------------------------------------------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------------|------------|-------------|--------------|----------------------|--------------------|---------|
+
+2020-04-17 20:09:37.613 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.next() returned false
+2020-04-17 20:09:37.614 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.close() returned void
+2020-04-17 20:09:37.614 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.getMaxRows() returned 0
+2020-04-17 20:09:37.614 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.getQueryTimeout() returned 0
+2020-04-17 20:09:37.614 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.close() returned 
+2020-04-17 20:09:37.615 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 20:09:37.615 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 20:09:37.615 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isReadOnly() returned true
+2020-04-17 20:09:37.615 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setReadOnly(false) returned 
+2020-04-17 20:09:37.616 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 20:09:37.616 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 20:09:38.663 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isValid(5) returned true
+2020-04-17 20:09:38.664 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setReadOnly(true) returned 
+2020-04-17 20:09:38.664 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 20:09:38.664 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 20:09:38.666 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.new PreparedStatement returned 
+2020-04-17 20:09:38.666 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.prepareStatement(select procinstan0_.process_id as process_1_0_, procinstan0_.department_id as departme2_0_, procinstan0_.department_name as departme3_0_, procinstan0_.proc_apply_time as proc_app4_0_, procinstan0_.proc_curr_node_user_id as proc_cur5_0_, procinstan0_.proc_curr_node_user_name as proc_cur6_0_, procinstan0_.proc_data as proc_dat7_0_, procinstan0_.proc_end_time as proc_end8_0_, procinstan0_.process_definition_id as process_9_0_, procinstan0_.process_key as process10_0_, procinstan0_.process_name as process11_0_, procinstan0_.process_state as process12_0_, procinstan0_.time_of_entry as time_of13_0_, procinstan0_.user_id as user_id14_0_, procinstan0_.username as usernam15_0_ from proc_instance procinstan0_ where (procinstan0_.process_state in (?)) and (procinstan0_.proc_curr_node_user_id like ?) limit ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@165e568e
+2020-04-17 20:09:38.666 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setString(1, "1") returned 
+2020-04-17 20:09:38.666 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setString(2, "%1075383133106425856%") returned 
+2020-04-17 20:09:38.666 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setInt(3, 10) returned 
+2020-04-17 20:09:38.667 INFO  log4jdbc.log4j2 Line:243 - 1. select procinstan0_.process_id as process_1_0_, procinstan0_.department_id as departme2_0_, 
+procinstan0_.department_name as departme3_0_, procinstan0_.proc_apply_time as proc_app4_0_, 
+procinstan0_.proc_curr_node_user_id as proc_cur5_0_, procinstan0_.proc_curr_node_user_name 
+as proc_cur6_0_, procinstan0_.proc_data as proc_dat7_0_, procinstan0_.proc_end_time as proc_end8_0_, 
+procinstan0_.process_definition_id as process_9_0_, procinstan0_.process_key as process10_0_, 
+procinstan0_.process_name as process11_0_, procinstan0_.process_state as process12_0_, procinstan0_.time_of_entry 
+as time_of13_0_, procinstan0_.user_id as user_id14_0_, procinstan0_.username as usernam15_0_ 
+from proc_instance procinstan0_ where (procinstan0_.process_state in ('1')) and (procinstan0_.proc_curr_node_user_id 
+like '%1075383133106425856%') limit 10  {executed in 0 ms}
+2020-04-17 20:09:38.667 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.new ResultSet returned 
+2020-04-17 20:09:38.667 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.executeQuery() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@588d097d
+2020-04-17 20:09:38.668 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.next() returned true
+2020-04-17 20:09:38.668 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process_1_0_) returned 1251118288528740352
+2020-04-17 20:09:38.668 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:38.668 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(departme2_0_) returned 1175311466846683136
+2020-04-17 20:09:38.668 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:38.669 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(departme3_0_) returned 市场部
+2020-04-17 20:09:38.669 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:38.669 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getTimestamp(proc_app4_0_) returned 2020-04-17 20:00:19.0
+2020-04-17 20:09:38.669 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:38.669 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(proc_cur5_0_) returned 10753831331064258561075383135371350016
+2020-04-17 20:09:38.670 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:38.670 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(proc_cur6_0_) returned test001 test002 
+2020-04-17 20:09:38.670 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:38.670 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(proc_dat7_0_) returned {"duration":"4","reason":"","holidayType":"1","processName":"请假","processKey":"process_leave","startTime":"2020-04-09 00:00:00","applyUnit":"按天","endTime":"2020-04-17 20:00:15","userId":"1066370498633486336"}
+2020-04-17 20:09:38.670 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:38.670 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getTimestamp(proc_end8_0_) returned void
+2020-04-17 20:09:38.671 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process_9_0_) returned void
+2020-04-17 20:09:38.671 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process10_0_) returned void
+2020-04-17 20:09:38.671 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process11_0_) returned 请假
+2020-04-17 20:09:38.671 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:38.672 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process12_0_) returned 1
+2020-04-17 20:09:38.672 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:38.672 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getTimestamp(time_of13_0_) returned 2018-11-04 08:00:00.0
+2020-04-17 20:09:38.673 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:38.673 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(user_id14_0_) returned 1066370498633486336
+2020-04-17 20:09:38.673 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:38.674 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(usernam15_0_) returned zbz
+2020-04-17 20:09:38.674 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:38.675 INFO  log4jdbc.log4j2 Line:390 - 
+|--------------------|--------------------|----------------|----------------------|---------------------------------------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------------|------------|-------------|--------------|----------------------|--------------------|---------|
+|process_id          |department_id       |department_name |proc_apply_time       |proc_curr_node_user_id                 |proc_curr_node_user_name |proc_data                                                                                                                                                                                                        |proc_end_time |process_definition_id |process_key |process_name |process_state |time_of_entry         |user_id             |username |
+|--------------------|--------------------|----------------|----------------------|---------------------------------------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------------|------------|-------------|--------------|----------------------|--------------------|---------|
+|1251118288528740352 |1175311466846683136 |市场部             |2020-04-17 20:00:19.0 |10753831331064258561075383135371350016 |test001 test002          |{"duration":"4","reason":"","holidayType":"1","processName":"请假","processKey":"process_leave","startTime":"2020-04-09 00:00:00","applyUnit":"按天","endTime":"2020-04-17 20:00:15","userId":"1066370498633486336"} |null          |null                  |null        |请假           |1             |2018-11-04 08:00:00.0 |1066370498633486336 |zbz      |
+|--------------------|--------------------|----------------|----------------------|---------------------------------------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------------|------------|-------------|--------------|----------------------|--------------------|---------|
+
+2020-04-17 20:09:38.675 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.next() returned false
+2020-04-17 20:09:38.675 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.close() returned void
+2020-04-17 20:09:38.675 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.getMaxRows() returned 0
+2020-04-17 20:09:38.675 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.getQueryTimeout() returned 0
+2020-04-17 20:09:38.676 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.close() returned 
+2020-04-17 20:09:38.676 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 20:09:38.676 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 20:09:38.677 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isReadOnly() returned true
+2020-04-17 20:09:38.677 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setReadOnly(false) returned 
+2020-04-17 20:09:38.678 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 20:09:38.678 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 20:09:40.983 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.isValid(5) returned true
+2020-04-17 20:09:40.984 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.setReadOnly(true) returned 
+2020-04-17 20:09:40.985 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.getAutoCommit() returned true
+2020-04-17 20:09:40.985 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.setAutoCommit(false) returned 
+2020-04-17 20:09:40.986 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.new PreparedStatement returned 
+2020-04-17 20:09:40.987 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.prepareStatement(select procinstan0_.process_id as process_1_0_0_, procinstan0_.department_id as departme2_0_0_, procinstan0_.department_name as departme3_0_0_, procinstan0_.proc_apply_time as proc_app4_0_0_, procinstan0_.proc_curr_node_user_id as proc_cur5_0_0_, procinstan0_.proc_curr_node_user_name as proc_cur6_0_0_, procinstan0_.proc_data as proc_dat7_0_0_, procinstan0_.proc_end_time as proc_end8_0_0_, procinstan0_.process_definition_id as process_9_0_0_, procinstan0_.process_key as process10_0_0_, procinstan0_.process_name as process11_0_0_, procinstan0_.process_state as process12_0_0_, procinstan0_.time_of_entry as time_of13_0_0_, procinstan0_.user_id as user_id14_0_0_, procinstan0_.username as usernam15_0_0_ from proc_instance procinstan0_ where procinstan0_.process_id=?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@114b334
+2020-04-17 20:09:40.988 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.setString(1, "1251118288528740352") returned 
+2020-04-17 20:09:40.990 INFO  log4jdbc.log4j2 Line:243 - 2. select procinstan0_.process_id as process_1_0_0_, procinstan0_.department_id as departme2_0_0_, 
+procinstan0_.department_name as departme3_0_0_, procinstan0_.proc_apply_time as proc_app4_0_0_, 
+procinstan0_.proc_curr_node_user_id as proc_cur5_0_0_, procinstan0_.proc_curr_node_user_name 
+as proc_cur6_0_0_, procinstan0_.proc_data as proc_dat7_0_0_, procinstan0_.proc_end_time as 
+proc_end8_0_0_, procinstan0_.process_definition_id as process_9_0_0_, procinstan0_.process_key 
+as process10_0_0_, procinstan0_.process_name as process11_0_0_, procinstan0_.process_state 
+as process12_0_0_, procinstan0_.time_of_entry as time_of13_0_0_, procinstan0_.user_id as user_id14_0_0_, 
+procinstan0_.username as usernam15_0_0_ from proc_instance procinstan0_ where procinstan0_.process_id='1251118288528740352'  {executed in 1 ms}
+2020-04-17 20:09:40.991 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.new ResultSet returned 
+2020-04-17 20:09:40.992 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.executeQuery() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@559076d6
+2020-04-17 20:09:40.993 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.next() returned true
+2020-04-17 20:09:40.994 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.getString(departme2_0_0_) returned 1175311466846683136
+2020-04-17 20:09:40.995 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.wasNull() returned false
+2020-04-17 20:09:40.996 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.getString(departme3_0_0_) returned 市场部
+2020-04-17 20:09:40.996 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.wasNull() returned false
+2020-04-17 20:09:40.997 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.getTimestamp(proc_app4_0_0_) returned 2020-04-17 20:00:19.0
+2020-04-17 20:09:40.998 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.wasNull() returned false
+2020-04-17 20:09:40.999 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.getString(proc_cur5_0_0_) returned 10753831331064258561075383135371350016
+2020-04-17 20:09:41.000 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.wasNull() returned false
+2020-04-17 20:09:41.001 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.getString(proc_cur6_0_0_) returned test001 test002 
+2020-04-17 20:09:41.002 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.wasNull() returned false
+2020-04-17 20:09:41.003 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.getString(proc_dat7_0_0_) returned {"duration":"4","reason":"","holidayType":"1","processName":"请假","processKey":"process_leave","startTime":"2020-04-09 00:00:00","applyUnit":"按天","endTime":"2020-04-17 20:00:15","userId":"1066370498633486336"}
+2020-04-17 20:09:41.003 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.wasNull() returned false
+2020-04-17 20:09:41.004 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.getTimestamp(proc_end8_0_0_) returned void
+2020-04-17 20:09:41.005 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.getString(process_9_0_0_) returned void
+2020-04-17 20:09:41.006 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.getString(process10_0_0_) returned void
+2020-04-17 20:09:41.007 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.getString(process11_0_0_) returned 请假
+2020-04-17 20:09:41.008 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.wasNull() returned false
+2020-04-17 20:09:41.009 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.getString(process12_0_0_) returned 1
+2020-04-17 20:09:41.010 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.wasNull() returned false
+2020-04-17 20:09:41.011 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.getTimestamp(time_of13_0_0_) returned 2018-11-04 08:00:00.0
+2020-04-17 20:09:41.012 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.wasNull() returned false
+2020-04-17 20:09:41.013 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.getString(user_id14_0_0_) returned 1066370498633486336
+2020-04-17 20:09:41.013 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.wasNull() returned false
+2020-04-17 20:09:41.014 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.getString(usernam15_0_0_) returned zbz
+2020-04-17 20:09:41.015 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.wasNull() returned false
+2020-04-17 20:09:41.017 INFO  log4jdbc.log4j2 Line:390 - 
+|-----------|--------------------|----------------|----------------------|---------------------------------------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------------|------------|-------------|--------------|----------------------|--------------------|---------|
+|process_id |department_id       |department_name |proc_apply_time       |proc_curr_node_user_id                 |proc_curr_node_user_name |proc_data                                                                                                                                                                                                        |proc_end_time |process_definition_id |process_key |process_name |process_state |time_of_entry         |user_id             |username |
+|-----------|--------------------|----------------|----------------------|---------------------------------------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------------|------------|-------------|--------------|----------------------|--------------------|---------|
+|[unread]   |1175311466846683136 |市场部             |2020-04-17 20:00:19.0 |10753831331064258561075383135371350016 |test001 test002          |{"duration":"4","reason":"","holidayType":"1","processName":"请假","processKey":"process_leave","startTime":"2020-04-09 00:00:00","applyUnit":"按天","endTime":"2020-04-17 20:00:15","userId":"1066370498633486336"} |null          |null                  |null        |请假           |1             |2018-11-04 08:00:00.0 |1066370498633486336 |zbz      |
+|-----------|--------------------|----------------|----------------------|---------------------------------------|-------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------------|------------|-------------|--------------|----------------------|--------------------|---------|
+
+2020-04-17 20:09:41.018 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.next() returned false
+2020-04-17 20:09:41.019 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.close() returned void
+2020-04-17 20:09:41.020 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.getMaxRows() returned 0
+2020-04-17 20:09:41.021 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.getQueryTimeout() returned 0
+2020-04-17 20:09:41.022 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.close() returned 
+2020-04-17 20:09:41.023 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.commit() returned 
+2020-04-17 20:09:41.024 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.setAutoCommit(true) returned 
+2020-04-17 20:09:41.025 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.isReadOnly() returned true
+2020-04-17 20:09:41.025 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.setReadOnly(false) returned 
+2020-04-17 20:09:41.026 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.getAutoCommit() returned true
+2020-04-17 20:09:41.027 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.setAutoCommit(false) returned 
+2020-04-17 20:09:41.032 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.new PreparedStatement returned 
+2020-04-17 20:09:41.032 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.prepareStatement(update proc_instance set department_id=?, department_name=?, proc_apply_time=?, proc_curr_node_user_id=?, proc_curr_node_user_name=?, proc_data=?, proc_end_time=?, process_definition_id=?, process_key=?, process_name=?, process_state=?, time_of_entry=?, user_id=?, username=? where process_id=?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@2092842e
+2020-04-17 20:09:41.032 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.setString(1, "1175311466846683136") returned 
+2020-04-17 20:09:41.033 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.setString(2, "市场部") returned 
+2020-04-17 20:09:41.033 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.setTimestamp(3, 2020-04-17 20:00:19.0) returned 
+2020-04-17 20:09:41.033 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.setString(4, "10753831331064258561075383135371350016") returned 
+2020-04-17 20:09:41.033 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.setString(5, "test001 test002 ") returned 
+2020-04-17 20:09:41.033 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.setString(6, "{"duration":"4","reason":"","holidayType":"1","processName":"请假","processKey":"process_leave","startTime":"2020-04-09 00:00:00","applyUnit":"按天","endTime":"2020-04-17 20:00:15","userId":"1066370498633486336"}") returned 
+2020-04-17 20:09:41.034 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.setNull(7, 93) returned 
+2020-04-17 20:09:41.034 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.setNull(8, 12) returned 
+2020-04-17 20:09:41.034 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.setNull(9, 12) returned 
+2020-04-17 20:09:41.034 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.setString(10, "请假") returned 
+2020-04-17 20:09:41.034 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.setString(11, "2") returned 
+2020-04-17 20:09:41.034 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.setTimestamp(12, 2018-11-04 08:00:00.0) returned 
+2020-04-17 20:09:41.035 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.setString(13, "1066370498633486336") returned 
+2020-04-17 20:09:41.035 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.setString(14, "zbz") returned 
+2020-04-17 20:09:41.035 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.setString(15, "1251118288528740352") returned 
+2020-04-17 20:09:41.036 INFO  log4jdbc.log4j2 Line:243 - 2. update proc_instance set department_id='1175311466846683136', department_name='市场部', proc_apply_time='2020-04-17 
+20:00:19', proc_curr_node_user_id='10753831331064258561075383135371350016', proc_curr_node_user_name='test001 
+test002 ', proc_data='{"duration":"4","reason":"","holidayType":"1","processName":"请假","processKey":"process_leave","startTime":"2020-04-09 
+00:00:00","applyUnit":"按天","endTime":"2020-04-17 20:00:15","userId":"1066370498633486336"}', 
+proc_end_time=NULL, process_definition_id=NULL, process_key=NULL, process_name='请假', process_state='2', 
+time_of_entry='2018-11-04 08:00:00', user_id='1066370498633486336', username='zbz' where process_id='1251118288528740352'  {executed in 0 ms}
+2020-04-17 20:09:41.036 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.executeUpdate() returned 1
+2020-04-17 20:09:41.036 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.getMaxRows() returned 0
+2020-04-17 20:09:41.036 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.getQueryTimeout() returned 0
+2020-04-17 20:09:41.036 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.close() returned 
+2020-04-17 20:09:41.049 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.commit() returned 
+2020-04-17 20:09:41.049 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.setAutoCommit(true) returned 
+2020-04-17 20:09:41.057 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.getAutoCommit() returned true
+2020-04-17 20:09:41.058 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.setAutoCommit(false) returned 
+2020-04-17 20:09:41.063 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.commit() returned 
+2020-04-17 20:09:41.064 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.setAutoCommit(true) returned 
+2020-04-17 20:09:41.065 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.getAutoCommit() returned true
+2020-04-17 20:09:41.066 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.setAutoCommit(false) returned 
+2020-04-17 20:09:41.153 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.commit() returned 
+2020-04-17 20:09:41.154 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.setAutoCommit(true) returned 
+2020-04-17 20:09:41.154 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.getAutoCommit() returned true
+2020-04-17 20:09:41.155 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.setAutoCommit(false) returned 
+2020-04-17 20:09:41.162 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.commit() returned 
+2020-04-17 20:09:41.162 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.setAutoCommit(true) returned 
+2020-04-17 20:09:41.163 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.getAutoCommit() returned true
+2020-04-17 20:09:41.164 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.setAutoCommit(false) returned 
+2020-04-17 20:09:41.165 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.commit() returned 
+2020-04-17 20:09:41.165 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.setAutoCommit(true) returned 
+2020-04-17 20:09:41.166 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.getAutoCommit() returned true
+2020-04-17 20:09:41.167 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.setAutoCommit(false) returned 
+2020-04-17 20:09:41.168 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.new PreparedStatement returned 
+2020-04-17 20:09:41.168 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.prepareStatement(select proctaskin0_.task_id as task_id1_1_0_, proctaskin0_.handle_opinion as handle_o2_1_0_, proctaskin0_.handle_time as handle_t3_1_0_, proctaskin0_.handle_type as handle_t4_1_0_, proctaskin0_.handle_user_id as handle_u5_1_0_, proctaskin0_.handle_user_name as handle_u6_1_0_, proctaskin0_.process_id as process_7_1_0_, proctaskin0_.task_key as task_key8_1_0_, proctaskin0_.task_name as task_nam9_1_0_ from proc_task_instance proctaskin0_ where proctaskin0_.task_id=?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@337503d2
+2020-04-17 20:09:41.169 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.setString(1, "1251120645182328832") returned 
+2020-04-17 20:09:41.170 INFO  log4jdbc.log4j2 Line:243 - 2. select proctaskin0_.task_id as task_id1_1_0_, proctaskin0_.handle_opinion as handle_o2_1_0_, 
+proctaskin0_.handle_time as handle_t3_1_0_, proctaskin0_.handle_type as handle_t4_1_0_, proctaskin0_.handle_user_id 
+as handle_u5_1_0_, proctaskin0_.handle_user_name as handle_u6_1_0_, proctaskin0_.process_id 
+as process_7_1_0_, proctaskin0_.task_key as task_key8_1_0_, proctaskin0_.task_name as task_nam9_1_0_ 
+from proc_task_instance proctaskin0_ where proctaskin0_.task_id='1251120645182328832'  {executed in 1 ms}
+2020-04-17 20:09:41.171 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.new ResultSet returned 
+2020-04-17 20:09:41.171 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.executeQuery() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@53a8af45
+2020-04-17 20:09:41.172 INFO  log4jdbc.log4j2 Line:390 - 
+|--------|---------------|------------|------------|---------------|-----------------|-----------|---------|----------|
+|task_id |handle_opinion |handle_time |handle_type |handle_user_id |handle_user_name |process_id |task_key |task_name |
+|--------|---------------|------------|------------|---------------|-----------------|-----------|---------|----------|
+|--------|---------------|------------|------------|---------------|-----------------|-----------|---------|----------|
+
+2020-04-17 20:09:41.173 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.next() returned false
+2020-04-17 20:09:41.173 INFO  log4jdbc.log4j2 Line:197 - 2. ResultSet.close() returned void
+2020-04-17 20:09:41.174 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.getMaxRows() returned 0
+2020-04-17 20:09:41.174 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.getQueryTimeout() returned 0
+2020-04-17 20:09:41.175 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.close() returned 
+2020-04-17 20:09:41.176 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.new PreparedStatement returned 
+2020-04-17 20:09:41.177 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.prepareStatement(insert into proc_task_instance (handle_opinion, handle_time, handle_type, handle_user_id, handle_user_name, process_id, task_key, task_name, task_id) values (?, ?, ?, ?, ?, ?, ?, ?, ?)) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@5e406f21
+2020-04-17 20:09:41.177 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.setString(1, "") returned 
+2020-04-17 20:09:41.178 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.setTimestamp(2, 2020-04-17 20:09:41.166) returned 
+2020-04-17 20:09:41.178 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.setString(3, "2") returned 
+2020-04-17 20:09:41.179 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.setString(4, "1075383133106425856") returned 
+2020-04-17 20:09:41.179 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.setString(5, "test001") returned 
+2020-04-17 20:09:41.180 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.setString(6, "1251118288528740352") returned 
+2020-04-17 20:09:41.180 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.setNull(7, 12) returned 
+2020-04-17 20:09:41.180 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.setNull(8, 12) returned 
+2020-04-17 20:09:41.181 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.setString(9, "1251120645182328832") returned 
+2020-04-17 20:09:41.182 INFO  log4jdbc.log4j2 Line:243 - 2. insert into proc_task_instance (handle_opinion, handle_time, handle_type, handle_user_id, handle_user_name, 
+process_id, task_key, task_name, task_id) values ('', '2020-04-17 20:09:41', '2', '1075383133106425856', 
+'test001', '1251118288528740352', NULL, NULL, '1251120645182328832')  {executed in 1 ms}
+2020-04-17 20:09:41.182 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.executeUpdate() returned 1
+2020-04-17 20:09:41.183 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.getMaxRows() returned 0
+2020-04-17 20:09:41.183 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.getQueryTimeout() returned 0
+2020-04-17 20:09:41.184 INFO  log4jdbc.log4j2 Line:197 - 2. PreparedStatement.close() returned 
+2020-04-17 20:09:41.187 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.commit() returned 
+2020-04-17 20:09:41.188 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.setAutoCommit(true) returned 
+2020-04-17 20:09:41.190 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.clearWarnings() returned 
+2020-04-17 20:09:41.190 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.clearWarnings() returned 
+2020-04-17 20:09:41.223 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isValid(5) returned true
+2020-04-17 20:09:41.224 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setReadOnly(true) returned 
+2020-04-17 20:09:41.225 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 20:09:41.225 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 20:09:41.226 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.new PreparedStatement returned 
+2020-04-17 20:09:41.226 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.prepareStatement(select procinstan0_.process_id as process_1_0_, procinstan0_.department_id as departme2_0_, procinstan0_.department_name as departme3_0_, procinstan0_.proc_apply_time as proc_app4_0_, procinstan0_.proc_curr_node_user_id as proc_cur5_0_, procinstan0_.proc_curr_node_user_name as proc_cur6_0_, procinstan0_.proc_data as proc_dat7_0_, procinstan0_.proc_end_time as proc_end8_0_, procinstan0_.process_definition_id as process_9_0_, procinstan0_.process_key as process10_0_, procinstan0_.process_name as process11_0_, procinstan0_.process_state as process12_0_, procinstan0_.time_of_entry as time_of13_0_, procinstan0_.user_id as user_id14_0_, procinstan0_.username as usernam15_0_ from proc_instance procinstan0_ where (procinstan0_.process_state in (?)) and (procinstan0_.proc_curr_node_user_id like ?) limit ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@5b8b80dd
+2020-04-17 20:09:41.227 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setString(1, "1") returned 
+2020-04-17 20:09:41.227 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setString(2, "%1075383133106425856%") returned 
+2020-04-17 20:09:41.227 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setInt(3, 10) returned 
+2020-04-17 20:09:41.228 INFO  log4jdbc.log4j2 Line:243 - 1. select procinstan0_.process_id as process_1_0_, procinstan0_.department_id as departme2_0_, 
+procinstan0_.department_name as departme3_0_, procinstan0_.proc_apply_time as proc_app4_0_, 
+procinstan0_.proc_curr_node_user_id as proc_cur5_0_, procinstan0_.proc_curr_node_user_name 
+as proc_cur6_0_, procinstan0_.proc_data as proc_dat7_0_, procinstan0_.proc_end_time as proc_end8_0_, 
+procinstan0_.process_definition_id as process_9_0_, procinstan0_.process_key as process10_0_, 
+procinstan0_.process_name as process11_0_, procinstan0_.process_state as process12_0_, procinstan0_.time_of_entry 
+as time_of13_0_, procinstan0_.user_id as user_id14_0_, procinstan0_.username as usernam15_0_ 
+from proc_instance procinstan0_ where (procinstan0_.process_state in ('1')) and (procinstan0_.proc_curr_node_user_id 
+like '%1075383133106425856%') limit 10  {executed in 1 ms}
+2020-04-17 20:09:41.228 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.new ResultSet returned 
+2020-04-17 20:09:41.229 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.executeQuery() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@59e4c045
+2020-04-17 20:09:41.229 INFO  log4jdbc.log4j2 Line:390 - 
+|-----------|--------------|----------------|----------------|-----------------------|-------------------------|----------|--------------|----------------------|------------|-------------|--------------|--------------|--------|---------|
+|process_id |department_id |department_name |proc_apply_time |proc_curr_node_user_id |proc_curr_node_user_name |proc_data |proc_end_time |process_definition_id |process_key |process_name |process_state |time_of_entry |user_id |username |
+|-----------|--------------|----------------|----------------|-----------------------|-------------------------|----------|--------------|----------------------|------------|-------------|--------------|--------------|--------|---------|
+|-----------|--------------|----------------|----------------|-----------------------|-------------------------|----------|--------------|----------------------|------------|-------------|--------------|--------------|--------|---------|
+
+2020-04-17 20:09:41.230 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.next() returned false
+2020-04-17 20:09:41.230 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.close() returned void
+2020-04-17 20:09:41.230 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.getMaxRows() returned 0
+2020-04-17 20:09:41.231 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.getQueryTimeout() returned 0
+2020-04-17 20:09:41.231 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.close() returned 
+2020-04-17 20:09:41.231 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 20:09:41.232 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 20:09:41.232 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isReadOnly() returned true
+2020-04-17 20:09:41.232 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setReadOnly(false) returned 
+2020-04-17 20:09:41.233 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 20:09:41.233 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 20:09:42.205 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isValid(5) returned true
+2020-04-17 20:09:42.205 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setReadOnly(true) returned 
+2020-04-17 20:09:42.206 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 20:09:42.206 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 20:09:42.207 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.new PreparedStatement returned 
+2020-04-17 20:09:42.207 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.prepareStatement(select procinstan0_.process_id as process_1_0_, procinstan0_.department_id as departme2_0_, procinstan0_.department_name as departme3_0_, procinstan0_.proc_apply_time as proc_app4_0_, procinstan0_.proc_curr_node_user_id as proc_cur5_0_, procinstan0_.proc_curr_node_user_name as proc_cur6_0_, procinstan0_.proc_data as proc_dat7_0_, procinstan0_.proc_end_time as proc_end8_0_, procinstan0_.process_definition_id as process_9_0_, procinstan0_.process_key as process10_0_, procinstan0_.process_name as process11_0_, procinstan0_.process_state as process12_0_, procinstan0_.time_of_entry as time_of13_0_, procinstan0_.user_id as user_id14_0_, procinstan0_.username as usernam15_0_ from proc_instance procinstan0_ where 1=1 limit ?) returned net.sf.log4jdbc.sql.jdbcapi.PreparedStatementSpy@2ac0ed4f
+2020-04-17 20:09:42.207 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.setInt(1, 10) returned 
+2020-04-17 20:09:42.208 INFO  log4jdbc.log4j2 Line:243 - 1. select procinstan0_.process_id as process_1_0_, procinstan0_.department_id as departme2_0_, 
+procinstan0_.department_name as departme3_0_, procinstan0_.proc_apply_time as proc_app4_0_, 
+procinstan0_.proc_curr_node_user_id as proc_cur5_0_, procinstan0_.proc_curr_node_user_name 
+as proc_cur6_0_, procinstan0_.proc_data as proc_dat7_0_, procinstan0_.proc_end_time as proc_end8_0_, 
+procinstan0_.process_definition_id as process_9_0_, procinstan0_.process_key as process10_0_, 
+procinstan0_.process_name as process11_0_, procinstan0_.process_state as process12_0_, procinstan0_.time_of_entry 
+as time_of13_0_, procinstan0_.user_id as user_id14_0_, procinstan0_.username as usernam15_0_ 
+from proc_instance procinstan0_ where 1=1 limit 10  {executed in 1 ms}
+2020-04-17 20:09:42.208 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.new ResultSet returned 
+2020-04-17 20:09:42.208 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.executeQuery() returned net.sf.log4jdbc.sql.jdbcapi.ResultSetSpy@5c8a47e3
+2020-04-17 20:09:42.209 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.next() returned true
+2020-04-17 20:09:42.209 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process_1_0_) returned 1251114710129012736
+2020-04-17 20:09:42.209 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.209 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(departme2_0_) returned 1175311466846683136
+2020-04-17 20:09:42.209 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.210 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(departme3_0_) returned 市场部
+2020-04-17 20:09:42.210 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.210 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getTimestamp(proc_app4_0_) returned 2020-04-17 19:46:06.0
+2020-04-17 20:09:42.210 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.210 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(proc_cur5_0_) returned 107163276022281011210742388013307043841074238801402007552
+2020-04-17 20:09:42.211 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.211 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(proc_cur6_0_) returned ll a01 a02 
+2020-04-17 20:09:42.211 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.211 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(proc_dat7_0_) returned {"duration":"1","reason":"xxx","holidayType":"1","processName":"请假","processKey":"process_leave","startTime":"2020-04-17 19:45:58","applyUnit":"按天","endTime":"2020-04-18 00:00:00","userId":"1066370498633486336"}
+2020-04-17 20:09:42.211 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.211 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getTimestamp(proc_end8_0_) returned void
+2020-04-17 20:09:42.212 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process_9_0_) returned void
+2020-04-17 20:09:42.212 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process10_0_) returned void
+2020-04-17 20:09:42.212 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process11_0_) returned 请假
+2020-04-17 20:09:42.212 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.212 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process12_0_) returned 2
+2020-04-17 20:09:42.213 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.213 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getTimestamp(time_of13_0_) returned 2018-11-04 08:00:00.0
+2020-04-17 20:09:42.213 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.213 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(user_id14_0_) returned 1066370498633486336
+2020-04-17 20:09:42.213 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.213 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(usernam15_0_) returned zbz
+2020-04-17 20:09:42.214 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.214 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.next() returned true
+2020-04-17 20:09:42.214 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process_1_0_) returned 1251117178887958528
+2020-04-17 20:09:42.214 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.214 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(departme2_0_) returned 1175311466846683136
+2020-04-17 20:09:42.215 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.215 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(departme3_0_) returned 市场部
+2020-04-17 20:09:42.215 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.215 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getTimestamp(proc_app4_0_) returned 2020-04-17 19:55:54.0
+2020-04-17 20:09:42.215 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.215 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(proc_cur5_0_) returned 107163276022281011210742388013307043841074238801402007552
+2020-04-17 20:09:42.216 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.216 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(proc_cur6_0_) returned ll a01 a02 
+2020-04-17 20:09:42.216 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.216 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(proc_dat7_0_) returned {"duration":"3","reason":"","holidayType":"1","processName":"请假","processKey":"process_leave","startTime":"2020-04-17 19:55:46","applyUnit":"按天","endTime":"2020-04-21 00:00:00","userId":"1066370498633486336"}
+2020-04-17 20:09:42.216 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.217 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getTimestamp(proc_end8_0_) returned void
+2020-04-17 20:09:42.217 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process_9_0_) returned void
+2020-04-17 20:09:42.217 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process10_0_) returned void
+2020-04-17 20:09:42.217 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process11_0_) returned 请假
+2020-04-17 20:09:42.218 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.218 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process12_0_) returned 2
+2020-04-17 20:09:42.218 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.218 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getTimestamp(time_of13_0_) returned 2018-11-04 08:00:00.0
+2020-04-17 20:09:42.218 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.219 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(user_id14_0_) returned 1066370498633486336
+2020-04-17 20:09:42.219 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.219 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(usernam15_0_) returned zbz
+2020-04-17 20:09:42.219 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.219 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.next() returned true
+2020-04-17 20:09:42.220 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process_1_0_) returned 1251118288528740352
+2020-04-17 20:09:42.220 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.220 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(departme2_0_) returned 1175311466846683136
+2020-04-17 20:09:42.221 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.221 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(departme3_0_) returned 市场部
+2020-04-17 20:09:42.221 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.221 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getTimestamp(proc_app4_0_) returned 2020-04-17 20:00:19.0
+2020-04-17 20:09:42.222 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.222 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(proc_cur5_0_) returned 10753831331064258561075383135371350016
+2020-04-17 20:09:42.222 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.222 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(proc_cur6_0_) returned test001 test002 
+2020-04-17 20:09:42.223 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.223 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(proc_dat7_0_) returned {"duration":"4","reason":"","holidayType":"1","processName":"请假","processKey":"process_leave","startTime":"2020-04-09 00:00:00","applyUnit":"按天","endTime":"2020-04-17 20:00:15","userId":"1066370498633486336"}
+2020-04-17 20:09:42.223 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.223 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getTimestamp(proc_end8_0_) returned void
+2020-04-17 20:09:42.224 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process_9_0_) returned void
+2020-04-17 20:09:42.224 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process10_0_) returned void
+2020-04-17 20:09:42.224 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process11_0_) returned 请假
+2020-04-17 20:09:42.224 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.224 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(process12_0_) returned 2
+2020-04-17 20:09:42.225 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.225 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getTimestamp(time_of13_0_) returned 2018-11-04 08:00:00.0
+2020-04-17 20:09:42.225 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.226 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(user_id14_0_) returned 1066370498633486336
+2020-04-17 20:09:42.226 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.226 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.getString(usernam15_0_) returned zbz
+2020-04-17 20:09:42.227 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.wasNull() returned false
+2020-04-17 20:09:42.227 INFO  log4jdbc.log4j2 Line:390 - 
+|--------------------|--------------------|----------------|----------------------|----------------------------------------------------------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------------|------------|-------------|--------------|----------------------|--------------------|---------|
+|process_id          |department_id       |department_name |proc_apply_time       |proc_curr_node_user_id                                    |proc_curr_node_user_name |proc_data                                                                                                                                                                                                           |proc_end_time |process_definition_id |process_key |process_name |process_state |time_of_entry         |user_id             |username |
+|--------------------|--------------------|----------------|----------------------|----------------------------------------------------------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------------|------------|-------------|--------------|----------------------|--------------------|---------|
+|1251114710129012736 |1175311466846683136 |市场部             |2020-04-17 19:46:06.0 |107163276022281011210742388013307043841074238801402007552 |ll a01 a02               |{"duration":"1","reason":"xxx","holidayType":"1","processName":"请假","processKey":"process_leave","startTime":"2020-04-17 19:45:58","applyUnit":"按天","endTime":"2020-04-18 00:00:00","userId":"1066370498633486336"} |null          |null                  |null        |请假           |2             |2018-11-04 08:00:00.0 |1066370498633486336 |zbz      |
+|1251117178887958528 |1175311466846683136 |市场部             |2020-04-17 19:55:54.0 |107163276022281011210742388013307043841074238801402007552 |ll a01 a02               |{"duration":"3","reason":"","holidayType":"1","processName":"请假","processKey":"process_leave","startTime":"2020-04-17 19:55:46","applyUnit":"按天","endTime":"2020-04-21 00:00:00","userId":"1066370498633486336"}    |null          |null                  |null        |请假           |2             |2018-11-04 08:00:00.0 |1066370498633486336 |zbz      |
+|1251118288528740352 |1175311466846683136 |市场部             |2020-04-17 20:00:19.0 |10753831331064258561075383135371350016                    |test001 test002          |{"duration":"4","reason":"","holidayType":"1","processName":"请假","processKey":"process_leave","startTime":"2020-04-09 00:00:00","applyUnit":"按天","endTime":"2020-04-17 20:00:15","userId":"1066370498633486336"}    |null          |null                  |null        |请假           |2             |2018-11-04 08:00:00.0 |1066370498633486336 |zbz      |
+|--------------------|--------------------|----------------|----------------------|----------------------------------------------------------|-------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------|----------------------|------------|-------------|--------------|----------------------|--------------------|---------|
+
+2020-04-17 20:09:42.228 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.next() returned false
+2020-04-17 20:09:42.228 INFO  log4jdbc.log4j2 Line:197 - 1. ResultSet.close() returned void
+2020-04-17 20:09:42.228 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.getMaxRows() returned 0
+2020-04-17 20:09:42.228 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.getQueryTimeout() returned 0
+2020-04-17 20:09:42.229 INFO  log4jdbc.log4j2 Line:197 - 1. PreparedStatement.close() returned 
+2020-04-17 20:09:42.229 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 20:09:42.229 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 20:09:42.230 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isReadOnly() returned true
+2020-04-17 20:09:42.230 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setReadOnly(false) returned 
+2020-04-17 20:09:42.231 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 20:09:42.231 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 20:13:51.929 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-04-17 20:18:51.931 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-04-17 20:23:51.933 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-04-17 20:27:55.825 INFO  log4jdbc.log4j2 Line:365 - 8. Connection closed. {executed in 4ms} 
+2020-04-17 20:27:55.826 INFO  log4jdbc.log4j2 Line:197 - 8. Connection.close() returned 
+2020-04-17 20:27:55.834 INFO  log4jdbc.log4j2 Line:365 - 11. Connection opened. {executed in 13ms} 
+2020-04-17 20:27:55.834 INFO  log4jdbc.log4j2 Line:197 - 11. Connection.new Connection returned 
+2020-04-17 20:27:55.834 INFO  log4jdbc.log4j2 Line:197 - 11. Connection.setReadOnly(false) returned 
+2020-04-17 20:27:55.836 INFO  log4jdbc.log4j2 Line:197 - 11. Connection.setAutoCommit(true) returned 
+2020-04-17 20:28:02.796 INFO  log4jdbc.log4j2 Line:365 - 3. Connection closed. {executed in 1ms} 
+2020-04-17 20:28:02.796 INFO  log4jdbc.log4j2 Line:197 - 3. Connection.close() returned 
+2020-04-17 20:28:02.799 INFO  log4jdbc.log4j2 Line:365 - 12. Connection opened. {executed in 3ms} 
+2020-04-17 20:28:02.800 INFO  log4jdbc.log4j2 Line:197 - 12. Connection.new Connection returned 
+2020-04-17 20:28:02.800 INFO  log4jdbc.log4j2 Line:197 - 12. Connection.setReadOnly(false) returned 
+2020-04-17 20:28:02.800 INFO  log4jdbc.log4j2 Line:197 - 12. Connection.setAutoCommit(true) returned 
+2020-04-17 20:28:06.397 INFO  log4jdbc.log4j2 Line:365 - 4. Connection closed. {executed in 1ms} 
+2020-04-17 20:28:06.398 INFO  log4jdbc.log4j2 Line:197 - 4. Connection.close() returned 
+2020-04-17 20:28:06.405 INFO  log4jdbc.log4j2 Line:365 - 13. Connection opened. {executed in 9ms} 
+2020-04-17 20:28:06.406 INFO  log4jdbc.log4j2 Line:197 - 13. Connection.new Connection returned 
+2020-04-17 20:28:06.407 INFO  log4jdbc.log4j2 Line:197 - 13. Connection.setReadOnly(false) returned 
+2020-04-17 20:28:06.408 INFO  log4jdbc.log4j2 Line:197 - 13. Connection.setAutoCommit(true) returned 
+2020-04-17 20:28:08.381 INFO  log4jdbc.log4j2 Line:365 - 7. Connection closed. {executed in 2ms} 
+2020-04-17 20:28:08.382 INFO  log4jdbc.log4j2 Line:197 - 7. Connection.close() returned 
+2020-04-17 20:28:08.388 INFO  log4jdbc.log4j2 Line:365 - 14. Connection opened. {executed in 8ms} 
+2020-04-17 20:28:08.388 INFO  log4jdbc.log4j2 Line:197 - 14. Connection.new Connection returned 
+2020-04-17 20:28:08.389 INFO  log4jdbc.log4j2 Line:197 - 14. Connection.setReadOnly(false) returned 
+2020-04-17 20:28:08.390 INFO  log4jdbc.log4j2 Line:197 - 14. Connection.setAutoCommit(true) returned 
+2020-04-17 20:28:20.208 INFO  log4jdbc.log4j2 Line:365 - 9. Connection closed. {executed in 1ms} 
+2020-04-17 20:28:20.209 INFO  log4jdbc.log4j2 Line:197 - 9. Connection.close() returned 
+2020-04-17 20:28:20.214 INFO  log4jdbc.log4j2 Line:365 - 15. Connection opened. {executed in 6ms} 
+2020-04-17 20:28:20.214 INFO  log4jdbc.log4j2 Line:197 - 15. Connection.new Connection returned 
+2020-04-17 20:28:20.214 INFO  log4jdbc.log4j2 Line:197 - 15. Connection.setReadOnly(false) returned 
+2020-04-17 20:28:20.215 INFO  log4jdbc.log4j2 Line:197 - 15. Connection.setAutoCommit(true) returned 
+2020-04-17 20:28:20.264 INFO  log4jdbc.log4j2 Line:365 - 2. Connection closed. {executed in 1ms} 
+2020-04-17 20:28:20.265 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.close() returned 
+2020-04-17 20:28:20.271 INFO  log4jdbc.log4j2 Line:365 - 16. Connection opened. {executed in 8ms} 
+2020-04-17 20:28:20.272 INFO  log4jdbc.log4j2 Line:197 - 16. Connection.new Connection returned 
+2020-04-17 20:28:20.272 INFO  log4jdbc.log4j2 Line:197 - 16. Connection.setReadOnly(false) returned 
+2020-04-17 20:28:20.273 INFO  log4jdbc.log4j2 Line:197 - 16. Connection.setAutoCommit(true) returned 
+2020-04-17 20:28:21.386 INFO  log4jdbc.log4j2 Line:365 - 1. Connection closed. {executed in 1ms} 
+2020-04-17 20:28:21.387 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.close() returned 
+2020-04-17 20:28:21.394 INFO  log4jdbc.log4j2 Line:365 - 17. Connection opened. {executed in 9ms} 
+2020-04-17 20:28:21.394 INFO  log4jdbc.log4j2 Line:197 - 17. Connection.new Connection returned 
+2020-04-17 20:28:21.395 INFO  log4jdbc.log4j2 Line:197 - 17. Connection.setReadOnly(false) returned 
+2020-04-17 20:28:21.395 INFO  log4jdbc.log4j2 Line:197 - 17. Connection.setAutoCommit(true) returned 
+2020-04-17 20:28:25.184 INFO  log4jdbc.log4j2 Line:365 - 5. Connection closed. {executed in 1ms} 
+2020-04-17 20:28:25.185 INFO  log4jdbc.log4j2 Line:197 - 5. Connection.close() returned 
+2020-04-17 20:28:25.191 INFO  log4jdbc.log4j2 Line:365 - 18. Connection opened. {executed in 8ms} 
+2020-04-17 20:28:25.191 INFO  log4jdbc.log4j2 Line:197 - 18. Connection.new Connection returned 
+2020-04-17 20:28:25.191 INFO  log4jdbc.log4j2 Line:197 - 18. Connection.setReadOnly(false) returned 
+2020-04-17 20:28:25.192 INFO  log4jdbc.log4j2 Line:197 - 18. Connection.setAutoCommit(true) returned 
+2020-04-17 20:28:30.791 INFO  log4jdbc.log4j2 Line:365 - 6. Connection closed. {executed in 1ms} 
+2020-04-17 20:28:30.792 INFO  log4jdbc.log4j2 Line:197 - 6. Connection.close() returned 
+2020-04-17 20:28:30.795 INFO  log4jdbc.log4j2 Line:365 - 19. Connection opened. {executed in 4ms} 
+2020-04-17 20:28:30.795 INFO  log4jdbc.log4j2 Line:197 - 19. Connection.new Connection returned 
+2020-04-17 20:28:30.796 INFO  log4jdbc.log4j2 Line:197 - 19. Connection.setReadOnly(false) returned 
+2020-04-17 20:28:30.796 INFO  log4jdbc.log4j2 Line:197 - 19. Connection.setAutoCommit(true) returned 
+2020-04-17 20:28:37.081 INFO  log4jdbc.log4j2 Line:365 - 10. Connection closed. {executed in 1ms} 
+2020-04-17 20:28:37.081 INFO  log4jdbc.log4j2 Line:197 - 10. Connection.close() returned 
+2020-04-17 20:28:37.086 INFO  log4jdbc.log4j2 Line:365 - 20. Connection opened. {executed in 5ms} 
+2020-04-17 20:28:37.086 INFO  log4jdbc.log4j2 Line:197 - 20. Connection.new Connection returned 
+2020-04-17 20:28:37.086 INFO  log4jdbc.log4j2 Line:197 - 20. Connection.setReadOnly(false) returned 
+2020-04-17 20:28:37.087 INFO  log4jdbc.log4j2 Line:197 - 20. Connection.setAutoCommit(true) returned 
+2020-04-17 20:28:51.936 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-04-17 20:33:51.938 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-04-17 20:38:51.940 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-04-17 20:43:51.942 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-04-17 20:48:51.944 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-04-17 20:53:51.947 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-04-17 20:57:12.223 INFO  log4jdbc.log4j2 Line:365 - 11. Connection closed. {executed in 1ms} 
+2020-04-17 20:57:12.223 INFO  log4jdbc.log4j2 Line:197 - 11. Connection.close() returned 
+2020-04-17 20:57:12.225 INFO  log4jdbc.log4j2 Line:365 - 21. Connection opened. {executed in 3ms} 
+2020-04-17 20:57:12.225 INFO  log4jdbc.log4j2 Line:197 - 21. Connection.new Connection returned 
+2020-04-17 20:57:12.225 INFO  log4jdbc.log4j2 Line:197 - 21. Connection.setReadOnly(false) returned 
+2020-04-17 20:57:12.226 INFO  log4jdbc.log4j2 Line:197 - 21. Connection.setAutoCommit(true) returned 
+2020-04-17 20:57:21.048 INFO  log4jdbc.log4j2 Line:365 - 12. Connection closed. {executed in 1ms} 
+2020-04-17 20:57:21.049 INFO  log4jdbc.log4j2 Line:197 - 12. Connection.close() returned 
+2020-04-17 20:57:21.057 INFO  log4jdbc.log4j2 Line:365 - 22. Connection opened. {executed in 10ms} 
+2020-04-17 20:57:21.057 INFO  log4jdbc.log4j2 Line:197 - 22. Connection.new Connection returned 
+2020-04-17 20:57:21.058 INFO  log4jdbc.log4j2 Line:197 - 22. Connection.setReadOnly(false) returned 
+2020-04-17 20:57:21.059 INFO  log4jdbc.log4j2 Line:197 - 22. Connection.setAutoCommit(true) returned 
+2020-04-17 20:57:35.426 INFO  log4jdbc.log4j2 Line:365 - 14. Connection closed. {executed in 1ms} 
+2020-04-17 20:57:35.427 INFO  log4jdbc.log4j2 Line:197 - 14. Connection.close() returned 
+2020-04-17 20:57:35.435 INFO  log4jdbc.log4j2 Line:365 - 23. Connection opened. {executed in 8ms} 
+2020-04-17 20:57:35.435 INFO  log4jdbc.log4j2 Line:197 - 23. Connection.new Connection returned 
+2020-04-17 20:57:35.436 INFO  log4jdbc.log4j2 Line:197 - 23. Connection.setReadOnly(false) returned 
+2020-04-17 20:57:35.436 INFO  log4jdbc.log4j2 Line:197 - 23. Connection.setAutoCommit(true) returned 
+2020-04-17 20:57:35.972 INFO  log4jdbc.log4j2 Line:365 - 13. Connection closed. {executed in 1ms} 
+2020-04-17 20:57:35.972 INFO  log4jdbc.log4j2 Line:197 - 13. Connection.close() returned 
+2020-04-17 20:57:35.979 INFO  log4jdbc.log4j2 Line:365 - 24. Connection opened. {executed in 8ms} 
+2020-04-17 20:57:35.980 INFO  log4jdbc.log4j2 Line:197 - 24. Connection.new Connection returned 
+2020-04-17 20:57:35.980 INFO  log4jdbc.log4j2 Line:197 - 24. Connection.setReadOnly(false) returned 
+2020-04-17 20:57:35.981 INFO  log4jdbc.log4j2 Line:197 - 24. Connection.setAutoCommit(true) returned 
+2020-04-17 20:57:51.279 INFO  log4jdbc.log4j2 Line:365 - 19. Connection closed. {executed in 1ms} 
+2020-04-17 20:57:51.280 INFO  log4jdbc.log4j2 Line:197 - 19. Connection.close() returned 
+2020-04-17 20:57:51.289 INFO  log4jdbc.log4j2 Line:365 - 25. Connection opened. {executed in 10ms} 
+2020-04-17 20:57:51.290 INFO  log4jdbc.log4j2 Line:197 - 25. Connection.new Connection returned 
+2020-04-17 20:57:51.291 INFO  log4jdbc.log4j2 Line:197 - 25. Connection.setReadOnly(false) returned 
+2020-04-17 20:57:51.292 INFO  log4jdbc.log4j2 Line:197 - 25. Connection.setAutoCommit(true) returned 
+2020-04-17 20:57:52.866 INFO  log4jdbc.log4j2 Line:365 - 20. Connection closed. {executed in 1ms} 
+2020-04-17 20:57:52.867 INFO  log4jdbc.log4j2 Line:197 - 20. Connection.close() returned 
+2020-04-17 20:57:52.874 INFO  log4jdbc.log4j2 Line:365 - 26. Connection opened. {executed in 9ms} 
+2020-04-17 20:57:52.875 INFO  log4jdbc.log4j2 Line:197 - 26. Connection.new Connection returned 
+2020-04-17 20:57:52.875 INFO  log4jdbc.log4j2 Line:197 - 26. Connection.setReadOnly(false) returned 
+2020-04-17 20:57:52.876 INFO  log4jdbc.log4j2 Line:197 - 26. Connection.setAutoCommit(true) returned 
+2020-04-17 20:57:53.980 INFO  log4jdbc.log4j2 Line:365 - 16. Connection closed. {executed in 1ms} 
+2020-04-17 20:57:53.981 INFO  log4jdbc.log4j2 Line:197 - 16. Connection.close() returned 
+2020-04-17 20:57:53.989 INFO  log4jdbc.log4j2 Line:365 - 27. Connection opened. {executed in 10ms} 
+2020-04-17 20:57:53.990 INFO  log4jdbc.log4j2 Line:197 - 27. Connection.new Connection returned 
+2020-04-17 20:57:53.990 INFO  log4jdbc.log4j2 Line:197 - 27. Connection.setReadOnly(false) returned 
+2020-04-17 20:57:53.991 INFO  log4jdbc.log4j2 Line:197 - 27. Connection.setAutoCommit(true) returned 
+2020-04-17 20:58:07.708 INFO  log4jdbc.log4j2 Line:365 - 15. Connection closed. {executed in 1ms} 
+2020-04-17 20:58:07.709 INFO  log4jdbc.log4j2 Line:197 - 15. Connection.close() returned 
+2020-04-17 20:58:07.714 INFO  log4jdbc.log4j2 Line:365 - 28. Connection opened. {executed in 6ms} 
+2020-04-17 20:58:07.715 INFO  log4jdbc.log4j2 Line:197 - 28. Connection.new Connection returned 
+2020-04-17 20:58:07.715 INFO  log4jdbc.log4j2 Line:197 - 28. Connection.setReadOnly(false) returned 
+2020-04-17 20:58:07.716 INFO  log4jdbc.log4j2 Line:197 - 28. Connection.setAutoCommit(true) returned 
+2020-04-17 20:58:17.319 INFO  log4jdbc.log4j2 Line:365 - 17. Connection closed. {executed in 1ms} 
+2020-04-17 20:58:17.320 INFO  log4jdbc.log4j2 Line:197 - 17. Connection.close() returned 
+2020-04-17 20:58:17.325 INFO  log4jdbc.log4j2 Line:365 - 29. Connection opened. {executed in 6ms} 
+2020-04-17 20:58:17.326 INFO  log4jdbc.log4j2 Line:197 - 29. Connection.new Connection returned 
+2020-04-17 20:58:17.326 INFO  log4jdbc.log4j2 Line:197 - 29. Connection.setReadOnly(false) returned 
+2020-04-17 20:58:17.327 INFO  log4jdbc.log4j2 Line:197 - 29. Connection.setAutoCommit(true) returned 
+2020-04-17 20:58:23.288 INFO  log4jdbc.log4j2 Line:365 - 18. Connection closed. {executed in 1ms} 
+2020-04-17 20:58:23.289 INFO  log4jdbc.log4j2 Line:197 - 18. Connection.close() returned 
+2020-04-17 20:58:23.295 INFO  log4jdbc.log4j2 Line:365 - 30. Connection opened. {executed in 8ms} 
+2020-04-17 20:58:23.297 INFO  log4jdbc.log4j2 Line:197 - 30. Connection.new Connection returned 
+2020-04-17 20:58:23.297 INFO  log4jdbc.log4j2 Line:197 - 30. Connection.setReadOnly(false) returned 
+2020-04-17 20:58:23.298 INFO  log4jdbc.log4j2 Line:197 - 30. Connection.setAutoCommit(true) returned 
+2020-04-17 20:58:51.950 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-04-17 21:00:18.654 INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager Line:275 - Validating all active sessions...
+2020-04-17 21:00:18.679 INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager Line:308 - Finished session validation.  No sessions were stopped.
+2020-04-17 21:03:51.951 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-04-17 21:08:51.953 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-04-17 21:13:51.954 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-04-17 21:18:51.957 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-04-17 21:23:51.959 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-04-17 21:26:39.387 INFO  log4jdbc.log4j2 Line:365 - 21. Connection closed. {executed in 2ms} 
+2020-04-17 21:26:39.389 INFO  log4jdbc.log4j2 Line:197 - 21. Connection.close() returned 
+2020-04-17 21:26:39.399 INFO  log4jdbc.log4j2 Line:365 - 31. Connection opened. {executed in 13ms} 
+2020-04-17 21:26:39.400 INFO  log4jdbc.log4j2 Line:197 - 31. Connection.new Connection returned 
+2020-04-17 21:26:39.401 INFO  log4jdbc.log4j2 Line:197 - 31. Connection.setReadOnly(false) returned 
+2020-04-17 21:26:39.401 INFO  log4jdbc.log4j2 Line:197 - 31. Connection.setAutoCommit(true) returned 
+2020-04-17 21:27:06.230 INFO  log4jdbc.log4j2 Line:365 - 22. Connection closed. {executed in 1ms} 
+2020-04-17 21:27:06.230 INFO  log4jdbc.log4j2 Line:197 - 22. Connection.close() returned 
+2020-04-17 21:27:06.234 INFO  log4jdbc.log4j2 Line:365 - 32. Connection opened. {executed in 5ms} 
+2020-04-17 21:27:06.234 INFO  log4jdbc.log4j2 Line:197 - 32. Connection.new Connection returned 
+2020-04-17 21:27:06.235 INFO  log4jdbc.log4j2 Line:197 - 32. Connection.setReadOnly(false) returned 
+2020-04-17 21:27:06.235 INFO  log4jdbc.log4j2 Line:197 - 32. Connection.setAutoCommit(true) returned 
+2020-04-17 21:27:08.309 INFO  log4jdbc.log4j2 Line:365 - 26. Connection closed. {executed in 2ms} 
+2020-04-17 21:27:08.310 INFO  log4jdbc.log4j2 Line:197 - 26. Connection.close() returned 
+2020-04-17 21:27:08.316 INFO  log4jdbc.log4j2 Line:365 - 33. Connection opened. {executed in 8ms} 
+2020-04-17 21:27:08.317 INFO  log4jdbc.log4j2 Line:197 - 33. Connection.new Connection returned 
+2020-04-17 21:27:08.317 INFO  log4jdbc.log4j2 Line:197 - 33. Connection.setReadOnly(false) returned 
+2020-04-17 21:27:08.319 INFO  log4jdbc.log4j2 Line:197 - 33. Connection.setAutoCommit(true) returned 
+2020-04-17 21:27:19.921 INFO  log4jdbc.log4j2 Line:365 - 24. Connection closed. {executed in 2ms} 
+2020-04-17 21:27:19.922 INFO  log4jdbc.log4j2 Line:197 - 24. Connection.close() returned 
+2020-04-17 21:27:19.929 INFO  log4jdbc.log4j2 Line:365 - 34. Connection opened. {executed in 10ms} 
+2020-04-17 21:27:19.930 INFO  log4jdbc.log4j2 Line:197 - 34. Connection.new Connection returned 
+2020-04-17 21:27:19.931 INFO  log4jdbc.log4j2 Line:197 - 34. Connection.setReadOnly(false) returned 
+2020-04-17 21:27:19.932 INFO  log4jdbc.log4j2 Line:197 - 34. Connection.setAutoCommit(true) returned 
+2020-04-17 21:27:21.512 INFO  log4jdbc.log4j2 Line:365 - 23. Connection closed. {executed in 1ms} 
+2020-04-17 21:27:21.513 INFO  log4jdbc.log4j2 Line:197 - 23. Connection.close() returned 
+2020-04-17 21:27:21.520 INFO  log4jdbc.log4j2 Line:365 - 35. Connection opened. {executed in 9ms} 
+2020-04-17 21:27:21.521 INFO  log4jdbc.log4j2 Line:197 - 35. Connection.new Connection returned 
+2020-04-17 21:27:21.521 INFO  log4jdbc.log4j2 Line:197 - 35. Connection.setReadOnly(false) returned 
+2020-04-17 21:27:21.522 INFO  log4jdbc.log4j2 Line:197 - 35. Connection.setAutoCommit(true) returned 
+2020-04-17 21:27:28.606 INFO  log4jdbc.log4j2 Line:365 - 25. Connection closed. {executed in 0ms} 
+2020-04-17 21:27:28.607 INFO  log4jdbc.log4j2 Line:197 - 25. Connection.close() returned 
+2020-04-17 21:27:28.610 INFO  log4jdbc.log4j2 Line:365 - 36. Connection opened. {executed in 4ms} 
+2020-04-17 21:27:28.611 INFO  log4jdbc.log4j2 Line:197 - 36. Connection.new Connection returned 
+2020-04-17 21:27:28.611 INFO  log4jdbc.log4j2 Line:197 - 36. Connection.setReadOnly(false) returned 
+2020-04-17 21:27:28.612 INFO  log4jdbc.log4j2 Line:197 - 36. Connection.setAutoCommit(true) returned 
+2020-04-17 21:27:42.503 INFO  log4jdbc.log4j2 Line:365 - 27. Connection closed. {executed in 1ms} 
+2020-04-17 21:27:42.504 INFO  log4jdbc.log4j2 Line:197 - 27. Connection.close() returned 
+2020-04-17 21:27:42.513 INFO  log4jdbc.log4j2 Line:365 - 37. Connection opened. {executed in 10ms} 
+2020-04-17 21:27:42.514 INFO  log4jdbc.log4j2 Line:197 - 37. Connection.new Connection returned 
+2020-04-17 21:27:42.514 INFO  log4jdbc.log4j2 Line:197 - 37. Connection.setReadOnly(false) returned 
+2020-04-17 21:27:42.515 INFO  log4jdbc.log4j2 Line:197 - 37. Connection.setAutoCommit(true) returned 
+2020-04-17 21:27:43.047 INFO  log4jdbc.log4j2 Line:365 - 30. Connection closed. {executed in 1ms} 
+2020-04-17 21:27:43.047 INFO  log4jdbc.log4j2 Line:197 - 30. Connection.close() returned 
+2020-04-17 21:27:43.049 INFO  log4jdbc.log4j2 Line:365 - 38. Connection opened. {executed in 3ms} 
+2020-04-17 21:27:43.050 INFO  log4jdbc.log4j2 Line:197 - 38. Connection.new Connection returned 
+2020-04-17 21:27:43.050 INFO  log4jdbc.log4j2 Line:197 - 38. Connection.setReadOnly(false) returned 
+2020-04-17 21:27:43.050 INFO  log4jdbc.log4j2 Line:197 - 38. Connection.setAutoCommit(true) returned 
+2020-04-17 21:27:58.901 INFO  log4jdbc.log4j2 Line:365 - 29. Connection closed. {executed in 0ms} 
+2020-04-17 21:27:58.902 INFO  log4jdbc.log4j2 Line:197 - 29. Connection.close() returned 
+2020-04-17 21:27:58.904 INFO  log4jdbc.log4j2 Line:365 - 39. Connection opened. {executed in 3ms} 
+2020-04-17 21:27:58.904 INFO  log4jdbc.log4j2 Line:197 - 39. Connection.new Connection returned 
+2020-04-17 21:27:58.904 INFO  log4jdbc.log4j2 Line:197 - 39. Connection.setReadOnly(false) returned 
+2020-04-17 21:27:58.904 INFO  log4jdbc.log4j2 Line:197 - 39. Connection.setAutoCommit(true) returned 
+2020-04-17 21:28:06.076 INFO  log4jdbc.log4j2 Line:365 - 28. Connection closed. {executed in 0ms} 
+2020-04-17 21:28:06.077 INFO  log4jdbc.log4j2 Line:197 - 28. Connection.close() returned 
+2020-04-17 21:28:06.078 INFO  log4jdbc.log4j2 Line:365 - 40. Connection opened. {executed in 2ms} 
+2020-04-17 21:28:06.078 INFO  log4jdbc.log4j2 Line:197 - 40. Connection.new Connection returned 
+2020-04-17 21:28:06.078 INFO  log4jdbc.log4j2 Line:197 - 40. Connection.setReadOnly(false) returned 
+2020-04-17 21:28:06.078 INFO  log4jdbc.log4j2 Line:197 - 40. Connection.setAutoCommit(true) returned 
+2020-04-17 21:28:51.961 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-04-17 21:33:51.962 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-04-17 21:38:51.964 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-04-17 21:43:51.966 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-04-17 21:48:51.968 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-04-17 21:53:51.970 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-04-17 21:55:55.148 INFO  log4jdbc.log4j2 Line:365 - 31. Connection closed. {executed in 1ms} 
+2020-04-17 21:55:55.149 INFO  log4jdbc.log4j2 Line:197 - 31. Connection.close() returned 
+2020-04-17 21:55:55.158 INFO  log4jdbc.log4j2 Line:365 - 41. Connection opened. {executed in 11ms} 
+2020-04-17 21:55:55.159 INFO  log4jdbc.log4j2 Line:197 - 41. Connection.new Connection returned 
+2020-04-17 21:55:55.159 INFO  log4jdbc.log4j2 Line:197 - 41. Connection.setReadOnly(false) returned 
+2020-04-17 21:55:55.160 INFO  log4jdbc.log4j2 Line:197 - 41. Connection.setAutoCommit(true) returned 
+2020-04-17 21:56:25.013 INFO  log4jdbc.log4j2 Line:365 - 33. Connection closed. {executed in 0ms} 
+2020-04-17 21:56:25.013 INFO  log4jdbc.log4j2 Line:197 - 33. Connection.close() returned 
+2020-04-17 21:56:25.016 INFO  log4jdbc.log4j2 Line:365 - 42. Connection opened. {executed in 4ms} 
+2020-04-17 21:56:25.017 INFO  log4jdbc.log4j2 Line:197 - 42. Connection.new Connection returned 
+2020-04-17 21:56:25.017 INFO  log4jdbc.log4j2 Line:197 - 42. Connection.setReadOnly(false) returned 
+2020-04-17 21:56:25.018 INFO  log4jdbc.log4j2 Line:197 - 42. Connection.setAutoCommit(true) returned 
+2020-04-17 21:56:52.612 INFO  log4jdbc.log4j2 Line:365 - 32. Connection closed. {executed in 1ms} 
+2020-04-17 21:56:52.613 INFO  log4jdbc.log4j2 Line:197 - 32. Connection.close() returned 
+2020-04-17 21:56:52.621 INFO  log4jdbc.log4j2 Line:365 - 43. Connection opened. {executed in 9ms} 
+2020-04-17 21:56:52.622 INFO  log4jdbc.log4j2 Line:197 - 43. Connection.new Connection returned 
+2020-04-17 21:56:52.622 INFO  log4jdbc.log4j2 Line:197 - 43. Connection.setReadOnly(false) returned 
+2020-04-17 21:56:52.624 INFO  log4jdbc.log4j2 Line:197 - 43. Connection.setAutoCommit(true) returned 
+2020-04-17 21:56:58.584 INFO  log4jdbc.log4j2 Line:365 - 34. Connection closed. {executed in 1ms} 
+2020-04-17 21:56:58.585 INFO  log4jdbc.log4j2 Line:197 - 34. Connection.close() returned 
+2020-04-17 21:56:58.592 INFO  log4jdbc.log4j2 Line:365 - 44. Connection opened. {executed in 9ms} 
+2020-04-17 21:56:58.592 INFO  log4jdbc.log4j2 Line:197 - 44. Connection.new Connection returned 
+2020-04-17 21:56:58.593 INFO  log4jdbc.log4j2 Line:197 - 44. Connection.setReadOnly(false) returned 
+2020-04-17 21:56:58.594 INFO  log4jdbc.log4j2 Line:197 - 44. Connection.setAutoCommit(true) returned 
+2020-04-17 21:57:00.846 INFO  log4jdbc.log4j2 Line:365 - 36. Connection closed. {executed in 0ms} 
+2020-04-17 21:57:00.846 INFO  log4jdbc.log4j2 Line:197 - 36. Connection.close() returned 
+2020-04-17 21:57:00.849 INFO  log4jdbc.log4j2 Line:365 - 45. Connection opened. {executed in 3ms} 
+2020-04-17 21:57:00.849 INFO  log4jdbc.log4j2 Line:197 - 45. Connection.new Connection returned 
+2020-04-17 21:57:00.849 INFO  log4jdbc.log4j2 Line:197 - 45. Connection.setReadOnly(false) returned 
+2020-04-17 21:57:00.850 INFO  log4jdbc.log4j2 Line:197 - 45. Connection.setAutoCommit(true) returned 
+2020-04-17 21:57:09.050 INFO  log4jdbc.log4j2 Line:365 - 37. Connection closed. {executed in 0ms} 
+2020-04-17 21:57:09.051 INFO  log4jdbc.log4j2 Line:197 - 37. Connection.close() returned 
+2020-04-17 21:57:09.058 INFO  log4jdbc.log4j2 Line:365 - 46. Connection opened. {executed in 8ms} 
+2020-04-17 21:57:09.059 INFO  log4jdbc.log4j2 Line:197 - 46. Connection.new Connection returned 
+2020-04-17 21:57:09.059 INFO  log4jdbc.log4j2 Line:197 - 46. Connection.setReadOnly(false) returned 
+2020-04-17 21:57:09.060 INFO  log4jdbc.log4j2 Line:197 - 46. Connection.setAutoCommit(true) returned 
+2020-04-17 21:57:19.822 INFO  log4jdbc.log4j2 Line:365 - 35. Connection closed. {executed in 1ms} 
+2020-04-17 21:57:19.823 INFO  log4jdbc.log4j2 Line:197 - 35. Connection.close() returned 
+2020-04-17 21:57:19.831 INFO  log4jdbc.log4j2 Line:365 - 47. Connection opened. {executed in 10ms} 
+2020-04-17 21:57:19.832 INFO  log4jdbc.log4j2 Line:197 - 47. Connection.new Connection returned 
+2020-04-17 21:57:19.833 INFO  log4jdbc.log4j2 Line:197 - 47. Connection.setReadOnly(false) returned 
+2020-04-17 21:57:19.834 INFO  log4jdbc.log4j2 Line:197 - 47. Connection.setAutoCommit(true) returned 
+2020-04-17 21:57:22.389 INFO  log4jdbc.log4j2 Line:365 - 40. Connection closed. {executed in 0ms} 
+2020-04-17 21:57:22.390 INFO  log4jdbc.log4j2 Line:197 - 40. Connection.close() returned 
+2020-04-17 21:57:22.392 INFO  log4jdbc.log4j2 Line:365 - 48. Connection opened. {executed in 3ms} 
+2020-04-17 21:57:22.392 INFO  log4jdbc.log4j2 Line:197 - 48. Connection.new Connection returned 
+2020-04-17 21:57:22.392 INFO  log4jdbc.log4j2 Line:197 - 48. Connection.setReadOnly(false) returned 
+2020-04-17 21:57:22.392 INFO  log4jdbc.log4j2 Line:197 - 48. Connection.setAutoCommit(true) returned 
+2020-04-17 21:57:27.159 INFO  log4jdbc.log4j2 Line:365 - 39. Connection closed. {executed in 1ms} 
+2020-04-17 21:57:27.160 INFO  log4jdbc.log4j2 Line:197 - 39. Connection.close() returned 
+2020-04-17 21:57:27.167 INFO  log4jdbc.log4j2 Line:365 - 49. Connection opened. {executed in 9ms} 
+2020-04-17 21:57:27.167 INFO  log4jdbc.log4j2 Line:197 - 49. Connection.new Connection returned 
+2020-04-17 21:57:27.168 INFO  log4jdbc.log4j2 Line:197 - 49. Connection.setReadOnly(false) returned 
+2020-04-17 21:57:27.169 INFO  log4jdbc.log4j2 Line:197 - 49. Connection.setAutoCommit(true) returned 
+2020-04-17 21:57:39.663 INFO  log4jdbc.log4j2 Line:365 - 38. Connection closed. {executed in 0ms} 
+2020-04-17 21:57:39.664 INFO  log4jdbc.log4j2 Line:197 - 38. Connection.close() returned 
+2020-04-17 21:57:39.665 INFO  log4jdbc.log4j2 Line:365 - 50. Connection opened. {executed in 3ms} 
+2020-04-17 21:57:39.666 INFO  log4jdbc.log4j2 Line:197 - 50. Connection.new Connection returned 
+2020-04-17 21:57:39.666 INFO  log4jdbc.log4j2 Line:197 - 50. Connection.setReadOnly(false) returned 
+2020-04-17 21:57:39.666 INFO  log4jdbc.log4j2 Line:197 - 50. Connection.setAutoCommit(true) returned 
+2020-04-17 21:58:51.973 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-04-17 22:00:18.654 INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager Line:275 - Validating all active sessions...
+2020-04-17 22:00:18.663 INFO  org.apache.shiro.session.mgt.AbstractValidatingSessionManager Line:308 - Finished session validation.  No sessions were stopped.
+2020-04-17 22:03:51.974 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-04-17 22:08:51.976 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-04-17 22:13:51.978 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-04-17 22:18:51.981 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-04-17 22:23:51.982 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-04-17 22:25:49.375 INFO  log4jdbc.log4j2 Line:365 - 41. Connection closed. {executed in 2ms} 
+2020-04-17 22:25:49.376 INFO  log4jdbc.log4j2 Line:197 - 41. Connection.close() returned 
+2020-04-17 22:25:49.386 INFO  log4jdbc.log4j2 Line:365 - 51. Connection opened. {executed in 12ms} 
+2020-04-17 22:25:49.387 INFO  log4jdbc.log4j2 Line:197 - 51. Connection.new Connection returned 
+2020-04-17 22:25:49.387 INFO  log4jdbc.log4j2 Line:197 - 51. Connection.setReadOnly(false) returned 
+2020-04-17 22:25:49.388 INFO  log4jdbc.log4j2 Line:197 - 51. Connection.setAutoCommit(true) returned 
+2020-04-17 22:26:12.664 INFO  log4jdbc.log4j2 Line:365 - 42. Connection closed. {executed in 1ms} 
+2020-04-17 22:26:12.664 INFO  log4jdbc.log4j2 Line:197 - 42. Connection.close() returned 
+2020-04-17 22:26:12.666 INFO  log4jdbc.log4j2 Line:365 - 52. Connection opened. {executed in 2ms} 
+2020-04-17 22:26:12.666 INFO  log4jdbc.log4j2 Line:197 - 52. Connection.new Connection returned 
+2020-04-17 22:26:12.666 INFO  log4jdbc.log4j2 Line:197 - 52. Connection.setReadOnly(false) returned 
+2020-04-17 22:26:12.666 INFO  log4jdbc.log4j2 Line:197 - 52. Connection.setAutoCommit(true) returned 
+2020-04-17 22:26:16.927 INFO  log4jdbc.log4j2 Line:365 - 44. Connection closed. {executed in 0ms} 
+2020-04-17 22:26:16.927 INFO  log4jdbc.log4j2 Line:197 - 44. Connection.close() returned 
+2020-04-17 22:26:16.929 INFO  log4jdbc.log4j2 Line:365 - 53. Connection opened. {executed in 2ms} 
+2020-04-17 22:26:16.929 INFO  log4jdbc.log4j2 Line:197 - 53. Connection.new Connection returned 
+2020-04-17 22:26:16.929 INFO  log4jdbc.log4j2 Line:197 - 53. Connection.setReadOnly(false) returned 
+2020-04-17 22:26:16.929 INFO  log4jdbc.log4j2 Line:197 - 53. Connection.setAutoCommit(true) returned 
+2020-04-17 22:26:23.676 INFO  log4jdbc.log4j2 Line:365 - 43. Connection closed. {executed in 0ms} 
+2020-04-17 22:26:23.677 INFO  log4jdbc.log4j2 Line:197 - 43. Connection.close() returned 
+2020-04-17 22:26:23.680 INFO  log4jdbc.log4j2 Line:365 - 54. Connection opened. {executed in 4ms} 
+2020-04-17 22:26:23.681 INFO  log4jdbc.log4j2 Line:197 - 54. Connection.new Connection returned 
+2020-04-17 22:26:23.681 INFO  log4jdbc.log4j2 Line:197 - 54. Connection.setReadOnly(false) returned 
+2020-04-17 22:26:23.681 INFO  log4jdbc.log4j2 Line:197 - 54. Connection.setAutoCommit(true) returned 
+2020-04-17 22:26:51.604 INFO  log4jdbc.log4j2 Line:365 - 45. Connection closed. {executed in 1ms} 
+2020-04-17 22:26:51.604 INFO  log4jdbc.log4j2 Line:197 - 45. Connection.close() returned 
+2020-04-17 22:26:51.607 INFO  log4jdbc.log4j2 Line:365 - 55. Connection opened. {executed in 3ms} 
+2020-04-17 22:26:51.608 INFO  log4jdbc.log4j2 Line:197 - 55. Connection.new Connection returned 
+2020-04-17 22:26:51.608 INFO  log4jdbc.log4j2 Line:197 - 55. Connection.setReadOnly(false) returned 
+2020-04-17 22:26:51.608 INFO  log4jdbc.log4j2 Line:197 - 55. Connection.setAutoCommit(true) returned 
+2020-04-17 22:27:05.819 INFO  log4jdbc.log4j2 Line:365 - 46. Connection closed. {executed in 0ms} 
+2020-04-17 22:27:05.820 INFO  log4jdbc.log4j2 Line:197 - 46. Connection.close() returned 
+2020-04-17 22:27:05.824 INFO  log4jdbc.log4j2 Line:365 - 56. Connection opened. {executed in 5ms} 
+2020-04-17 22:27:05.824 INFO  log4jdbc.log4j2 Line:197 - 56. Connection.new Connection returned 
+2020-04-17 22:27:05.824 INFO  log4jdbc.log4j2 Line:197 - 56. Connection.setReadOnly(false) returned 
+2020-04-17 22:27:05.825 INFO  log4jdbc.log4j2 Line:197 - 56. Connection.setAutoCommit(true) returned 
+2020-04-17 22:27:17.583 INFO  log4jdbc.log4j2 Line:365 - 49. Connection closed. {executed in 0ms} 
+2020-04-17 22:27:17.584 INFO  log4jdbc.log4j2 Line:197 - 49. Connection.close() returned 
+2020-04-17 22:27:17.585 INFO  log4jdbc.log4j2 Line:365 - 57. Connection opened. {executed in 2ms} 
+2020-04-17 22:27:17.585 INFO  log4jdbc.log4j2 Line:197 - 57. Connection.new Connection returned 
+2020-04-17 22:27:17.586 INFO  log4jdbc.log4j2 Line:197 - 57. Connection.setReadOnly(false) returned 
+2020-04-17 22:27:17.586 INFO  log4jdbc.log4j2 Line:197 - 57. Connection.setAutoCommit(true) returned 
+2020-04-17 22:27:17.638 INFO  log4jdbc.log4j2 Line:365 - 47. Connection closed. {executed in 0ms} 
+2020-04-17 22:27:17.638 INFO  log4jdbc.log4j2 Line:197 - 47. Connection.close() returned 
+2020-04-17 22:27:17.640 INFO  log4jdbc.log4j2 Line:365 - 58. Connection opened. {executed in 2ms} 
+2020-04-17 22:27:17.640 INFO  log4jdbc.log4j2 Line:197 - 58. Connection.new Connection returned 
+2020-04-17 22:27:17.640 INFO  log4jdbc.log4j2 Line:197 - 58. Connection.setReadOnly(false) returned 
+2020-04-17 22:27:17.640 INFO  log4jdbc.log4j2 Line:197 - 58. Connection.setAutoCommit(true) returned 
+2020-04-17 22:27:21.489 INFO  log4jdbc.log4j2 Line:365 - 48. Connection closed. {executed in 1ms} 
+2020-04-17 22:27:21.489 INFO  log4jdbc.log4j2 Line:197 - 48. Connection.close() returned 
+2020-04-17 22:27:21.492 INFO  log4jdbc.log4j2 Line:365 - 59. Connection opened. {executed in 4ms} 
+2020-04-17 22:27:21.492 INFO  log4jdbc.log4j2 Line:197 - 59. Connection.new Connection returned 
+2020-04-17 22:27:21.492 INFO  log4jdbc.log4j2 Line:197 - 59. Connection.setReadOnly(false) returned 
+2020-04-17 22:27:21.493 INFO  log4jdbc.log4j2 Line:197 - 59. Connection.setAutoCommit(true) returned 
+2020-04-17 22:27:35.680 INFO  log4jdbc.log4j2 Line:365 - 50. Connection closed. {executed in 1ms} 
+2020-04-17 22:27:35.680 INFO  log4jdbc.log4j2 Line:197 - 50. Connection.close() returned 
+2020-04-17 22:27:35.682 INFO  log4jdbc.log4j2 Line:365 - 60. Connection opened. {executed in 2ms} 
+2020-04-17 22:27:35.682 INFO  log4jdbc.log4j2 Line:197 - 60. Connection.new Connection returned 
+2020-04-17 22:27:35.682 INFO  log4jdbc.log4j2 Line:197 - 60. Connection.setReadOnly(false) returned 
+2020-04-17 22:27:35.683 INFO  log4jdbc.log4j2 Line:197 - 60. Connection.setAutoCommit(true) returned 
+2020-04-17 22:28:51.984 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-04-17 22:33:51.987 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-04-17 22:38:51.989 INFO  com.netflix.discovery.shared.resolver.aws.ConfigClusterResolver Line:43  - Resolving eureka endpoints via configuration
+2020-04-17 22:41:24.366 INFO  org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext Line:993 - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@411291e5: startup date [Fri Apr 17 19:58:34 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@7b5a12ae
+2020-04-17 22:41:24.366 INFO  com.netflix.loadbalancer.PollingServerListUpdater Line:53  - Shutting down the Executor Pool for PollingServerListUpdater
+2020-04-17 22:41:24.370 INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry Line:65  - Unregistering application ihrm-audit with eureka with status DOWN
+2020-04-17 22:41:24.372 INFO  com.netflix.discovery.DiscoveryClient Line:826 - DiscoveryClient_IHRM-AUDIT/192.168.25.1:ihrm-audit:9009: registering service...
+2020-04-17 22:41:24.389 INFO  org.springframework.context.support.DefaultLifecycleProcessor Line:369 - Stopping beans in phase 0
+2020-04-17 22:41:24.397 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:451 - Unregistering JMX-exposed beans on shutdown
+2020-04-17 22:41:24.399 INFO  org.springframework.jmx.export.annotation.AnnotationMBeanExporter Line:185 - Unregistering JMX-exposed beans
+2020-04-17 22:41:24.415 INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext Line:993 - Closing SpringClientFactory-ihrm-system: startup date [Fri Apr 17 20:00:18 CST 2020]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@411291e5
+2020-04-17 22:41:24.418 INFO  com.netflix.util.concurrent.ShutdownEnabledTimer Line:67  - Shutdown hook removed for: NFLoadBalancer-PingTimer-ihrm-system
+2020-04-17 22:41:24.418 INFO  com.netflix.util.concurrent.ShutdownEnabledTimer Line:72  - Exception caught (might be ok if at shutdown)
+java.lang.IllegalStateException: Shutdown in progress
+	at java.lang.ApplicationShutdownHooks.remove(ApplicationShutdownHooks.java:82)
+	at java.lang.Runtime.removeShutdownHook(Runtime.java:239)
+	at com.netflix.util.concurrent.ShutdownEnabledTimer.cancel(ShutdownEnabledTimer.java:70)
+	at com.netflix.loadbalancer.BaseLoadBalancer.cancelPingTask(BaseLoadBalancer.java:613)
+	at com.netflix.loadbalancer.BaseLoadBalancer.shutdown(BaseLoadBalancer.java:864)
+	at com.netflix.loadbalancer.DynamicServerListLoadBalancer.shutdown(DynamicServerListLoadBalancer.java:285)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.invokeCustomDestroyMethod(DisposableBeanAdapter.java:337)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:271)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:954)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1041)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1017)
+	at org.springframework.context.support.AbstractApplicationContext.close(AbstractApplicationContext.java:967)
+	at org.springframework.cloud.context.named.NamedContextFactory.destroy(NamedContextFactory.java:76)
+	at org.springframework.beans.factory.support.DisposableBeanAdapter.destroy(DisposableBeanAdapter.java:256)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroyBean(DefaultSingletonBeanRegistry.java:571)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingleton(DefaultSingletonBeanRegistry.java:543)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingleton(DefaultListableBeanFactory.java:954)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.destroySingletons(DefaultSingletonBeanRegistry.java:504)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.destroySingletons(DefaultListableBeanFactory.java:961)
+	at org.springframework.context.support.AbstractApplicationContext.destroyBeans(AbstractApplicationContext.java:1041)
+	at org.springframework.context.support.AbstractApplicationContext.doClose(AbstractApplicationContext.java:1017)
+	at org.springframework.context.support.AbstractApplicationContext$1.run(AbstractApplicationContext.java:937)
+2020-04-17 22:41:24.421 INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext Line:993 - Closing FeignContext-ihrm-system: startup date [Fri Apr 17 19:58:45 CST 2020]; parent: org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@411291e5
+2020-04-17 22:41:24.434 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Line:597 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-17 22:41:24.440 INFO  com.zaxxer.hikari.HikariDataSource Line:381 - HikariPool-1 - Shutdown initiated...
+2020-04-17 22:41:24.447 INFO  log4jdbc.log4j2 Line:365 - 51. Connection closed. {executed in 0ms} 
+2020-04-17 22:41:24.448 INFO  log4jdbc.log4j2 Line:197 - 51. Connection.close() returned 
+2020-04-17 22:41:24.449 INFO  log4jdbc.log4j2 Line:365 - 52. Connection closed. {executed in 0ms} 
+2020-04-17 22:41:24.450 INFO  log4jdbc.log4j2 Line:197 - 52. Connection.close() returned 
+2020-04-17 22:41:24.451 INFO  log4jdbc.log4j2 Line:365 - 53. Connection closed. {executed in 1ms} 
+2020-04-17 22:41:24.451 INFO  log4jdbc.log4j2 Line:197 - 53. Connection.close() returned 
+2020-04-17 22:41:24.452 INFO  log4jdbc.log4j2 Line:365 - 54. Connection closed. {executed in 0ms} 
+2020-04-17 22:41:24.453 INFO  log4jdbc.log4j2 Line:197 - 54. Connection.close() returned 
+2020-04-17 22:41:24.454 INFO  log4jdbc.log4j2 Line:365 - 55. Connection closed. {executed in 1ms} 
+2020-04-17 22:41:24.454 INFO  log4jdbc.log4j2 Line:197 - 55. Connection.close() returned 
+2020-04-17 22:41:24.456 INFO  log4jdbc.log4j2 Line:365 - 56. Connection closed. {executed in 0ms} 
+2020-04-17 22:41:24.456 INFO  log4jdbc.log4j2 Line:197 - 56. Connection.close() returned 
+2020-04-17 22:41:24.457 INFO  log4jdbc.log4j2 Line:365 - 57. Connection closed. {executed in 1ms} 
+2020-04-17 22:41:24.457 INFO  log4jdbc.log4j2 Line:197 - 57. Connection.close() returned 
+2020-04-17 22:41:24.458 INFO  log4jdbc.log4j2 Line:365 - 58. Connection closed. {executed in 1ms} 
+2020-04-17 22:41:24.458 INFO  log4jdbc.log4j2 Line:197 - 58. Connection.close() returned 
+2020-04-17 22:41:24.459 INFO  log4jdbc.log4j2 Line:365 - 59. Connection closed. {executed in 1ms} 
+2020-04-17 22:41:24.459 INFO  log4jdbc.log4j2 Line:197 - 59. Connection.close() returned 
+2020-04-17 22:41:24.460 INFO  log4jdbc.log4j2 Line:365 - 60. Connection closed. {executed in 0ms} 
+2020-04-17 22:41:24.460 INFO  log4jdbc.log4j2 Line:197 - 60. Connection.close() returned 
+2020-04-17 22:41:24.460 INFO  com.zaxxer.hikari.HikariDataSource Line:383 - HikariPool-1 - Shutdown completed.
+2020-04-17 22:41:24.461 INFO  com.zaxxer.hikari.HikariDataSource Line:381 - HikariPool-2 - Shutdown initiated...
+2020-04-17 22:41:24.467 INFO  com.zaxxer.hikari.HikariDataSource Line:383 - HikariPool-2 - Shutdown completed.
+2020-04-17 22:41:24.470 INFO  com.netflix.discovery.DiscoveryClient Line:888 - Shutting down DiscoveryClient ...

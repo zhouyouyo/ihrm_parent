@@ -1,0 +1,1212 @@
+2020-04-17 16:28:10.445 INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper Line:308 - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ihrm.audit.ProcessTest], using SpringBootContextLoader
+2020-04-17 16:28:10.455 INFO  org.springframework.test.context.support.AbstractContextLoader Line:264 - Could not detect default resource locations for test class [com.ihrm.audit.ProcessTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-04-17 16:28:10.457 INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils Line:83  - Could not detect default configuration classes for test class [com.ihrm.audit.ProcessTest]: ProcessTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-04-17 16:28:10.718 INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper Line:247 - Found @SpringBootConfiguration com.ihrm.audit.AuditApplication for test class com.ihrm.audit.ProcessTest
+2020-04-17 16:28:11.085 INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper Line:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-04-17 16:28:11.124 INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper Line:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@64b0598, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@18f8cd79, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3e2055d6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@50029372, org.springframework.test.context.support.DirtiesContextTestExecutionListener@e3b3b2f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@50f6ac94, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6cc4cdb9, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@28194a50, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7f2cfe3f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1a5b6f42, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5038d0b5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@32115b28]
+2020-04-17 16:28:13.130 INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext Line:590 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@21fd5faa: startup date [Fri Apr 17 16:28:13 CST 2020]; root of context hierarchy
+2020-04-17 16:28:13.874 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Line:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-17 16:28:13.955 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2d8e22e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:28:15.089 INFO  com.ihrm.audit.ProcessTest Line:680 - No active profile set, falling back to default profiles: default
+2020-04-17 16:28:15.097 INFO  org.springframework.web.context.support.GenericWebApplicationContext Line:590 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@548e76f1: startup date [Fri Apr 17 16:28:15 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@21fd5faa
+2020-04-17 16:28:17.940 INFO  org.springframework.cloud.context.scope.GenericScope Line:294 - BeanFactory id=5029d97f-0553-30bd-9a3a-969804a3f239
+2020-04-17 16:28:18.072 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Line:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-17 16:28:18.290 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$11741fe4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:28:18.367 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$aa21e81e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:28:18.385 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:28:18.388 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@5df2023c' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:28:18.407 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'org.springframework.security.config.annotation.method.configuration.Jsr250MetadataSourceConfiguration' of type [org.springframework.security.config.annotation.method.configuration.Jsr250MetadataSourceConfiguration$$EnhancerBySpringCGLIB$$f44ba2e6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:28:18.417 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'jsr250MethodSecurityMetadataSource' of type [org.springframework.security.access.annotation.Jsr250MethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:28:18.422 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'methodSecurityConfig' of type [org.activiti.spring.boot.MethodSecurityConfig$$EnhancerBySpringCGLIB$$36b5b60c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:28:18.441 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:28:18.456 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'shiroConfiguration' of type [com.ihrm.audit.ShiroConfiguration$$EnhancerBySpringCGLIB$$c9c387e8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:28:18.510 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'getRealm' of type [com.ihrm.common.shiro.realm.IhrmRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:28:19.886 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'getSecurityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:28:19.929 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:28:19.997 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2d8e22e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:28:20.480 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-17 16:28:20.504 INFO  com.netflix.config.DynamicPropertyFactory Line:281 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3e01796a
+2020-04-17 16:28:20.665 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Line:361 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-04-17 16:28:20.692 INFO  org.hibernate.jpa.internal.util.LogHelper Line:31  - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-17 16:28:20.828 INFO  org.hibernate.Version Line:45  - HHH000412: Hibernate Core {5.2.17.Final}
+2020-04-17 16:28:20.831 INFO  org.hibernate.cfg.Environment Line:213 - HHH000206: hibernate.properties not found
+2020-04-17 16:28:20.922 INFO  org.hibernate.annotations.common.Version Line:66  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-04-17 16:28:21.122 INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+2020-04-17 16:28:21.547 INFO  log4jdbc.log4j2 Line:365 - 1. Connection opened. {executed in 373ms} 
+2020-04-17 16:28:21.549 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.new Connection returned 
+2020-04-17 16:28:21.550 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getNetworkTimeout() returned 0
+2020-04-17 16:28:21.551 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setReadOnly(false) returned 
+2020-04-17 16:28:21.552 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:21.552 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isValid(1) returned true
+2020-04-17 16:28:21.553 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getTransactionIsolation() returned 4
+2020-04-17 16:28:21.562 INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+2020-04-17 16:28:21.566 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getMetaData() returned com.mysql.jdbc.JDBC4DatabaseMetaData@75d7297d
+2020-04-17 16:28:21.567 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getMetaData() returned com.mysql.jdbc.JDBC4DatabaseMetaData@6706da3d
+2020-04-17 16:28:21.592 INFO  org.hibernate.dialect.Dialect Line:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-04-17 16:28:21.664 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:21.672 INFO  log4jdbc.log4j2 Line:365 - 2. Connection opened. {executed in 6ms} 
+2020-04-17 16:28:21.674 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.new Connection returned 
+2020-04-17 16:28:21.674 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.setReadOnly(false) returned 
+2020-04-17 16:28:21.675 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:21.680 INFO  log4jdbc.log4j2 Line:365 - 3. Connection opened. {executed in 4ms} 
+2020-04-17 16:28:21.681 INFO  log4jdbc.log4j2 Line:197 - 3. Connection.new Connection returned 
+2020-04-17 16:28:21.681 INFO  log4jdbc.log4j2 Line:197 - 3. Connection.setReadOnly(false) returned 
+2020-04-17 16:28:21.682 INFO  log4jdbc.log4j2 Line:197 - 3. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:21.688 INFO  log4jdbc.log4j2 Line:365 - 4. Connection opened. {executed in 6ms} 
+2020-04-17 16:28:21.689 INFO  log4jdbc.log4j2 Line:197 - 4. Connection.new Connection returned 
+2020-04-17 16:28:21.689 INFO  log4jdbc.log4j2 Line:197 - 4. Connection.setReadOnly(false) returned 
+2020-04-17 16:28:21.691 INFO  log4jdbc.log4j2 Line:197 - 4. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:21.697 INFO  log4jdbc.log4j2 Line:365 - 5. Connection opened. {executed in 5ms} 
+2020-04-17 16:28:21.698 INFO  log4jdbc.log4j2 Line:197 - 5. Connection.new Connection returned 
+2020-04-17 16:28:21.698 INFO  log4jdbc.log4j2 Line:197 - 5. Connection.setReadOnly(false) returned 
+2020-04-17 16:28:21.699 INFO  log4jdbc.log4j2 Line:197 - 5. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:21.703 INFO  log4jdbc.log4j2 Line:365 - 6. Connection opened. {executed in 4ms} 
+2020-04-17 16:28:21.703 INFO  log4jdbc.log4j2 Line:197 - 6. Connection.new Connection returned 
+2020-04-17 16:28:21.704 INFO  log4jdbc.log4j2 Line:197 - 6. Connection.setReadOnly(false) returned 
+2020-04-17 16:28:21.704 INFO  log4jdbc.log4j2 Line:197 - 6. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:21.708 INFO  log4jdbc.log4j2 Line:365 - 7. Connection opened. {executed in 3ms} 
+2020-04-17 16:28:21.709 INFO  log4jdbc.log4j2 Line:197 - 7. Connection.new Connection returned 
+2020-04-17 16:28:21.709 INFO  log4jdbc.log4j2 Line:197 - 7. Connection.setReadOnly(false) returned 
+2020-04-17 16:28:21.710 INFO  log4jdbc.log4j2 Line:197 - 7. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:21.715 INFO  log4jdbc.log4j2 Line:365 - 8. Connection opened. {executed in 4ms} 
+2020-04-17 16:28:21.716 INFO  log4jdbc.log4j2 Line:197 - 8. Connection.new Connection returned 
+2020-04-17 16:28:21.716 INFO  log4jdbc.log4j2 Line:197 - 8. Connection.setReadOnly(false) returned 
+2020-04-17 16:28:21.717 INFO  log4jdbc.log4j2 Line:197 - 8. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:21.731 INFO  log4jdbc.log4j2 Line:365 - 9. Connection opened. {executed in 13ms} 
+2020-04-17 16:28:21.732 INFO  log4jdbc.log4j2 Line:197 - 9. Connection.new Connection returned 
+2020-04-17 16:28:21.732 INFO  log4jdbc.log4j2 Line:197 - 9. Connection.setReadOnly(false) returned 
+2020-04-17 16:28:21.733 INFO  log4jdbc.log4j2 Line:197 - 9. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:21.737 INFO  log4jdbc.log4j2 Line:365 - 10. Connection opened. {executed in 4ms} 
+2020-04-17 16:28:21.738 INFO  log4jdbc.log4j2 Line:197 - 10. Connection.new Connection returned 
+2020-04-17 16:28:21.738 INFO  log4jdbc.log4j2 Line:197 - 10. Connection.setReadOnly(false) returned 
+2020-04-17 16:28:21.738 INFO  log4jdbc.log4j2 Line:197 - 10. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:22.399 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Line:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-17 16:28:22.479 INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext Line:590 - Refreshing FeignContext-ihrm-system: startup date [Fri Apr 17 16:28:22 CST 2020]; parent: org.springframework.web.context.support.GenericWebApplicationContext@548e76f1
+2020-04-17 16:28:22.509 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Line:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-17 16:28:23.011 INFO  org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration Line:86  - 
+
+Using generated security password: ad3dc8a2-0166-4980-acf4-4d79f0a95fda
+
+2020-04-17 16:28:23.080 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isValid(5) returned true
+2020-04-17 16:28:23.087 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getMetaData() returned com.mysql.jdbc.JDBC4DatabaseMetaData@5e0bba2f
+2020-04-17 16:28:23.088 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:23.255 INFO  org.activiti.spring.boot.ProcessDefinitionResourceFinder Line:52  - No process definitions were found for auto-deployment in the location `classpath:**/processes/`
+2020-04-17 16:28:24.234 INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-2 - Starting...
+2020-04-17 16:28:24.241 INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-2 - Start completed.
+2020-04-17 16:28:25.763 INFO  org.activiti.engine.compatibility.DefaultActiviti5CompatibilityHandlerFactory Line:38  - Activiti 5 compatibility handler implementation not found or error during instantiation : org.activiti.compatibility.DefaultActiviti5CompatibilityHandler. Activiti 5 backwards compatibility disabled.
+2020-04-17 16:28:25.816 INFO  org.activiti.engine.impl.ProcessEngineImpl Line:74  - ProcessEngine default created
+2020-04-17 16:28:25.904 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isValid(5) returned true
+2020-04-17 16:28:25.905 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:28:25.905 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:28:25.909 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:28:25.909 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:25.912 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:25.912 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:27.816 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-17 16:28:28.010 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-17 16:28:28.422 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter Line:588 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@548e76f1: startup date [Fri Apr 17 16:28:15 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@21fd5faa
+2020-04-17 16:28:28.596 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/user/process/definition],methods=[GET]}" onto public com.ihrm.common.entity.Result com.ihrm.audit.controller.ProcessController.definitionList()
+2020-04-17 16:28:28.600 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/user/process/instance/{page}/{size}],methods=[PUT]}" onto public com.ihrm.common.entity.Result com.ihrm.audit.controller.ProcessController.instanceList(com.ihrm.audit.entity.ProcInstance,int,int)
+2020-04-17 16:28:28.601 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/user/process/instance/{id}],methods=[GET]}" onto public com.ihrm.common.entity.Result com.ihrm.audit.controller.ProcessController.instanceDetail(java.lang.String) throws java.io.IOException
+2020-04-17 16:28:28.602 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/user/process/startProcess],methods=[POST]}" onto public com.ihrm.common.entity.Result com.ihrm.audit.controller.ProcessController.startProcess(java.util.Map)
+2020-04-17 16:28:28.603 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/user/process/suspend/{processKey}],methods=[GET]}" onto public com.ihrm.common.entity.Result com.ihrm.audit.controller.ProcessController.suspendProcess(java.lang.String)
+2020-04-17 16:28:28.604 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/user/process/deploy],methods=[POST]}" onto public com.ihrm.common.entity.Result com.ihrm.audit.controller.ProcessController.deployProcess(org.springframework.web.multipart.MultipartFile) throws java.lang.Exception
+2020-04-17 16:28:28.605 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/autherror]}" onto public com.ihrm.common.entity.Result com.ihrm.common.controller.ErrorController.autherror(int)
+2020-04-17 16:28:28.614 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-04-17 16:28:28.615 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-04-17 16:28:28.720 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-17 16:28:28.721 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-17 16:28:28.773 INFO  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver Line:288 - Detected @ExceptionHandler methods in baseExceptionHandler
+2020-04-17 16:28:29.106 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isValid(5) returned true
+2020-04-17 16:28:29.107 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:28:29.108 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:28:29.109 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:28:29.109 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:29.110 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.110 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.117 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:28:29.118 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:28:29.119 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:28:29.120 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:29.120 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.121 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.127 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:28:29.128 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:28:29.129 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:28:29.130 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:29.131 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.131 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.261 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:28:29.262 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:28:29.263 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:28:29.264 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:29.265 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.265 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.280 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:28:29.281 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:28:29.282 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:28:29.283 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:29.283 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.284 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.291 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:28:29.292 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:28:29.292 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:28:29.293 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:29.294 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.294 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.302 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:28:29.303 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:28:29.304 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:28:29.305 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:29.305 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.306 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.313 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:28:29.314 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:28:29.315 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:28:29.316 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:29.317 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.317 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.324 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:28:29.325 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:28:29.326 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:28:29.327 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:29.328 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.328 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.358 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:28:29.359 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:28:29.359 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:28:29.360 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:29.360 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.361 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.368 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:28:29.369 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:28:29.370 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:28:29.370 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:29.371 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.371 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.393 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:28:29.394 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:28:29.395 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:28:29.395 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:29.396 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.396 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.403 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:28:29.404 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:28:29.405 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:28:29.405 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:29.406 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.406 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.601 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:28:29.602 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:28:29.603 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:28:29.604 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:29.605 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.605 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.614 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:28:29.615 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:28:29.617 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:28:29.617 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:29.618 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.618 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.625 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:28:29.626 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:28:29.627 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:28:29.627 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:29.628 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.628 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.636 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:28:29.637 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:28:29.637 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:28:29.638 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:29.639 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.639 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.651 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:28:29.651 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:28:29.652 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:28:29.652 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:29.653 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.653 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.659 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:28:29.659 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:28:29.660 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:28:29.660 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:29.661 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.661 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.671 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:28:29.673 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:28:29.673 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:28:29.674 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:29.674 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.675 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.681 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:28:29.682 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:28:29.683 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:28:29.683 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:29.684 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.684 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.691 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:28:29.692 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:28:29.693 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:28:29.693 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:29.693 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.694 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.700 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:28:29.701 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:28:29.702 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:28:29.702 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:29.703 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:29.703 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:33.136 INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Line:59  - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-04-17 16:28:33.164 INFO  org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping Line:549 - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-04-17 16:28:33.166 INFO  org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping Line:549 - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-04-17 16:28:33.167 INFO  org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping Line:549 - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-04-17 16:28:33.740 INFO  org.springframework.context.support.DefaultLifecycleProcessor Line:356 - Starting beans in phase 0
+2020-04-17 16:28:33.780 INFO  com.ihrm.audit.ProcessTest Line:59  - Started ProcessTest in 22.549 seconds (JVM running for 24.593)
+2020-04-17 16:28:33.954 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isValid(5) returned true
+2020-04-17 16:28:33.954 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:28:33.955 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:28:34.247 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:28:34.247 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:28:34.248 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:34.248 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:28:34.256 INFO  org.springframework.web.context.support.GenericWebApplicationContext Line:993 - Closing org.springframework.web.context.support.GenericWebApplicationContext@548e76f1: startup date [Fri Apr 17 16:28:15 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@21fd5faa
+2020-04-17 16:28:34.267 INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory Line:71  - Setting initial instance status as: STARTING
+2020-04-17 16:28:34.272 INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry Line:65  - Unregistering application ihrm-audit with eureka with status DOWN
+2020-04-17 16:28:34.275 INFO  org.springframework.context.support.DefaultLifecycleProcessor Line:369 - Stopping beans in phase 0
+2020-04-17 16:28:34.285 INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext Line:993 - Closing FeignContext-ihrm-system: startup date [Fri Apr 17 16:28:22 CST 2020]; parent: org.springframework.web.context.support.GenericWebApplicationContext@548e76f1
+2020-04-17 16:28:34.290 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Line:597 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-17 16:28:34.291 INFO  com.zaxxer.hikari.HikariDataSource Line:381 - HikariPool-1 - Shutdown initiated...
+2020-04-17 16:28:34.294 INFO  log4jdbc.log4j2 Line:365 - 1. Connection closed. {executed in 1ms} 
+2020-04-17 16:28:34.295 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.close() returned 
+2020-04-17 16:28:34.295 INFO  log4jdbc.log4j2 Line:365 - 2. Connection closed. {executed in 0ms} 
+2020-04-17 16:28:34.296 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.close() returned 
+2020-04-17 16:28:34.297 INFO  log4jdbc.log4j2 Line:365 - 3. Connection closed. {executed in 1ms} 
+2020-04-17 16:28:34.297 INFO  log4jdbc.log4j2 Line:197 - 3. Connection.close() returned 
+2020-04-17 16:28:34.298 INFO  log4jdbc.log4j2 Line:365 - 4. Connection closed. {executed in 0ms} 
+2020-04-17 16:28:34.299 INFO  log4jdbc.log4j2 Line:197 - 4. Connection.close() returned 
+2020-04-17 16:28:34.300 INFO  log4jdbc.log4j2 Line:365 - 5. Connection closed. {executed in 1ms} 
+2020-04-17 16:28:34.300 INFO  log4jdbc.log4j2 Line:197 - 5. Connection.close() returned 
+2020-04-17 16:28:34.301 INFO  log4jdbc.log4j2 Line:365 - 6. Connection closed. {executed in 1ms} 
+2020-04-17 16:28:34.301 INFO  log4jdbc.log4j2 Line:197 - 6. Connection.close() returned 
+2020-04-17 16:28:34.302 INFO  log4jdbc.log4j2 Line:365 - 7. Connection closed. {executed in 1ms} 
+2020-04-17 16:28:34.302 INFO  log4jdbc.log4j2 Line:197 - 7. Connection.close() returned 
+2020-04-17 16:28:34.303 INFO  log4jdbc.log4j2 Line:365 - 8. Connection closed. {executed in 1ms} 
+2020-04-17 16:28:34.303 INFO  log4jdbc.log4j2 Line:197 - 8. Connection.close() returned 
+2020-04-17 16:28:34.304 INFO  log4jdbc.log4j2 Line:365 - 9. Connection closed. {executed in 0ms} 
+2020-04-17 16:28:34.304 INFO  log4jdbc.log4j2 Line:197 - 9. Connection.close() returned 
+2020-04-17 16:28:34.305 INFO  log4jdbc.log4j2 Line:365 - 10. Connection closed. {executed in 0ms} 
+2020-04-17 16:28:34.305 INFO  log4jdbc.log4j2 Line:197 - 10. Connection.close() returned 
+2020-04-17 16:28:34.305 INFO  com.zaxxer.hikari.HikariDataSource Line:383 - HikariPool-1 - Shutdown completed.
+2020-04-17 16:28:34.306 INFO  com.zaxxer.hikari.HikariDataSource Line:381 - HikariPool-2 - Shutdown initiated...
+2020-04-17 16:28:34.312 INFO  com.zaxxer.hikari.HikariDataSource Line:383 - HikariPool-2 - Shutdown completed.
+2020-04-17 16:31:16.599 INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper Line:308 - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ihrm.audit.ProcessTest], using SpringBootContextLoader
+2020-04-17 16:31:16.614 INFO  org.springframework.test.context.support.AbstractContextLoader Line:264 - Could not detect default resource locations for test class [com.ihrm.audit.ProcessTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-04-17 16:31:16.615 INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils Line:83  - Could not detect default configuration classes for test class [com.ihrm.audit.ProcessTest]: ProcessTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-04-17 16:31:16.889 INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper Line:247 - Found @SpringBootConfiguration com.ihrm.audit.AuditApplication for test class com.ihrm.audit.ProcessTest
+2020-04-17 16:31:17.122 INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper Line:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-04-17 16:31:17.153 INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper Line:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@64b0598, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@18f8cd79, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3e2055d6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@50029372, org.springframework.test.context.support.DirtiesContextTestExecutionListener@e3b3b2f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@50f6ac94, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6cc4cdb9, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@28194a50, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7f2cfe3f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1a5b6f42, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5038d0b5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@32115b28]
+2020-04-17 16:31:19.600 INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext Line:590 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2766ca9d: startup date [Fri Apr 17 16:31:19 CST 2020]; root of context hierarchy
+2020-04-17 16:31:19.952 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Line:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-17 16:31:20.049 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$125e2956] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:31:21.534 INFO  com.ihrm.audit.ProcessTest Line:680 - No active profile set, falling back to default profiles: default
+2020-04-17 16:31:21.545 INFO  org.springframework.web.context.support.GenericWebApplicationContext Line:590 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5aabbb29: startup date [Fri Apr 17 16:31:21 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2766ca9d
+2020-04-17 16:31:25.335 INFO  org.springframework.cloud.context.scope.GenericScope Line:294 - BeanFactory id=5029d97f-0553-30bd-9a3a-969804a3f239
+2020-04-17 16:31:25.480 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Line:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-17 16:31:25.675 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f6442659] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:31:25.761 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'org.springframework.security.config.annotation.method.configuration.Jsr250MetadataSourceConfiguration' of type [org.springframework.security.config.annotation.method.configuration.Jsr250MetadataSourceConfiguration$$EnhancerBySpringCGLIB$$d91ba95b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:31:25.777 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'jsr250MethodSecurityMetadataSource' of type [org.springframework.security.access.annotation.Jsr250MethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:31:25.788 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$8ef1ee93] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:31:25.806 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:31:25.808 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2a4e939a' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:31:25.820 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'methodSecurityConfig' of type [org.activiti.spring.boot.MethodSecurityConfig$$EnhancerBySpringCGLIB$$1b85bc81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:31:25.847 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:31:25.863 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'shiroConfiguration' of type [com.ihrm.audit.ShiroConfiguration$$EnhancerBySpringCGLIB$$ae938e5d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:31:25.920 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'getRealm' of type [com.ihrm.common.shiro.realm.IhrmRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:31:27.421 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'getSecurityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:31:27.458 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:31:27.522 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$125e2956] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:31:28.016 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-17 16:31:28.072 INFO  com.netflix.config.DynamicPropertyFactory Line:281 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@62ab5e63
+2020-04-17 16:31:28.257 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Line:361 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-04-17 16:31:28.293 INFO  org.hibernate.jpa.internal.util.LogHelper Line:31  - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-17 16:31:28.446 INFO  org.hibernate.Version Line:45  - HHH000412: Hibernate Core {5.2.17.Final}
+2020-04-17 16:31:28.451 INFO  org.hibernate.cfg.Environment Line:213 - HHH000206: hibernate.properties not found
+2020-04-17 16:31:28.549 INFO  org.hibernate.annotations.common.Version Line:66  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-04-17 16:31:28.772 INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+2020-04-17 16:31:29.186 INFO  log4jdbc.log4j2 Line:365 - 1. Connection opened. {executed in 363ms} 
+2020-04-17 16:31:29.189 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.new Connection returned 
+2020-04-17 16:31:29.190 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getNetworkTimeout() returned 0
+2020-04-17 16:31:29.191 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setReadOnly(false) returned 
+2020-04-17 16:31:29.191 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:29.192 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isValid(1) returned true
+2020-04-17 16:31:29.193 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getTransactionIsolation() returned 4
+2020-04-17 16:31:29.203 INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+2020-04-17 16:31:29.208 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getMetaData() returned com.mysql.jdbc.JDBC4DatabaseMetaData@4e20a985
+2020-04-17 16:31:29.210 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getMetaData() returned com.mysql.jdbc.JDBC4DatabaseMetaData@7438c3d5
+2020-04-17 16:31:29.239 INFO  org.hibernate.dialect.Dialect Line:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-04-17 16:31:29.314 INFO  log4jdbc.log4j2 Line:365 - 2. Connection opened. {executed in 9ms} 
+2020-04-17 16:31:29.317 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.new Connection returned 
+2020-04-17 16:31:29.317 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:29.317 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.setReadOnly(false) returned 
+2020-04-17 16:31:29.318 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:29.323 INFO  log4jdbc.log4j2 Line:365 - 3. Connection opened. {executed in 4ms} 
+2020-04-17 16:31:29.324 INFO  log4jdbc.log4j2 Line:197 - 3. Connection.new Connection returned 
+2020-04-17 16:31:29.324 INFO  log4jdbc.log4j2 Line:197 - 3. Connection.setReadOnly(false) returned 
+2020-04-17 16:31:29.325 INFO  log4jdbc.log4j2 Line:197 - 3. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:29.330 INFO  log4jdbc.log4j2 Line:365 - 4. Connection opened. {executed in 4ms} 
+2020-04-17 16:31:29.332 INFO  log4jdbc.log4j2 Line:197 - 4. Connection.new Connection returned 
+2020-04-17 16:31:29.332 INFO  log4jdbc.log4j2 Line:197 - 4. Connection.setReadOnly(false) returned 
+2020-04-17 16:31:29.333 INFO  log4jdbc.log4j2 Line:197 - 4. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:29.339 INFO  log4jdbc.log4j2 Line:365 - 5. Connection opened. {executed in 5ms} 
+2020-04-17 16:31:29.339 INFO  log4jdbc.log4j2 Line:197 - 5. Connection.new Connection returned 
+2020-04-17 16:31:29.340 INFO  log4jdbc.log4j2 Line:197 - 5. Connection.setReadOnly(false) returned 
+2020-04-17 16:31:29.340 INFO  log4jdbc.log4j2 Line:197 - 5. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:29.346 INFO  log4jdbc.log4j2 Line:365 - 6. Connection opened. {executed in 5ms} 
+2020-04-17 16:31:29.346 INFO  log4jdbc.log4j2 Line:197 - 6. Connection.new Connection returned 
+2020-04-17 16:31:29.347 INFO  log4jdbc.log4j2 Line:197 - 6. Connection.setReadOnly(false) returned 
+2020-04-17 16:31:29.348 INFO  log4jdbc.log4j2 Line:197 - 6. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:29.354 INFO  log4jdbc.log4j2 Line:365 - 7. Connection opened. {executed in 5ms} 
+2020-04-17 16:31:29.354 INFO  log4jdbc.log4j2 Line:197 - 7. Connection.new Connection returned 
+2020-04-17 16:31:29.355 INFO  log4jdbc.log4j2 Line:197 - 7. Connection.setReadOnly(false) returned 
+2020-04-17 16:31:29.355 INFO  log4jdbc.log4j2 Line:197 - 7. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:29.361 INFO  log4jdbc.log4j2 Line:365 - 8. Connection opened. {executed in 5ms} 
+2020-04-17 16:31:29.362 INFO  log4jdbc.log4j2 Line:197 - 8. Connection.new Connection returned 
+2020-04-17 16:31:29.362 INFO  log4jdbc.log4j2 Line:197 - 8. Connection.setReadOnly(false) returned 
+2020-04-17 16:31:29.363 INFO  log4jdbc.log4j2 Line:197 - 8. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:29.369 INFO  log4jdbc.log4j2 Line:365 - 9. Connection opened. {executed in 5ms} 
+2020-04-17 16:31:29.370 INFO  log4jdbc.log4j2 Line:197 - 9. Connection.new Connection returned 
+2020-04-17 16:31:29.370 INFO  log4jdbc.log4j2 Line:197 - 9. Connection.setReadOnly(false) returned 
+2020-04-17 16:31:29.371 INFO  log4jdbc.log4j2 Line:197 - 9. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:29.377 INFO  log4jdbc.log4j2 Line:365 - 10. Connection opened. {executed in 6ms} 
+2020-04-17 16:31:29.378 INFO  log4jdbc.log4j2 Line:197 - 10. Connection.new Connection returned 
+2020-04-17 16:31:29.378 INFO  log4jdbc.log4j2 Line:197 - 10. Connection.setReadOnly(false) returned 
+2020-04-17 16:31:29.379 INFO  log4jdbc.log4j2 Line:197 - 10. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:30.245 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Line:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-17 16:31:30.350 INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext Line:590 - Refreshing FeignContext-ihrm-system: startup date [Fri Apr 17 16:31:30 CST 2020]; parent: org.springframework.web.context.support.GenericWebApplicationContext@5aabbb29
+2020-04-17 16:31:30.389 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Line:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-17 16:31:30.943 INFO  org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration Line:86  - 
+
+Using generated security password: 980bc27d-9055-4397-a87d-1eb6f6c43cdd
+
+2020-04-17 16:31:31.030 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isValid(5) returned true
+2020-04-17 16:31:31.040 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getMetaData() returned com.mysql.jdbc.JDBC4DatabaseMetaData@41d53813
+2020-04-17 16:31:31.044 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:31.256 INFO  org.activiti.spring.boot.ProcessDefinitionResourceFinder Line:52  - No process definitions were found for auto-deployment in the location `classpath:**/processes/`
+2020-04-17 16:31:32.208 INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-2 - Starting...
+2020-04-17 16:31:32.223 INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-2 - Start completed.
+2020-04-17 16:31:34.369 INFO  org.activiti.engine.compatibility.DefaultActiviti5CompatibilityHandlerFactory Line:38  - Activiti 5 compatibility handler implementation not found or error during instantiation : org.activiti.compatibility.DefaultActiviti5CompatibilityHandler. Activiti 5 backwards compatibility disabled.
+2020-04-17 16:31:34.431 INFO  org.activiti.engine.impl.ProcessEngineImpl Line:74  - ProcessEngine default created
+2020-04-17 16:31:34.544 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isValid(5) returned true
+2020-04-17 16:31:34.545 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:31:34.546 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:31:34.550 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:31:34.552 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:34.555 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:34.556 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:36.987 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-17 16:31:37.200 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-17 16:31:37.713 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter Line:588 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5aabbb29: startup date [Fri Apr 17 16:31:21 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2766ca9d
+2020-04-17 16:31:37.897 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/user/process/instance/{id}],methods=[GET]}" onto public com.ihrm.common.entity.Result com.ihrm.audit.controller.ProcessController.instanceDetail(java.lang.String) throws java.io.IOException
+2020-04-17 16:31:37.900 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/user/process/instance/{page}/{size}],methods=[PUT]}" onto public com.ihrm.common.entity.Result com.ihrm.audit.controller.ProcessController.instanceList(com.ihrm.audit.entity.ProcInstance,int,int)
+2020-04-17 16:31:37.901 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/user/process/startProcess],methods=[POST]}" onto public com.ihrm.common.entity.Result com.ihrm.audit.controller.ProcessController.startProcess(java.util.Map)
+2020-04-17 16:31:37.902 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/user/process/deploy],methods=[POST]}" onto public com.ihrm.common.entity.Result com.ihrm.audit.controller.ProcessController.deployProcess(org.springframework.web.multipart.MultipartFile) throws java.lang.Exception
+2020-04-17 16:31:37.903 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/user/process/definition],methods=[GET]}" onto public com.ihrm.common.entity.Result com.ihrm.audit.controller.ProcessController.definitionList()
+2020-04-17 16:31:37.904 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/user/process/suspend/{processKey}],methods=[GET]}" onto public com.ihrm.common.entity.Result com.ihrm.audit.controller.ProcessController.suspendProcess(java.lang.String)
+2020-04-17 16:31:37.906 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/autherror]}" onto public com.ihrm.common.entity.Result com.ihrm.common.controller.ErrorController.autherror(int)
+2020-04-17 16:31:37.913 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-04-17 16:31:37.915 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-04-17 16:31:38.039 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-17 16:31:38.040 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-17 16:31:38.099 INFO  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver Line:288 - Detected @ExceptionHandler methods in baseExceptionHandler
+2020-04-17 16:31:38.538 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isValid(5) returned true
+2020-04-17 16:31:38.539 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:31:38.539 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:31:38.540 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:31:38.541 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:38.542 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:38.542 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:38.549 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:31:38.550 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:31:38.551 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:31:38.551 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:38.552 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:38.553 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:38.559 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:31:38.560 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:31:38.561 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:31:38.562 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:38.563 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:38.563 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:38.701 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:31:38.702 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:31:38.703 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:31:38.704 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:38.705 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:38.705 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:38.719 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:31:38.720 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:31:38.721 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:31:38.721 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:38.722 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:38.722 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:38.729 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:31:38.730 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:31:38.731 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:31:38.732 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:38.732 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:38.733 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:38.740 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:31:38.741 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:31:38.742 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:31:38.743 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:38.743 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:38.744 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:38.751 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:31:38.752 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:31:38.753 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:31:38.754 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:38.755 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:38.755 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:38.762 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:31:38.763 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:31:38.764 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:31:38.764 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:38.765 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:38.766 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:38.797 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:31:38.798 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:31:38.799 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:31:38.800 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:38.800 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:38.801 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:38.808 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:31:38.809 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:31:38.810 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:31:38.811 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:38.812 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:38.812 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:38.840 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:31:38.841 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:31:38.842 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:31:38.843 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:38.844 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:38.844 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:38.851 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:31:38.853 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:31:38.855 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:31:38.856 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:38.857 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:38.858 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:39.087 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:31:39.088 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:31:39.089 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:31:39.089 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:39.089 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:39.090 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:39.098 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:31:39.099 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:31:39.100 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:31:39.101 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:39.101 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:39.102 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:39.111 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:31:39.112 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:31:39.113 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:31:39.113 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:39.114 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:39.114 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:39.122 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:31:39.123 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:31:39.124 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:31:39.124 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:39.125 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:39.125 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:39.138 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:31:39.139 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:31:39.139 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:31:39.140 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:39.140 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:39.141 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:39.148 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:31:39.149 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:31:39.150 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:31:39.150 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:39.151 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:39.151 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:39.166 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:31:39.167 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:31:39.167 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:31:39.168 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:39.169 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:39.169 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:39.175 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:31:39.175 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:31:39.176 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:31:39.177 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:39.177 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:39.177 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:39.183 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:31:39.184 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:31:39.185 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:31:39.186 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:39.187 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:39.187 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:39.194 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:31:39.195 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:31:39.195 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:31:39.196 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:39.197 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:39.197 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:43.120 INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Line:59  - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-04-17 16:31:43.148 INFO  org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping Line:549 - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-04-17 16:31:43.150 INFO  org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping Line:549 - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-04-17 16:31:43.151 INFO  org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping Line:549 - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-04-17 16:31:43.817 INFO  org.springframework.context.support.DefaultLifecycleProcessor Line:356 - Starting beans in phase 0
+2020-04-17 16:31:43.852 INFO  com.ihrm.audit.ProcessTest Line:59  - Started ProcessTest in 26.589 seconds (JVM running for 28.621)
+2020-04-17 16:31:44.034 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isValid(5) returned true
+2020-04-17 16:31:44.034 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:31:44.034 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:31:44.040 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.rollback() returned 
+2020-04-17 16:31:44.041 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:31:44.042 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:44.042 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:31:44.057 INFO  org.springframework.web.context.support.GenericWebApplicationContext Line:993 - Closing org.springframework.web.context.support.GenericWebApplicationContext@5aabbb29: startup date [Fri Apr 17 16:31:21 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2766ca9d
+2020-04-17 16:31:44.067 INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory Line:71  - Setting initial instance status as: STARTING
+2020-04-17 16:31:44.070 INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry Line:65  - Unregistering application ihrm-audit with eureka with status DOWN
+2020-04-17 16:31:44.073 INFO  org.springframework.context.support.DefaultLifecycleProcessor Line:369 - Stopping beans in phase 0
+2020-04-17 16:31:44.086 INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext Line:993 - Closing FeignContext-ihrm-system: startup date [Fri Apr 17 16:31:30 CST 2020]; parent: org.springframework.web.context.support.GenericWebApplicationContext@5aabbb29
+2020-04-17 16:31:44.088 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Line:597 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-17 16:31:44.090 INFO  com.zaxxer.hikari.HikariDataSource Line:381 - HikariPool-1 - Shutdown initiated...
+2020-04-17 16:31:44.093 INFO  log4jdbc.log4j2 Line:365 - 1. Connection closed. {executed in 2ms} 
+2020-04-17 16:31:44.093 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.close() returned 
+2020-04-17 16:31:44.094 INFO  log4jdbc.log4j2 Line:365 - 2. Connection closed. {executed in 1ms} 
+2020-04-17 16:31:44.094 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.close() returned 
+2020-04-17 16:31:44.094 INFO  log4jdbc.log4j2 Line:365 - 3. Connection closed. {executed in 0ms} 
+2020-04-17 16:31:44.095 INFO  log4jdbc.log4j2 Line:197 - 3. Connection.close() returned 
+2020-04-17 16:31:44.096 INFO  log4jdbc.log4j2 Line:365 - 4. Connection closed. {executed in 1ms} 
+2020-04-17 16:31:44.096 INFO  log4jdbc.log4j2 Line:197 - 4. Connection.close() returned 
+2020-04-17 16:31:44.096 INFO  log4jdbc.log4j2 Line:365 - 5. Connection closed. {executed in 0ms} 
+2020-04-17 16:31:44.097 INFO  log4jdbc.log4j2 Line:197 - 5. Connection.close() returned 
+2020-04-17 16:31:44.097 INFO  log4jdbc.log4j2 Line:365 - 6. Connection closed. {executed in 0ms} 
+2020-04-17 16:31:44.097 INFO  log4jdbc.log4j2 Line:197 - 6. Connection.close() returned 
+2020-04-17 16:31:44.098 INFO  log4jdbc.log4j2 Line:365 - 7. Connection closed. {executed in 0ms} 
+2020-04-17 16:31:44.098 INFO  log4jdbc.log4j2 Line:197 - 7. Connection.close() returned 
+2020-04-17 16:31:44.098 INFO  log4jdbc.log4j2 Line:365 - 8. Connection closed. {executed in 0ms} 
+2020-04-17 16:31:44.099 INFO  log4jdbc.log4j2 Line:197 - 8. Connection.close() returned 
+2020-04-17 16:31:44.099 INFO  log4jdbc.log4j2 Line:365 - 9. Connection closed. {executed in 0ms} 
+2020-04-17 16:31:44.099 INFO  log4jdbc.log4j2 Line:197 - 9. Connection.close() returned 
+2020-04-17 16:31:44.100 INFO  log4jdbc.log4j2 Line:365 - 10. Connection closed. {executed in 1ms} 
+2020-04-17 16:31:44.100 INFO  log4jdbc.log4j2 Line:197 - 10. Connection.close() returned 
+2020-04-17 16:31:44.100 INFO  com.zaxxer.hikari.HikariDataSource Line:383 - HikariPool-1 - Shutdown completed.
+2020-04-17 16:31:44.100 INFO  com.zaxxer.hikari.HikariDataSource Line:381 - HikariPool-2 - Shutdown initiated...
+2020-04-17 16:31:44.103 INFO  com.zaxxer.hikari.HikariDataSource Line:383 - HikariPool-2 - Shutdown completed.
+2020-04-17 16:32:25.776 INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper Line:308 - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ihrm.audit.ProcessTest], using SpringBootContextLoader
+2020-04-17 16:32:25.787 INFO  org.springframework.test.context.support.AbstractContextLoader Line:264 - Could not detect default resource locations for test class [com.ihrm.audit.ProcessTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-04-17 16:32:25.790 INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils Line:83  - Could not detect default configuration classes for test class [com.ihrm.audit.ProcessTest]: ProcessTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-04-17 16:32:26.098 INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper Line:247 - Found @SpringBootConfiguration com.ihrm.audit.AuditApplication for test class com.ihrm.audit.ProcessTest
+2020-04-17 16:32:26.458 INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper Line:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-04-17 16:32:26.510 INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper Line:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@5167f57d, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@64b0598, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@18f8cd79, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@3e2055d6, org.springframework.test.context.support.DirtiesContextTestExecutionListener@50029372, org.springframework.test.context.transaction.TransactionalTestExecutionListener@e3b3b2f, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@50f6ac94, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@6cc4cdb9, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@28194a50, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@7f2cfe3f, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@1a5b6f42, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@5038d0b5]
+2020-04-17 16:32:28.590 INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext Line:590 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@21fd5faa: startup date [Fri Apr 17 16:32:28 CST 2020]; root of context hierarchy
+2020-04-17 16:32:28.871 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Line:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-17 16:32:28.952 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2d8e22e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:32:30.048 INFO  com.ihrm.audit.ProcessTest Line:680 - No active profile set, falling back to default profiles: default
+2020-04-17 16:32:30.055 INFO  org.springframework.web.context.support.GenericWebApplicationContext Line:590 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@548e76f1: startup date [Fri Apr 17 16:32:30 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@21fd5faa
+2020-04-17 16:32:33.831 INFO  org.springframework.cloud.context.scope.GenericScope Line:294 - BeanFactory id=5029d97f-0553-30bd-9a3a-969804a3f239
+2020-04-17 16:32:34.052 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Line:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-17 16:32:34.365 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$11741fe4] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:32:34.477 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'org.springframework.security.config.annotation.method.configuration.Jsr250MetadataSourceConfiguration' of type [org.springframework.security.config.annotation.method.configuration.Jsr250MetadataSourceConfiguration$$EnhancerBySpringCGLIB$$f44ba2e6] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:32:34.496 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'jsr250MethodSecurityMetadataSource' of type [org.springframework.security.access.annotation.Jsr250MethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:32:34.514 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$aa21e81e] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:32:34.532 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:32:34.535 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@353b0719' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:32:34.552 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'methodSecurityConfig' of type [org.activiti.spring.boot.MethodSecurityConfig$$EnhancerBySpringCGLIB$$36b5b60c] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:32:34.586 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:32:34.615 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'shiroConfiguration' of type [com.ihrm.audit.ShiroConfiguration$$EnhancerBySpringCGLIB$$c9c387e8] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:32:34.684 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'getRealm' of type [com.ihrm.common.shiro.realm.IhrmRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:32:37.122 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'getSecurityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:32:37.164 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:32:37.243 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$2d8e22e1] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:32:37.836 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-17 16:32:37.874 INFO  com.netflix.config.DynamicPropertyFactory Line:281 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@3e01796a
+2020-04-17 16:32:38.057 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Line:361 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-04-17 16:32:38.095 INFO  org.hibernate.jpa.internal.util.LogHelper Line:31  - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-17 16:32:38.270 INFO  org.hibernate.Version Line:45  - HHH000412: Hibernate Core {5.2.17.Final}
+2020-04-17 16:32:38.275 INFO  org.hibernate.cfg.Environment Line:213 - HHH000206: hibernate.properties not found
+2020-04-17 16:32:38.384 INFO  org.hibernate.annotations.common.Version Line:66  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-04-17 16:32:38.660 INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+2020-04-17 16:32:39.469 INFO  log4jdbc.log4j2 Line:365 - 1. Connection opened. {executed in 715ms} 
+2020-04-17 16:32:39.473 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.new Connection returned 
+2020-04-17 16:32:39.474 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getNetworkTimeout() returned 0
+2020-04-17 16:32:39.476 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setReadOnly(false) returned 
+2020-04-17 16:32:39.477 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:39.478 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isValid(1) returned true
+2020-04-17 16:32:39.479 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getTransactionIsolation() returned 4
+2020-04-17 16:32:39.491 INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+2020-04-17 16:32:39.497 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getMetaData() returned com.mysql.jdbc.JDBC4DatabaseMetaData@75d7297d
+2020-04-17 16:32:39.502 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getMetaData() returned com.mysql.jdbc.JDBC4DatabaseMetaData@6706da3d
+2020-04-17 16:32:39.540 INFO  org.hibernate.dialect.Dialect Line:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-04-17 16:32:39.622 INFO  log4jdbc.log4j2 Line:365 - 2. Connection opened. {executed in 11ms} 
+2020-04-17 16:32:39.626 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.new Connection returned 
+2020-04-17 16:32:39.627 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.setReadOnly(false) returned 
+2020-04-17 16:32:39.628 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:39.635 INFO  log4jdbc.log4j2 Line:365 - 3. Connection opened. {executed in 6ms} 
+2020-04-17 16:32:39.636 INFO  log4jdbc.log4j2 Line:197 - 3. Connection.new Connection returned 
+2020-04-17 16:32:39.636 INFO  log4jdbc.log4j2 Line:197 - 3. Connection.setReadOnly(false) returned 
+2020-04-17 16:32:39.637 INFO  log4jdbc.log4j2 Line:197 - 3. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:39.646 INFO  log4jdbc.log4j2 Line:365 - 4. Connection opened. {executed in 9ms} 
+2020-04-17 16:32:39.647 INFO  log4jdbc.log4j2 Line:197 - 4. Connection.new Connection returned 
+2020-04-17 16:32:39.647 INFO  log4jdbc.log4j2 Line:197 - 4. Connection.setReadOnly(false) returned 
+2020-04-17 16:32:39.648 INFO  log4jdbc.log4j2 Line:197 - 4. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:39.654 INFO  log4jdbc.log4j2 Line:365 - 5. Connection opened. {executed in 5ms} 
+2020-04-17 16:32:39.654 INFO  log4jdbc.log4j2 Line:197 - 5. Connection.new Connection returned 
+2020-04-17 16:32:39.654 INFO  log4jdbc.log4j2 Line:197 - 5. Connection.setReadOnly(false) returned 
+2020-04-17 16:32:39.655 INFO  log4jdbc.log4j2 Line:197 - 5. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:39.666 INFO  log4jdbc.log4j2 Line:365 - 6. Connection opened. {executed in 11ms} 
+2020-04-17 16:32:39.666 INFO  log4jdbc.log4j2 Line:197 - 6. Connection.new Connection returned 
+2020-04-17 16:32:39.667 INFO  log4jdbc.log4j2 Line:197 - 6. Connection.setReadOnly(false) returned 
+2020-04-17 16:32:39.667 INFO  log4jdbc.log4j2 Line:197 - 6. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:39.673 INFO  log4jdbc.log4j2 Line:365 - 7. Connection opened. {executed in 5ms} 
+2020-04-17 16:32:39.673 INFO  log4jdbc.log4j2 Line:197 - 7. Connection.new Connection returned 
+2020-04-17 16:32:39.674 INFO  log4jdbc.log4j2 Line:197 - 7. Connection.setReadOnly(false) returned 
+2020-04-17 16:32:39.674 INFO  log4jdbc.log4j2 Line:197 - 7. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:39.680 INFO  log4jdbc.log4j2 Line:365 - 8. Connection opened. {executed in 5ms} 
+2020-04-17 16:32:39.680 INFO  log4jdbc.log4j2 Line:197 - 8. Connection.new Connection returned 
+2020-04-17 16:32:39.681 INFO  log4jdbc.log4j2 Line:197 - 8. Connection.setReadOnly(false) returned 
+2020-04-17 16:32:39.681 INFO  log4jdbc.log4j2 Line:197 - 8. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:39.687 INFO  log4jdbc.log4j2 Line:365 - 9. Connection opened. {executed in 5ms} 
+2020-04-17 16:32:39.687 INFO  log4jdbc.log4j2 Line:197 - 9. Connection.new Connection returned 
+2020-04-17 16:32:39.687 INFO  log4jdbc.log4j2 Line:197 - 9. Connection.setReadOnly(false) returned 
+2020-04-17 16:32:39.688 INFO  log4jdbc.log4j2 Line:197 - 9. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:39.701 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:39.707 INFO  log4jdbc.log4j2 Line:365 - 10. Connection opened. {executed in 18ms} 
+2020-04-17 16:32:39.707 INFO  log4jdbc.log4j2 Line:197 - 10. Connection.new Connection returned 
+2020-04-17 16:32:39.708 INFO  log4jdbc.log4j2 Line:197 - 10. Connection.setReadOnly(false) returned 
+2020-04-17 16:32:39.709 INFO  log4jdbc.log4j2 Line:197 - 10. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:40.507 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Line:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-17 16:32:40.598 INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext Line:590 - Refreshing FeignContext-ihrm-system: startup date [Fri Apr 17 16:32:40 CST 2020]; parent: org.springframework.web.context.support.GenericWebApplicationContext@548e76f1
+2020-04-17 16:32:40.631 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Line:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-17 16:32:41.144 INFO  org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration Line:86  - 
+
+Using generated security password: df506bd7-ddd5-498e-a290-dfa64f3513d2
+
+2020-04-17 16:32:41.224 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isValid(5) returned true
+2020-04-17 16:32:41.232 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getMetaData() returned com.mysql.jdbc.JDBC4DatabaseMetaData@5e0bba2f
+2020-04-17 16:32:41.234 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:41.422 INFO  org.activiti.spring.boot.ProcessDefinitionResourceFinder Line:52  - No process definitions were found for auto-deployment in the location `classpath:**/processes/`
+2020-04-17 16:32:42.371 INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-2 - Starting...
+2020-04-17 16:32:42.379 INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-2 - Start completed.
+2020-04-17 16:32:44.075 INFO  org.activiti.engine.compatibility.DefaultActiviti5CompatibilityHandlerFactory Line:38  - Activiti 5 compatibility handler implementation not found or error during instantiation : org.activiti.compatibility.DefaultActiviti5CompatibilityHandler. Activiti 5 backwards compatibility disabled.
+2020-04-17 16:32:44.129 INFO  org.activiti.engine.impl.ProcessEngineImpl Line:74  - ProcessEngine default created
+2020-04-17 16:32:44.230 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isValid(5) returned true
+2020-04-17 16:32:44.231 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:32:44.232 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:32:44.236 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:32:44.237 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:44.240 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:44.241 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:47.194 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-17 16:32:47.478 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-17 16:32:48.078 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter Line:588 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@548e76f1: startup date [Fri Apr 17 16:32:30 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@21fd5faa
+2020-04-17 16:32:48.281 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/user/process/instance/{id}],methods=[GET]}" onto public com.ihrm.common.entity.Result com.ihrm.audit.controller.ProcessController.instanceDetail(java.lang.String) throws java.io.IOException
+2020-04-17 16:32:48.284 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/user/process/instance/{page}/{size}],methods=[PUT]}" onto public com.ihrm.common.entity.Result com.ihrm.audit.controller.ProcessController.instanceList(com.ihrm.audit.entity.ProcInstance,int,int)
+2020-04-17 16:32:48.285 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/user/process/deploy],methods=[POST]}" onto public com.ihrm.common.entity.Result com.ihrm.audit.controller.ProcessController.deployProcess(org.springframework.web.multipart.MultipartFile) throws java.lang.Exception
+2020-04-17 16:32:48.286 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/user/process/suspend/{processKey}],methods=[GET]}" onto public com.ihrm.common.entity.Result com.ihrm.audit.controller.ProcessController.suspendProcess(java.lang.String)
+2020-04-17 16:32:48.287 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/user/process/startProcess],methods=[POST]}" onto public com.ihrm.common.entity.Result com.ihrm.audit.controller.ProcessController.startProcess(java.util.Map)
+2020-04-17 16:32:48.288 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/user/process/definition],methods=[GET]}" onto public com.ihrm.common.entity.Result com.ihrm.audit.controller.ProcessController.definitionList()
+2020-04-17 16:32:48.290 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/autherror]}" onto public com.ihrm.common.entity.Result com.ihrm.common.controller.ErrorController.autherror(int)
+2020-04-17 16:32:48.300 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-04-17 16:32:48.301 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-04-17 16:32:48.446 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-17 16:32:48.447 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-17 16:32:48.500 INFO  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver Line:288 - Detected @ExceptionHandler methods in baseExceptionHandler
+2020-04-17 16:32:48.949 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isValid(5) returned true
+2020-04-17 16:32:48.950 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:32:48.950 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:32:48.951 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:32:48.952 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:48.952 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:48.953 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:48.959 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:32:48.960 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:32:48.961 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:32:48.961 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:48.962 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:48.962 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:48.969 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:32:48.970 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:32:48.971 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:32:48.972 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:48.972 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:48.973 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.104 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:32:49.105 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:32:49.106 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:32:49.107 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:49.107 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.108 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.121 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:32:49.122 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:32:49.123 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:32:49.123 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:49.124 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.124 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.132 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:32:49.133 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:32:49.134 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:32:49.135 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:49.135 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.136 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.143 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:32:49.144 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:32:49.146 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:32:49.148 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:49.148 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.149 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.157 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:32:49.158 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:32:49.158 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:32:49.159 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:49.159 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.160 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.167 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:32:49.168 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:32:49.169 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:32:49.169 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:49.170 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.170 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.203 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:32:49.204 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:32:49.205 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:32:49.206 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:49.206 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.207 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.214 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:32:49.215 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:32:49.216 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:32:49.218 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:49.218 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.219 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.245 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:32:49.246 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:32:49.247 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:32:49.248 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:49.249 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.249 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.257 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:32:49.258 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:32:49.259 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:32:49.260 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:49.260 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.261 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.479 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:32:49.480 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:32:49.481 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:32:49.481 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:49.482 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.482 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.491 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:32:49.492 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:32:49.492 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:32:49.493 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:49.493 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.494 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.501 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:32:49.502 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:32:49.502 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:32:49.503 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:49.503 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.504 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.512 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:32:49.513 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:32:49.514 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:32:49.514 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:49.515 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.515 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.529 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:32:49.530 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:32:49.531 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:32:49.532 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:49.532 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.532 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.539 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:32:49.540 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:32:49.541 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:32:49.542 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:49.542 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.543 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.555 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:32:49.558 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:32:49.559 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:32:49.559 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:49.560 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.561 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.568 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:32:49.569 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:32:49.570 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:32:49.570 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:49.571 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.571 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.577 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:32:49.578 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:32:49.579 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:32:49.580 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:49.581 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.581 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.587 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:32:49.588 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:32:49.589 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:32:49.590 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:49.590 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:49.591 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:54.048 INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Line:59  - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-04-17 16:32:54.073 INFO  org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping Line:549 - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-04-17 16:32:54.074 INFO  org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping Line:549 - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-04-17 16:32:54.075 INFO  org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping Line:549 - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-04-17 16:32:54.733 INFO  org.springframework.context.support.DefaultLifecycleProcessor Line:356 - Starting beans in phase 0
+2020-04-17 16:32:54.772 INFO  com.ihrm.audit.ProcessTest Line:59  - Started ProcessTest in 28.123 seconds (JVM running for 30.608)
+2020-04-17 16:32:54.992 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isValid(5) returned true
+2020-04-17 16:32:54.993 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:32:54.993 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:32:55.000 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.rollback() returned 
+2020-04-17 16:32:55.000 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:32:55.001 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:55.001 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:32:55.020 INFO  org.springframework.web.context.support.GenericWebApplicationContext Line:993 - Closing org.springframework.web.context.support.GenericWebApplicationContext@548e76f1: startup date [Fri Apr 17 16:32:30 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@21fd5faa
+2020-04-17 16:32:55.036 INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory Line:71  - Setting initial instance status as: STARTING
+2020-04-17 16:32:55.043 INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry Line:65  - Unregistering application ihrm-audit with eureka with status DOWN
+2020-04-17 16:32:55.047 INFO  org.springframework.context.support.DefaultLifecycleProcessor Line:369 - Stopping beans in phase 0
+2020-04-17 16:32:55.060 INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext Line:993 - Closing FeignContext-ihrm-system: startup date [Fri Apr 17 16:32:40 CST 2020]; parent: org.springframework.web.context.support.GenericWebApplicationContext@548e76f1
+2020-04-17 16:32:55.063 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Line:597 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-17 16:32:55.065 INFO  com.zaxxer.hikari.HikariDataSource Line:381 - HikariPool-1 - Shutdown initiated...
+2020-04-17 16:32:55.070 INFO  log4jdbc.log4j2 Line:365 - 1. Connection closed. {executed in 2ms} 
+2020-04-17 16:32:55.070 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.close() returned 
+2020-04-17 16:32:55.071 INFO  log4jdbc.log4j2 Line:365 - 2. Connection closed. {executed in 1ms} 
+2020-04-17 16:32:55.071 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.close() returned 
+2020-04-17 16:32:55.072 INFO  log4jdbc.log4j2 Line:365 - 3. Connection closed. {executed in 0ms} 
+2020-04-17 16:32:55.073 INFO  log4jdbc.log4j2 Line:197 - 3. Connection.close() returned 
+2020-04-17 16:32:55.074 INFO  log4jdbc.log4j2 Line:365 - 4. Connection closed. {executed in 1ms} 
+2020-04-17 16:32:55.074 INFO  log4jdbc.log4j2 Line:197 - 4. Connection.close() returned 
+2020-04-17 16:32:55.074 INFO  log4jdbc.log4j2 Line:365 - 5. Connection closed. {executed in 0ms} 
+2020-04-17 16:32:55.075 INFO  log4jdbc.log4j2 Line:197 - 5. Connection.close() returned 
+2020-04-17 16:32:55.075 INFO  log4jdbc.log4j2 Line:365 - 6. Connection closed. {executed in 0ms} 
+2020-04-17 16:32:55.076 INFO  log4jdbc.log4j2 Line:197 - 6. Connection.close() returned 
+2020-04-17 16:32:55.076 INFO  log4jdbc.log4j2 Line:365 - 7. Connection closed. {executed in 0ms} 
+2020-04-17 16:32:55.077 INFO  log4jdbc.log4j2 Line:197 - 7. Connection.close() returned 
+2020-04-17 16:32:55.078 INFO  log4jdbc.log4j2 Line:365 - 8. Connection closed. {executed in 1ms} 
+2020-04-17 16:32:55.078 INFO  log4jdbc.log4j2 Line:197 - 8. Connection.close() returned 
+2020-04-17 16:32:55.078 INFO  log4jdbc.log4j2 Line:365 - 9. Connection closed. {executed in 0ms} 
+2020-04-17 16:32:55.079 INFO  log4jdbc.log4j2 Line:197 - 9. Connection.close() returned 
+2020-04-17 16:32:55.079 INFO  log4jdbc.log4j2 Line:365 - 10. Connection closed. {executed in 0ms} 
+2020-04-17 16:32:55.080 INFO  log4jdbc.log4j2 Line:197 - 10. Connection.close() returned 
+2020-04-17 16:32:55.080 INFO  com.zaxxer.hikari.HikariDataSource Line:383 - HikariPool-1 - Shutdown completed.
+2020-04-17 16:32:55.081 INFO  com.zaxxer.hikari.HikariDataSource Line:381 - HikariPool-2 - Shutdown initiated...
+2020-04-17 16:32:55.087 INFO  com.zaxxer.hikari.HikariDataSource Line:383 - HikariPool-2 - Shutdown completed.
+2020-04-17 16:34:11.071 INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper Line:308 - Neither @ContextConfiguration nor @ContextHierarchy found for test class [com.ihrm.audit.ProcessTest], using SpringBootContextLoader
+2020-04-17 16:34:11.084 INFO  org.springframework.test.context.support.AbstractContextLoader Line:264 - Could not detect default resource locations for test class [com.ihrm.audit.ProcessTest]: no resource found for suffixes {-context.xml, Context.groovy}.
+2020-04-17 16:34:11.086 INFO  org.springframework.test.context.support.AnnotationConfigContextLoaderUtils Line:83  - Could not detect default configuration classes for test class [com.ihrm.audit.ProcessTest]: ProcessTest does not declare any static, non-private, non-final, nested classes annotated with @Configuration.
+2020-04-17 16:34:11.368 INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper Line:247 - Found @SpringBootConfiguration com.ihrm.audit.AuditApplication for test class com.ihrm.audit.ProcessTest
+2020-04-17 16:34:11.655 INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper Line:248 - Loaded default TestExecutionListener class names from location [META-INF/spring.factories]: [org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener, org.springframework.test.context.web.ServletTestExecutionListener, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener, org.springframework.test.context.support.DependencyInjectionTestExecutionListener, org.springframework.test.context.support.DirtiesContextTestExecutionListener, org.springframework.test.context.transaction.TransactionalTestExecutionListener, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener]
+2020-04-17 16:34:11.719 INFO  org.springframework.boot.test.context.SpringBootTestContextBootstrapper Line:177 - Using TestExecutionListeners: [org.springframework.test.context.web.ServletTestExecutionListener@64b0598, org.springframework.test.context.support.DirtiesContextBeforeModesTestExecutionListener@18f8cd79, org.springframework.boot.test.mock.mockito.MockitoTestExecutionListener@3e2055d6, org.springframework.boot.test.autoconfigure.SpringBootDependencyInjectionTestExecutionListener@50029372, org.springframework.test.context.support.DirtiesContextTestExecutionListener@e3b3b2f, org.springframework.test.context.transaction.TransactionalTestExecutionListener@50f6ac94, org.springframework.test.context.jdbc.SqlScriptsTestExecutionListener@6cc4cdb9, org.springframework.boot.test.mock.mockito.ResetMocksTestExecutionListener@28194a50, org.springframework.boot.test.autoconfigure.restdocs.RestDocsTestExecutionListener@7f2cfe3f, org.springframework.boot.test.autoconfigure.web.client.MockRestServiceServerResetTestExecutionListener@1a5b6f42, org.springframework.boot.test.autoconfigure.web.servlet.MockMvcPrintOnlyOnFailureTestExecutionListener@5038d0b5, org.springframework.boot.test.autoconfigure.web.servlet.WebDriverTestExecutionListener@32115b28]
+2020-04-17 16:34:13.757 INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext Line:590 - Refreshing org.springframework.context.annotation.AnnotationConfigApplicationContext@2766ca9d: startup date [Fri Apr 17 16:34:13 CST 2020]; root of context hierarchy
+2020-04-17 16:34:14.047 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Line:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-17 16:34:14.134 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'configurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$125e2956] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:34:15.217 INFO  com.ihrm.audit.ProcessTest Line:680 - No active profile set, falling back to default profiles: default
+2020-04-17 16:34:15.224 INFO  org.springframework.web.context.support.GenericWebApplicationContext Line:590 - Refreshing org.springframework.web.context.support.GenericWebApplicationContext@5aabbb29: startup date [Fri Apr 17 16:34:15 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2766ca9d
+2020-04-17 16:34:18.163 INFO  org.springframework.cloud.context.scope.GenericScope Line:294 - BeanFactory id=5029d97f-0553-30bd-9a3a-969804a3f239
+2020-04-17 16:34:18.302 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Line:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-17 16:34:18.508 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration' of type [org.springframework.transaction.annotation.ProxyTransactionManagementConfiguration$$EnhancerBySpringCGLIB$$f6442659] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:34:18.579 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'org.springframework.security.config.annotation.method.configuration.Jsr250MetadataSourceConfiguration' of type [org.springframework.security.config.annotation.method.configuration.Jsr250MetadataSourceConfiguration$$EnhancerBySpringCGLIB$$d91ba95b] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:34:18.594 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'jsr250MethodSecurityMetadataSource' of type [org.springframework.security.access.annotation.Jsr250MethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:34:18.613 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration' of type [org.springframework.security.config.annotation.configuration.ObjectPostProcessorConfiguration$$EnhancerBySpringCGLIB$$8ef1ee93] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:34:18.629 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'objectPostProcessor' of type [org.springframework.security.config.annotation.configuration.AutowireBeanFactoryObjectPostProcessor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:34:18.632 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@2a4e939a' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:34:18.642 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'methodSecurityConfig' of type [org.activiti.spring.boot.MethodSecurityConfig$$EnhancerBySpringCGLIB$$1b85bc81] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:34:18.665 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:34:18.682 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'shiroConfiguration' of type [com.ihrm.audit.ShiroConfiguration$$EnhancerBySpringCGLIB$$ae938e5d] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:34:18.733 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'getRealm' of type [com.ihrm.common.shiro.realm.IhrmRealm] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:34:20.192 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'getSecurityManager' of type [org.apache.shiro.web.mgt.DefaultWebSecurityManager] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:34:20.225 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'authorizationAttributeSourceAdvisor' of type [org.apache.shiro.spring.security.interceptor.AuthorizationAttributeSourceAdvisor] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:34:20.287 INFO  org.springframework.context.support.PostProcessorRegistrationDelegate$BeanPostProcessorChecker Line:326 - Bean 'org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration' of type [org.springframework.cloud.autoconfigure.ConfigurationPropertiesRebinderAutoConfiguration$$EnhancerBySpringCGLIB$$125e2956] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-04-17 16:34:20.759 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-17 16:34:20.788 INFO  com.netflix.config.DynamicPropertyFactory Line:281 - DynamicPropertyFactory is initialized with configuration sources: com.netflix.config.ConcurrentCompositeConfiguration@62ab5e63
+2020-04-17 16:34:20.947 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Line:361 - Building JPA container EntityManagerFactory for persistence unit 'default'
+2020-04-17 16:34:20.977 INFO  org.hibernate.jpa.internal.util.LogHelper Line:31  - HHH000204: Processing PersistenceUnitInfo [
+	name: default
+	...]
+2020-04-17 16:34:21.120 INFO  org.hibernate.Version Line:45  - HHH000412: Hibernate Core {5.2.17.Final}
+2020-04-17 16:34:21.123 INFO  org.hibernate.cfg.Environment Line:213 - HHH000206: hibernate.properties not found
+2020-04-17 16:34:21.205 INFO  org.hibernate.annotations.common.Version Line:66  - HCANN000001: Hibernate Commons Annotations {5.0.1.Final}
+2020-04-17 16:34:21.434 INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-1 - Starting...
+2020-04-17 16:34:21.754 INFO  log4jdbc.log4j2 Line:365 - 1. Connection opened. {executed in 268ms} 
+2020-04-17 16:34:21.756 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.new Connection returned 
+2020-04-17 16:34:21.756 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getNetworkTimeout() returned 0
+2020-04-17 16:34:21.757 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setReadOnly(false) returned 
+2020-04-17 16:34:21.757 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:21.758 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isValid(1) returned true
+2020-04-17 16:34:21.759 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getTransactionIsolation() returned 4
+2020-04-17 16:34:21.764 INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-1 - Start completed.
+2020-04-17 16:34:21.767 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getMetaData() returned com.mysql.jdbc.JDBC4DatabaseMetaData@4e20a985
+2020-04-17 16:34:21.769 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getMetaData() returned com.mysql.jdbc.JDBC4DatabaseMetaData@7438c3d5
+2020-04-17 16:34:21.788 INFO  org.hibernate.dialect.Dialect Line:157 - HHH000400: Using dialect: org.hibernate.dialect.MySQL55Dialect
+2020-04-17 16:34:21.837 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:21.872 INFO  log4jdbc.log4j2 Line:365 - 2. Connection opened. {executed in 6ms} 
+2020-04-17 16:34:21.873 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.new Connection returned 
+2020-04-17 16:34:21.874 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.setReadOnly(false) returned 
+2020-04-17 16:34:21.874 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:21.878 INFO  log4jdbc.log4j2 Line:365 - 3. Connection opened. {executed in 3ms} 
+2020-04-17 16:34:21.879 INFO  log4jdbc.log4j2 Line:197 - 3. Connection.new Connection returned 
+2020-04-17 16:34:21.879 INFO  log4jdbc.log4j2 Line:197 - 3. Connection.setReadOnly(false) returned 
+2020-04-17 16:34:21.879 INFO  log4jdbc.log4j2 Line:197 - 3. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:21.884 INFO  log4jdbc.log4j2 Line:365 - 4. Connection opened. {executed in 4ms} 
+2020-04-17 16:34:21.885 INFO  log4jdbc.log4j2 Line:197 - 4. Connection.new Connection returned 
+2020-04-17 16:34:21.885 INFO  log4jdbc.log4j2 Line:197 - 4. Connection.setReadOnly(false) returned 
+2020-04-17 16:34:21.886 INFO  log4jdbc.log4j2 Line:197 - 4. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:21.891 INFO  log4jdbc.log4j2 Line:365 - 5. Connection opened. {executed in 4ms} 
+2020-04-17 16:34:21.892 INFO  log4jdbc.log4j2 Line:197 - 5. Connection.new Connection returned 
+2020-04-17 16:34:21.892 INFO  log4jdbc.log4j2 Line:197 - 5. Connection.setReadOnly(false) returned 
+2020-04-17 16:34:21.892 INFO  log4jdbc.log4j2 Line:197 - 5. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:21.897 INFO  log4jdbc.log4j2 Line:365 - 6. Connection opened. {executed in 4ms} 
+2020-04-17 16:34:21.898 INFO  log4jdbc.log4j2 Line:197 - 6. Connection.new Connection returned 
+2020-04-17 16:34:21.899 INFO  log4jdbc.log4j2 Line:197 - 6. Connection.setReadOnly(false) returned 
+2020-04-17 16:34:21.900 INFO  log4jdbc.log4j2 Line:197 - 6. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:21.903 INFO  log4jdbc.log4j2 Line:365 - 7. Connection opened. {executed in 3ms} 
+2020-04-17 16:34:21.904 INFO  log4jdbc.log4j2 Line:197 - 7. Connection.new Connection returned 
+2020-04-17 16:34:21.904 INFO  log4jdbc.log4j2 Line:197 - 7. Connection.setReadOnly(false) returned 
+2020-04-17 16:34:21.905 INFO  log4jdbc.log4j2 Line:197 - 7. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:21.909 INFO  log4jdbc.log4j2 Line:365 - 8. Connection opened. {executed in 4ms} 
+2020-04-17 16:34:21.910 INFO  log4jdbc.log4j2 Line:197 - 8. Connection.new Connection returned 
+2020-04-17 16:34:21.910 INFO  log4jdbc.log4j2 Line:197 - 8. Connection.setReadOnly(false) returned 
+2020-04-17 16:34:21.910 INFO  log4jdbc.log4j2 Line:197 - 8. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:21.914 INFO  log4jdbc.log4j2 Line:365 - 9. Connection opened. {executed in 3ms} 
+2020-04-17 16:34:21.915 INFO  log4jdbc.log4j2 Line:197 - 9. Connection.new Connection returned 
+2020-04-17 16:34:21.915 INFO  log4jdbc.log4j2 Line:197 - 9. Connection.setReadOnly(false) returned 
+2020-04-17 16:34:21.916 INFO  log4jdbc.log4j2 Line:197 - 9. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:21.920 INFO  log4jdbc.log4j2 Line:365 - 10. Connection opened. {executed in 4ms} 
+2020-04-17 16:34:21.921 INFO  log4jdbc.log4j2 Line:197 - 10. Connection.new Connection returned 
+2020-04-17 16:34:21.921 INFO  log4jdbc.log4j2 Line:197 - 10. Connection.setReadOnly(false) returned 
+2020-04-17 16:34:21.922 INFO  log4jdbc.log4j2 Line:197 - 10. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:23.051 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Line:415 - Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-04-17 16:34:23.229 INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext Line:590 - Refreshing FeignContext-ihrm-system: startup date [Fri Apr 17 16:34:23 CST 2020]; parent: org.springframework.web.context.support.GenericWebApplicationContext@5aabbb29
+2020-04-17 16:34:23.383 INFO  org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor Line:153 - JSR-330 'javax.inject.Inject' annotation found and supported for autowiring
+2020-04-17 16:34:24.200 INFO  org.springframework.boot.autoconfigure.security.servlet.UserDetailsServiceAutoConfiguration Line:86  - 
+
+Using generated security password: 9d5424a7-5816-48ad-aae7-bb878fe3af69
+
+2020-04-17 16:34:24.279 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isValid(5) returned true
+2020-04-17 16:34:24.288 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getMetaData() returned com.mysql.jdbc.JDBC4DatabaseMetaData@41d53813
+2020-04-17 16:34:24.289 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:24.521 INFO  org.activiti.spring.boot.ProcessDefinitionResourceFinder Line:52  - No process definitions were found for auto-deployment in the location `classpath:**/processes/`
+2020-04-17 16:34:25.584 INFO  com.zaxxer.hikari.HikariDataSource Line:110 - HikariPool-2 - Starting...
+2020-04-17 16:34:25.597 INFO  com.zaxxer.hikari.HikariDataSource Line:123 - HikariPool-2 - Start completed.
+2020-04-17 16:34:27.499 INFO  org.activiti.engine.compatibility.DefaultActiviti5CompatibilityHandlerFactory Line:38  - Activiti 5 compatibility handler implementation not found or error during instantiation : org.activiti.compatibility.DefaultActiviti5CompatibilityHandler. Activiti 5 backwards compatibility disabled.
+2020-04-17 16:34:27.564 INFO  org.activiti.engine.impl.ProcessEngineImpl Line:74  - ProcessEngine default created
+2020-04-17 16:34:27.682 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isValid(5) returned true
+2020-04-17 16:34:27.683 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:34:27.684 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:34:27.689 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:34:27.690 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:27.693 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:27.693 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:30.734 INFO  com.netflix.config.sources.URLConfigurationSource Line:122 - To enable URLs as dynamic configuration sources, define System property archaius.configurationSource.additionalUrls or make config.properties available on classpath.
+2020-04-17 16:34:30.918 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:373 - Mapped URL path [/**/favicon.ico] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-17 16:34:31.353 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter Line:588 - Looking for @ControllerAdvice: org.springframework.web.context.support.GenericWebApplicationContext@5aabbb29: startup date [Fri Apr 17 16:34:15 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2766ca9d
+2020-04-17 16:34:31.517 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/user/process/deploy],methods=[POST]}" onto public com.ihrm.common.entity.Result com.ihrm.audit.controller.ProcessController.deployProcess(org.springframework.web.multipart.MultipartFile) throws java.lang.Exception
+2020-04-17 16:34:31.520 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/user/process/definition],methods=[GET]}" onto public com.ihrm.common.entity.Result com.ihrm.audit.controller.ProcessController.definitionList()
+2020-04-17 16:34:31.520 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/user/process/suspend/{processKey}],methods=[GET]}" onto public com.ihrm.common.entity.Result com.ihrm.audit.controller.ProcessController.suspendProcess(java.lang.String)
+2020-04-17 16:34:31.521 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/user/process/instance/{page}/{size}],methods=[PUT]}" onto public com.ihrm.common.entity.Result com.ihrm.audit.controller.ProcessController.instanceList(com.ihrm.audit.entity.ProcInstance,int,int)
+2020-04-17 16:34:31.521 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/user/process/instance/{id}],methods=[GET]}" onto public com.ihrm.common.entity.Result com.ihrm.audit.controller.ProcessController.instanceDetail(java.lang.String) throws java.io.IOException
+2020-04-17 16:34:31.522 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/user/process/startProcess],methods=[POST]}" onto public com.ihrm.common.entity.Result com.ihrm.audit.controller.ProcessController.startProcess(java.util.Map)
+2020-04-17 16:34:31.523 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/autherror]}" onto public com.ihrm.common.entity.Result com.ihrm.common.controller.ErrorController.autherror(int)
+2020-04-17 16:34:31.529 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/error]}" onto public org.springframework.http.ResponseEntity<java.util.Map<java.lang.String, java.lang.Object>> org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.error(javax.servlet.http.HttpServletRequest)
+2020-04-17 16:34:31.530 INFO  org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping Line:549 - Mapped "{[/error],produces=[text/html]}" onto public org.springframework.web.servlet.ModelAndView org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController.errorHtml(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-04-17 16:34:31.612 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:373 - Mapped URL path [/webjars/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-17 16:34:31.612 INFO  org.springframework.web.servlet.handler.SimpleUrlHandlerMapping Line:373 - Mapped URL path [/**] onto handler of type [class org.springframework.web.servlet.resource.ResourceHttpRequestHandler]
+2020-04-17 16:34:31.663 INFO  org.springframework.web.servlet.mvc.method.annotation.ExceptionHandlerExceptionResolver Line:288 - Detected @ExceptionHandler methods in baseExceptionHandler
+2020-04-17 16:34:31.988 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isValid(5) returned true
+2020-04-17 16:34:31.988 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:34:31.989 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:34:31.990 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:34:31.991 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:31.991 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:31.992 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:31.997 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:34:31.998 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:34:31.999 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:34:31.999 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:32.000 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.000 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.008 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:34:32.009 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:34:32.010 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:34:32.011 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:32.011 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.012 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.139 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:34:32.140 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:34:32.141 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:34:32.141 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:32.142 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.142 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.156 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:34:32.156 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:34:32.157 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:34:32.157 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:32.158 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.158 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.164 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:34:32.164 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:34:32.165 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:34:32.166 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:32.166 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.166 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.173 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:34:32.174 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:34:32.175 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:34:32.176 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:32.176 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.177 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.183 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:34:32.184 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:34:32.185 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:34:32.186 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:32.187 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.187 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.194 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:34:32.195 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:34:32.196 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:34:32.197 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:32.197 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.198 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.229 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:34:32.230 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:34:32.231 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:34:32.232 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:32.232 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.233 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.240 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:34:32.241 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:34:32.242 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:34:32.243 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:32.243 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.244 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.270 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:34:32.271 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:34:32.272 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:34:32.273 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:32.273 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.273 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.278 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:34:32.279 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:34:32.280 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:34:32.281 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:32.282 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.282 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.496 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:34:32.497 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:34:32.498 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:34:32.498 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:32.499 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.499 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.508 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:34:32.508 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:34:32.509 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:34:32.510 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:32.510 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.510 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.519 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:34:32.520 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:34:32.521 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:34:32.522 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:32.522 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.522 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.530 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:34:32.530 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:34:32.531 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:34:32.531 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:32.531 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.532 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.543 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:34:32.543 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:34:32.544 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:34:32.545 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:32.545 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.546 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.552 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:34:32.553 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:34:32.553 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:34:32.554 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:32.555 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.555 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.567 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:34:32.569 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:34:32.570 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:34:32.571 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:32.572 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.572 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.577 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:34:32.578 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:34:32.579 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:34:32.579 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:32.579 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.580 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.585 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:34:32.586 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:34:32.587 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:34:32.588 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:32.588 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.588 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.594 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:34:32.595 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:34:32.596 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:34:32.596 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:32.597 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:32.597 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:36.212 INFO  org.springframework.boot.actuate.endpoint.web.EndpointLinksResolver Line:59  - Exposing 2 endpoint(s) beneath base path '/actuator'
+2020-04-17 16:34:36.235 INFO  org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping Line:549 - Mapped "{[/actuator/health],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-04-17 16:34:36.236 INFO  org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping Line:549 - Mapped "{[/actuator/info],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto public java.lang.Object org.springframework.boot.actuate.endpoint.web.servlet.AbstractWebMvcEndpointHandlerMapping$OperationHandler.handle(javax.servlet.http.HttpServletRequest,java.util.Map<java.lang.String, java.lang.String>)
+2020-04-17 16:34:36.238 INFO  org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping Line:549 - Mapped "{[/actuator],methods=[GET],produces=[application/vnd.spring-boot.actuator.v2+json || application/json]}" onto protected java.util.Map<java.lang.String, java.util.Map<java.lang.String, org.springframework.boot.actuate.endpoint.web.Link>> org.springframework.boot.actuate.endpoint.web.servlet.WebMvcEndpointHandlerMapping.links(javax.servlet.http.HttpServletRequest,javax.servlet.http.HttpServletResponse)
+2020-04-17 16:34:36.753 INFO  org.springframework.context.support.DefaultLifecycleProcessor Line:356 - Starting beans in phase 0
+2020-04-17 16:34:36.788 INFO  com.ihrm.audit.ProcessTest Line:59  - Started ProcessTest in 24.958 seconds (JVM running for 27.013)
+2020-04-17 16:34:36.983 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.isValid(5) returned true
+2020-04-17 16:34:36.984 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.getAutoCommit() returned true
+2020-04-17 16:34:36.984 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(false) returned 
+2020-04-17 16:34:37.690 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.commit() returned 
+2020-04-17 16:34:37.691 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.setAutoCommit(true) returned 
+2020-04-17 16:34:37.691 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:37.691 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.clearWarnings() returned 
+2020-04-17 16:34:37.696 INFO  org.springframework.web.context.support.GenericWebApplicationContext Line:993 - Closing org.springframework.web.context.support.GenericWebApplicationContext@5aabbb29: startup date [Fri Apr 17 16:34:15 CST 2020]; parent: org.springframework.context.annotation.AnnotationConfigApplicationContext@2766ca9d
+2020-04-17 16:34:37.706 INFO  org.springframework.cloud.netflix.eureka.InstanceInfoFactory Line:71  - Setting initial instance status as: STARTING
+2020-04-17 16:34:37.710 INFO  org.springframework.cloud.netflix.eureka.serviceregistry.EurekaServiceRegistry Line:65  - Unregistering application ihrm-audit with eureka with status DOWN
+2020-04-17 16:34:37.712 INFO  org.springframework.context.support.DefaultLifecycleProcessor Line:369 - Stopping beans in phase 0
+2020-04-17 16:34:37.720 INFO  org.springframework.context.annotation.AnnotationConfigApplicationContext Line:993 - Closing FeignContext-ihrm-system: startup date [Fri Apr 17 16:34:23 CST 2020]; parent: org.springframework.web.context.support.GenericWebApplicationContext@5aabbb29
+2020-04-17 16:34:37.725 INFO  org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean Line:597 - Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-04-17 16:34:37.726 INFO  com.zaxxer.hikari.HikariDataSource Line:381 - HikariPool-1 - Shutdown initiated...
+2020-04-17 16:34:37.729 INFO  log4jdbc.log4j2 Line:365 - 1. Connection closed. {executed in 1ms} 
+2020-04-17 16:34:37.730 INFO  log4jdbc.log4j2 Line:197 - 1. Connection.close() returned 
+2020-04-17 16:34:37.730 INFO  log4jdbc.log4j2 Line:365 - 2. Connection closed. {executed in 0ms} 
+2020-04-17 16:34:37.731 INFO  log4jdbc.log4j2 Line:197 - 2. Connection.close() returned 
+2020-04-17 16:34:37.731 INFO  log4jdbc.log4j2 Line:365 - 3. Connection closed. {executed in 0ms} 
+2020-04-17 16:34:37.731 INFO  log4jdbc.log4j2 Line:197 - 3. Connection.close() returned 
+2020-04-17 16:34:37.732 INFO  log4jdbc.log4j2 Line:365 - 4. Connection closed. {executed in 0ms} 
+2020-04-17 16:34:37.732 INFO  log4jdbc.log4j2 Line:197 - 4. Connection.close() returned 
+2020-04-17 16:34:37.733 INFO  log4jdbc.log4j2 Line:365 - 5. Connection closed. {executed in 0ms} 
+2020-04-17 16:34:37.733 INFO  log4jdbc.log4j2 Line:197 - 5. Connection.close() returned 
+2020-04-17 16:34:37.734 INFO  log4jdbc.log4j2 Line:365 - 6. Connection closed. {executed in 0ms} 
+2020-04-17 16:34:37.734 INFO  log4jdbc.log4j2 Line:197 - 6. Connection.close() returned 
+2020-04-17 16:34:37.734 INFO  log4jdbc.log4j2 Line:365 - 7. Connection closed. {executed in 0ms} 
+2020-04-17 16:34:37.734 INFO  log4jdbc.log4j2 Line:197 - 7. Connection.close() returned 
+2020-04-17 16:34:37.735 INFO  log4jdbc.log4j2 Line:365 - 8. Connection closed. {executed in 0ms} 
+2020-04-17 16:34:37.735 INFO  log4jdbc.log4j2 Line:197 - 8. Connection.close() returned 
+2020-04-17 16:34:37.735 INFO  log4jdbc.log4j2 Line:365 - 9. Connection closed. {executed in 0ms} 
+2020-04-17 16:34:37.735 INFO  log4jdbc.log4j2 Line:197 - 9. Connection.close() returned 
+2020-04-17 16:34:37.736 INFO  log4jdbc.log4j2 Line:365 - 10. Connection closed. {executed in 0ms} 
+2020-04-17 16:34:37.736 INFO  log4jdbc.log4j2 Line:197 - 10. Connection.close() returned 
+2020-04-17 16:34:37.736 INFO  com.zaxxer.hikari.HikariDataSource Line:383 - HikariPool-1 - Shutdown completed.
+2020-04-17 16:34:37.737 INFO  com.zaxxer.hikari.HikariDataSource Line:381 - HikariPool-2 - Shutdown initiated...
+2020-04-17 16:34:37.741 INFO  com.zaxxer.hikari.HikariDataSource Line:383 - HikariPool-2 - Shutdown completed.

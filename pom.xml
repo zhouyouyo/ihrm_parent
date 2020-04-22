@@ -17,6 +17,7 @@
         <module>ihrm_social_securitys</module>
         <module>ihrm_attendance</module>
         <module>ihrm_salarys</module>
+        <module>ihrm_audit</module>
     </modules>
 
     <packaging>pom</packaging>
@@ -106,6 +107,13 @@
             <artifactId>poi-ooxml-schemas</artifactId>
             <version>4.0.1</version>
         </dependency>
+        <!--监控sql日志-->
+        <dependency>
+            <groupId>org.bgee.log4jdbc-log4j2</groupId>
+            <artifactId>log4jdbc-log4j2-jdbc4.1</artifactId>
+            <version>1.16</version>
+        </dependency>
+
 
         <!--七牛云存储依赖-->
         <dependency>

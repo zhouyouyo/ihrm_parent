@@ -1,59 +1,42 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="cbc77585-f06d-47b1-87cf-9674cec03543" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/salarys/CompanySettings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/salarys/SalaryArchive.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/salarys/SalaryArchiveDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/salarys/Settings.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/salarys/UserSalary.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/salarys/UserSalaryChange.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/salarys/CompanySettings.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/salarys/SalaryArchive.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/salarys/SalaryArchiveDetail.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/salarys/Settings.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/salarys/UserSalary.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/salarys/UserSalaryChange.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/ihrm_salarys.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/SalarysApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/SalarysConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/controller/ArchiveController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/controller/CompanySettingsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/controller/SalaryController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/controller/SettingsController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/dao/ArchiveDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/dao/ArchiveDetailDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/dao/CompanySettingsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/dao/SettingsDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/dao/UserSalaryChangeDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/dao/UserSalaryDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/service/ArchiveService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/service/CompanySettingsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/service/SalaryService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys/service/SettingsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/src/main/resources/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/META-INF/ihrm_salarys.kotlin_module" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/application.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/SalarysApplication.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/SalarysConfiguration.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/controller/ArchiveController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/controller/CompanySettingsController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/controller/SalaryController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/controller/SettingsController.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/dao/ArchiveDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/dao/ArchiveDetailDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/dao/CompanySettingsDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/dao/SettingsDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/dao/UserSalaryChangeDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/dao/UserSalaryDao.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/service/ArchiveService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/service/CompanySettingsService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/service/SalaryService.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ihrm_salarys/target/classes/com/ihrm/salarys/service/SettingsService.class" afterDir="false" />
+    <list default="true" id="cbc77585-f06d-47b1-87cf-9674cec03543" name="Default Changelist" comment="增加薪资模块">
+      <change afterPath="$PROJECT_DIR$/ihrm_audit/logs/graceLogs/log_error.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_audit/logs/graceLogs/log_info.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_audit/logs/graceLogs/log_warn.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_audit/pom.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_audit/src/main/java/com/ihrm/audit/AuditApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_audit/src/main/java/com/ihrm/audit/AuditDatasourceConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_audit/src/main/java/com/ihrm/audit/JpaRepositoriesConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_audit/src/main/java/com/ihrm/audit/ShiroConfiguration.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_audit/src/main/java/com/ihrm/audit/client/FeignClientService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_audit/src/main/java/com/ihrm/audit/client/SystemFeignClient.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_audit/src/main/java/com/ihrm/audit/controller/ProcessController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_audit/src/main/java/com/ihrm/audit/dao/ProcInstanceDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_audit/src/main/java/com/ihrm/audit/dao/ProcTaskInstanceDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_audit/src/main/java/com/ihrm/audit/dao/ProcUserGroupDao.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_audit/src/main/java/com/ihrm/audit/entity/ProcInstance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_audit/src/main/java/com/ihrm/audit/entity/ProcTaskInstance.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_audit/src/main/java/com/ihrm/audit/entity/ProcUserGroup.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_audit/src/main/java/com/ihrm/audit/service/AuditService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_audit/src/main/java/com/ihrm/audit/service/ProcessService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_audit/src/main/resources/application.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_audit/src/main/resources/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_audit/src/test/java/com/ihrm/audit/AuditTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ihrm_audit/src/test/java/com/ihrm/audit/ProcessTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/graceLogs/error/log-error-2020-04-16.0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/graceLogs/info/log-info-2020-04-16.0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/graceLogs/info/log-info-2020-04-17.0.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/graceLogs/log_error.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/graceLogs/log_info.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/graceLogs/log_warn.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logs/graceLogs/warn/log-warn-2020-04-16.0.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/system/response/ProfileResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/ihrm_common_model/src/main/java/com/ihrm/domain/system/response/ProfileResult.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/system/response/ProfileResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/ihrm_common_model/target/classes/com/ihrm/domain/system/response/ProfileResult.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ihrm_gate/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ihrm_gate/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/ihrm_gate/target/classes/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/ihrm_gate/target/classes/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
@@ -94,6 +77,9 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
+  <component name="HierarchyBrowserManager">
+    <option name="SORT_ALPHABETICALLY" value="true" />
+  </component>
   <component name="IgnoredFileRootStore">
     <option name="generatedRoots">
       <set>
@@ -131,29 +117,29 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/ihrm_salarys/src/main/java/com/ihrm/salarys" />
+    <property name="last_opened_file_path" value="E:/BaiduNetdiskDownload/在职加薪/第二阶段/NIO与Netty编程/代码/IODemo" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
     <property name="settings.editor.selected.configurable" value="File.Encoding" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_salarys\src\main\java\com\ihrm\salarys" />
-      <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_common_model\src\main\java\com\ihrm\domain" />
-      <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_salarys\src\main\java" />
-      <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_salarys\src\main\resources" />
-      <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_common_model\src\main\java\com\ihrm\domain\atte\entity" />
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_employee\src\main\resources\template" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.ihrm.audit.dao" />
       <recent name="com.ihrm.salarys" />
       <recent name="com.ihrm.atte" />
       <recent name="com.ihrm.gate" />
       <recent name="com.ihrm.company" />
-      <recent name="com.ihrm.system" />
     </key>
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_employee\src\main\resources\template" />
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_audit\src\main\java\com\ihrm\audit\entity" />
+      <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_audit\src\main\java\com\ihrm\audit" />
+      <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_audit\src\main\java\com\ihrm\audit\dao" />
+      <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_audit\src\main\resources" />
+      <recent name="D:\IDEA2019\workspace\ihrm_parent\ihrm_salarys\src\main\java\com\ihrm\salarys" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -163,7 +149,7 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="Spring Boot.SalarysApplication">
+  <component name="RunManager" selected="Spring Boot.AuditApplication">
     <configuration name="ParseJwtTest" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.ihrm.common.ParseJwtTest" />
       <module name="ihrm_common" />
@@ -177,28 +163,52 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="PoiTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="com.ihrm.poi.PoiTest" />
-      <module name="ihrm_attendance" />
+    <configuration name="ProcessTest.deleteProcess" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ihrm_audit" />
+      <shortenClasspath name="MANIFEST" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ihrm.poi.*" />
+          <option name="PATTERN" value="com.ihrm.audit.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.ihrm.audit" />
+      <option name="MAIN_CLASS_NAME" value="com.ihrm.audit.ProcessTest" />
+      <option name="METHOD_NAME" value="deleteProcess" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="AttandanceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
-      <module name="ihrm_attendance" />
+    <configuration name="ProcessTest.testSuspend" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ihrm_audit" />
+      <shortenClasspath name="MANIFEST" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.ihrm.atte.*" />
+          <option name="PATTERN" value="com.ihrm.audit.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="com.ihrm.audit" />
+      <option name="MAIN_CLASS_NAME" value="com.ihrm.audit.ProcessTest" />
+      <option name="METHOD_NAME" value="testSuspend" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="PARAMETERS" value="" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AttandanceApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ihrm_attendance" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ihrm.atte.AttandanceApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="AuditApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ihrm_audit" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ihrm.audit.AuditApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -223,6 +233,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="EurekaServer" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ihrm_eureka" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ihrm.eureka.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ihrm.eureka.EurekaServer" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="GateApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ihrm_gate" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ihrm.gate.GateApplication" />
@@ -230,39 +253,54 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SalarysApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="SalarysApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ihrm_salarys" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ihrm.salarys.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ihrm.salarys.SalarysApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SocialSecuritysApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+    <configuration name="SocialSecuritysApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
       <module name="ihrm_social_securitys" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.ihrm.social.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.ihrm.social.SocialSecuritysApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="SystemApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="ihrm_system" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.ihrm.system.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.ihrm.system.SystemApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Application.ParseJwtTest" />
+      <item itemvalue="JUnit.ProcessTest.testSuspend" />
+      <item itemvalue="JUnit.ProcessTest.deleteProcess" />
+      <item itemvalue="Spring Boot.AuditApplication" />
+      <item itemvalue="Spring Boot.EmployeeApplication" />
+      <item itemvalue="Spring Boot.GateApplication" />
+      <item itemvalue="Spring Boot.SalarysApplication" />
+      <item itemvalue="Spring Boot.AttandanceApplication" />
+      <item itemvalue="Spring Boot.SocialSecuritysApplication" />
+      <item itemvalue="Spring Boot.EurekaServer" />
+      <item itemvalue="Spring Boot.SystemApplication" />
+      <item itemvalue="Spring Boot.CompanyApplication" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Spring Boot.SalarysApplication" />
-        <item itemvalue="Spring Boot.AttandanceApplication" />
-        <item itemvalue="Application.PoiTest" />
-        <item itemvalue="Spring Boot.SocialSecuritysApplication" />
+        <item itemvalue="JUnit.ProcessTest.deleteProcess" />
+        <item itemvalue="JUnit.ProcessTest.testSuspend" />
+        <item itemvalue="Spring Boot.SystemApplication" />
         <item itemvalue="Spring Boot.CompanyApplication" />
+        <item itemvalue="Spring Boot.EurekaServer" />
       </list>
     </recent_temporary>
   </component>
@@ -276,11 +314,6 @@
               <path>
                 <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
                 <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              </path>
-              <path>
-                <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-                <item name="Spring Boot" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-                <item name="Running" type="7427dc5b:ServiceModel$ServiceGroupNode" />
               </path>
             </expand>
             <select />
@@ -324,7 +357,12 @@
       <workItem from="1586352912701" duration="1268000" />
       <workItem from="1586415667368" duration="22492000" />
       <workItem from="1586520578586" duration="3340000" />
-      <workItem from="1586588448193" duration="23850000" />
+      <workItem from="1586588448193" duration="26623000" />
+      <workItem from="1586762297166" duration="7224000" />
+      <workItem from="1586937221634" duration="20411000" />
+      <workItem from="1587108299772" duration="15024000" />
+      <workItem from="1587194551745" duration="9850000" />
+      <workItem from="1587279364036" duration="812000" />
     </task>
     <task id="LOCAL-00001" summary="搭建子模块">
       <created>1584174898324</created>
@@ -396,7 +434,14 @@
       <option name="project" value="LOCAL" />
       <updated>1586688343693</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="增加薪资模块">
+      <created>1586696377822</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1586696377822</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -415,7 +460,8 @@
     <MESSAGE value="增加导出功能" />
     <MESSAGE value="增加社保模块" />
     <MESSAGE value="增加考勤模块" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加考勤模块" />
+    <MESSAGE value="增加薪资模块" />
+    <option name="LAST_COMMIT_MESSAGE" value="增加薪资模块" />
   </component>
   <component name="WindowStateProjectService">
     <state x="361" y="74" key="#Inspections" timestamp="1584333514532">
@@ -426,14 +472,30 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="361" y="53" width="814" height="771" key="#Intentions/0.0.1536.824@0.0.1536.824" timestamp="1584333697588" />
-    <state x="223" y="71" width="1155" height="682" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586519426351">
+    <state x="350" y="89" key="#ProcessTest.deleteProcess" timestamp="1587022982944">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="223" y="71" width="1155" height="682" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1586519426351" />
-    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser" timestamp="1586262589924">
+    <state x="350" y="89" key="#ProcessTest.deleteProcess/0.0.1536.824@0.0.1536.824" timestamp="1587022982944" />
+    <state x="350" y="89" key="#ProcessTest.findAll" timestamp="1586764747738">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="574" y="121" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1586262589924" />
+    <state x="350" y="89" key="#ProcessTest.findAll/0.0.1536.824@0.0.1536.824" timestamp="1586764747738" />
+    <state x="350" y="89" key="#ProcessTest.testSuspend" timestamp="1586765147846">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="350" y="89" key="#ProcessTest.testSuspend/0.0.1536.824@0.0.1536.824" timestamp="1586765147846" />
+    <state x="223" y="71" width="1155" height="682" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1586768406176">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="223" y="71" width="1155" height="682" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1586768406176" />
+    <state x="590" y="243" key="#com.intellij.ide.util.MemberChooser" timestamp="1587110178073">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="590" y="243" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1587110178073" />
+    <state x="498" y="200" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1586765141706">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="200" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.1536.824@0.0.1536.824" timestamp="1586765141706" />
     <state x="374" y="341" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1584175569512">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -446,106 +508,106 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="499" y="162" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1584434296497" />
-    <state x="231" y="7" key="CommitChangelistDialog2" timestamp="1586688342552">
+    <state x="231" y="7" key="CommitChangelistDialog2" timestamp="1587110165927">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="231" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1586688342552" />
-    <state width="544" height="578" key="DebuggerActiveHint" timestamp="1586605215677">
+    <state x="231" y="7" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1587110165927" />
+    <state width="544" height="578" key="DebuggerActiveHint" timestamp="1587124939862">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="544" height="578" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1586605215677" />
-    <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1584867794849">
+    <state width="544" height="578" key="DebuggerActiveHint/0.0.1536.824@0.0.1536.824" timestamp="1587124939862" />
+    <state x="549" y="171" key="FileChooserDialogImpl" timestamp="1587280284043">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1584867794849" />
-    <state width="1141" height="281" key="GridCell.Tab.0.bottom" timestamp="1586689014112">
+    <state x="549" y="171" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1587280284043" />
+    <state width="1493" height="235" key="GridCell.Tab.0.bottom" timestamp="1587134489804">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1141" height="281" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586689014112" />
-    <state width="1141" height="281" key="GridCell.Tab.0.center" timestamp="1586689014112">
+    <state width="1493" height="235" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587134489804" />
+    <state width="1493" height="235" key="GridCell.Tab.0.center" timestamp="1587134489804">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1141" height="281" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1586689014112" />
-    <state width="1141" height="281" key="GridCell.Tab.0.left" timestamp="1586689014111">
+    <state width="1493" height="235" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1587134489804" />
+    <state width="1493" height="235" key="GridCell.Tab.0.left" timestamp="1587134489804">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1141" height="281" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1586689014111" />
-    <state width="1141" height="281" key="GridCell.Tab.0.right" timestamp="1586689014112">
+    <state width="1493" height="235" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1587134489804" />
+    <state width="1493" height="235" key="GridCell.Tab.0.right" timestamp="1587134489804">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1141" height="281" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1586689014112" />
-    <state width="1141" height="281" key="GridCell.Tab.1.bottom" timestamp="1586689014112">
+    <state width="1493" height="235" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1587134489804" />
+    <state width="1141" height="289" key="GridCell.Tab.1.bottom" timestamp="1587134489800">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1141" height="281" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586689014112" />
-    <state width="1141" height="281" key="GridCell.Tab.1.center" timestamp="1586689014112">
+    <state width="1141" height="289" key="GridCell.Tab.1.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587134489800" />
+    <state width="1141" height="289" key="GridCell.Tab.1.center" timestamp="1587134489799">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1141" height="281" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1586689014112" />
-    <state width="1141" height="281" key="GridCell.Tab.1.left" timestamp="1586689014112">
+    <state width="1141" height="289" key="GridCell.Tab.1.center/0.0.1536.824@0.0.1536.824" timestamp="1587134489799" />
+    <state width="1141" height="289" key="GridCell.Tab.1.left" timestamp="1587134489799">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1141" height="281" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1586689014112" />
-    <state width="1141" height="281" key="GridCell.Tab.1.right" timestamp="1586689014112">
+    <state width="1141" height="289" key="GridCell.Tab.1.left/0.0.1536.824@0.0.1536.824" timestamp="1587134489799" />
+    <state width="1141" height="289" key="GridCell.Tab.1.right" timestamp="1587134489800">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1141" height="281" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1586689014112" />
-    <state width="1141" height="281" key="GridCell.Tab.2.bottom" timestamp="1586689014113">
+    <state width="1141" height="289" key="GridCell.Tab.1.right/0.0.1536.824@0.0.1536.824" timestamp="1587134489800" />
+    <state width="1141" height="289" key="GridCell.Tab.2.bottom" timestamp="1587134489800">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1141" height="281" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1586689014113" />
-    <state width="1141" height="281" key="GridCell.Tab.2.center" timestamp="1586689014112">
+    <state width="1141" height="289" key="GridCell.Tab.2.bottom/0.0.1536.824@0.0.1536.824" timestamp="1587134489800" />
+    <state width="1141" height="289" key="GridCell.Tab.2.center" timestamp="1587134489800">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1141" height="281" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1586689014112" />
-    <state width="1141" height="281" key="GridCell.Tab.2.left" timestamp="1586689014112">
+    <state width="1141" height="289" key="GridCell.Tab.2.center/0.0.1536.824@0.0.1536.824" timestamp="1587134489800" />
+    <state width="1141" height="289" key="GridCell.Tab.2.left" timestamp="1587134489800">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1141" height="281" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1586689014112" />
-    <state width="1141" height="281" key="GridCell.Tab.2.right" timestamp="1586689014112">
+    <state width="1141" height="289" key="GridCell.Tab.2.left/0.0.1536.824@0.0.1536.824" timestamp="1587134489800" />
+    <state width="1141" height="289" key="GridCell.Tab.2.right" timestamp="1587134489800">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1141" height="281" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1586689014112" />
+    <state width="1141" height="289" key="GridCell.Tab.2.right/0.0.1536.824@0.0.1536.824" timestamp="1587134489800" />
     <state x="498" y="58" key="NewModule_or_Project.wizard" timestamp="1584667356801">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="498" y="58" key="NewModule_or_Project.wizard/0.0.1536.824@0.0.1536.824" timestamp="1584667356801" />
-    <state x="272" y="0" width="1173" height="708" key="SettingsEditor" timestamp="1584782214016">
+    <state x="272" y="0" width="1173" height="708" key="SettingsEditor" timestamp="1586765112091">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="272" y="0" width="1173" height="708" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1584782214016" />
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1586688368052">
+    <state x="272" y="0" width="1173" height="708" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1586765112091" />
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2" timestamp="1586696387068">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586688368052" />
-    <state x="564" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1584174765610">
+    <state x="361" y="149" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1586696387068" />
+    <state x="564" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1587110183487">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="564" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1584174765610" />
-    <state x="323" y="152" width="889" height="565" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1586612386118">
+    <state x="564" y="331" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2/0.0.1536.824@0.0.1536.824" timestamp="1587110183487" />
+    <state x="323" y="152" width="889" height="565" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1587110389161">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="323" y="152" width="889" height="565" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1586612386118" />
-    <state x="543" y="254" width="827" height="490" key="find.popup" timestamp="1586691035179">
+    <state x="323" y="152" width="889" height="565" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2/0.0.1536.824@0.0.1536.824" timestamp="1587110389161" />
+    <state x="543" y="254" width="827" height="490" key="find.popup" timestamp="1587218149772">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="543" y="254" width="827" height="490" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1586691035179" />
+    <state x="543" y="254" width="827" height="490" key="find.popup/0.0.1536.824@0.0.1536.824" timestamp="1587218149772" />
     <state x="465" y="215" key="git4idea.merge.GitPullDialog" timestamp="1586688353402">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="465" y="215" key="git4idea.merge.GitPullDialog/0.0.1536.824@0.0.1536.824" timestamp="1586688353402" />
-    <state x="178" y="58" key="new project wizard" timestamp="1586688384392">
+    <state x="178" y="58" key="new project wizard" timestamp="1586696397895">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="178" y="58" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1586688384392" />
-    <state x="425" y="187" key="run.anything.popup" timestamp="1586003019018">
+    <state x="178" y="58" key="new project wizard/0.0.1536.824@0.0.1536.824" timestamp="1586696397895" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1587115360551">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1586003019018" />
-    <state x="578" y="203" width="672" height="678" key="search.everywhere.popup" timestamp="1586690195440">
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1587115360551" />
+    <state x="578" y="203" width="672" height="678" key="search.everywhere.popup" timestamp="1587218257589">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="578" y="203" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1586690195440" />
+    <state x="578" y="203" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1587218257589" />
   </component>
   <component name="XDebuggerManager">
     <watches-manager>

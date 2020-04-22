@@ -16,6 +16,7 @@ public class ProfileResult implements Serializable, AuthCachePrincipal {
     private String username;
     private String company;
     private String companyId;
+    private String userId;
     private Map<String, Object> roles = new HashMap<>();
 
     /**
@@ -26,6 +27,7 @@ public class ProfileResult implements Serializable, AuthCachePrincipal {
     public ProfileResult(User user, List<Permission> list){
         this.mobile = user.getMobile();
         this.username = user.getUsername();
+        this.userId = user.getId();
         this.company = user.getCompanyName();
         this.companyId = user.getCompanyId();
         Set<Role> roles = user.getRoles();
@@ -56,6 +58,7 @@ public class ProfileResult implements Serializable, AuthCachePrincipal {
         this.username = user.getUsername();
         this.company = user.getCompanyName();
         this.companyId = user.getCompanyId();
+        this.userId = user.getId();
         Set<Role> roles = user.getRoles();
         Set<String> menus = new HashSet<>();
         Set<String> points = new HashSet<>();
